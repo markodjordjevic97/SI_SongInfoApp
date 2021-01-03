@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\AppData\Local\Temp\Rar$DRa8140.29745\BUNIFU UI\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />

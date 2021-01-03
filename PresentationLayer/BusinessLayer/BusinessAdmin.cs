@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer;
-using System;
+using DataAccessLayer.Models;
+using System.Text.RegularExpressions;
 
 namespace BusinessLayer
 {
@@ -10,6 +11,34 @@ namespace BusinessLayer
         public BusinessAdmin()
         {
             adminRepository = new AdminRepository();
+        }
+        // Method for registration
+        public int RegisterAdmin(Admin admin)
+        {
+            return this.adminRepository.RegisterAdmin(admin);
+        }
+        // Method for check password validation
+        public bool IsValidPassword(string passw)
+        { 
+            // example of password:  Adminpp1, one upperCase, one Number, minimum 8 characters
+            var hasNumber = new Regex(@"[0-9]$");
+            var hasUpperChar = new Regex(@"[A-Z]+");
+            var hasMinimum8Chars = new Regex(@".{8,}");
+            var isValidated = hasNumber.IsMatch(passw) && hasUpperChar.IsMatch(passw) && hasMinimum8Chars.IsMatch(passw);
+            if (isValidated)
+                return true;
+            return false;
+        }
+        // Method for check username validation
+        public bool IsValidUsername(string username)
+        {
+            //example of username: adminadmin or Adminadmin , just characters and min 8 characters
+            var hasUpperChar = new Regex(@"^[a-zA-Z]+$");
+            var hasMinimum8Chars = new Regex(@".{8,}");
+            var isValidated =  hasUpperChar.IsMatch(username) && hasMinimum8Chars.IsMatch(username);
+            if (isValidated)
+                return true;
+            return false;
         }
 
     }

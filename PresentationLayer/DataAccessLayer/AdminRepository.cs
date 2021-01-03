@@ -7,10 +7,9 @@ namespace DataAccessLayer
     public class AdminRepository
     {
         private List<Admin> list = new List<Admin>();
-
-        public void RegisterAdmin(Admin admin)
+        public int RegisterAdmin(Admin admin)
         {
-
+            return 2;
         }
         
     }
