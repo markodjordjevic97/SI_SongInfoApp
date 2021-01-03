@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,13 @@ namespace PresentationLayer
 {
     public partial class Form1 : Form
     {
+        private readonly BusinessAdmin businessAdmin;
         
 
         public Form1()
         {
             InitializeComponent();
+            businessAdmin = new BusinessAdmin();
             
         }
 
@@ -108,6 +111,10 @@ namespace PresentationLayer
                 btnExit.Text = " ";
                 
             }
+        }
+
+        private void adminlogin1_Load(object sender, EventArgs e)
+        {
         }
     }
 }
