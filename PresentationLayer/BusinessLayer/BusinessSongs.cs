@@ -1,4 +1,8 @@
-﻿using DataAccessLayer;
+﻿
+
+using DataAccessLayer;
+using DataAccessLayer.Models;
+using System.Collections.Generic;
 
 namespace BusinessLayer
 {
@@ -27,9 +31,9 @@ namespace BusinessLayer
             return this.songRepository.DeleteSong(song);
         }
         // Method for get all songs
-        public int GetAllSongs(Song song)
+        public List<Song> GetAllSongs()
         {
-            return this.songRepository.GetAllSongs(song);
+            return this.songRepository.GetAllSongs();
         }
     }
 }
