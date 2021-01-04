@@ -22,9 +22,10 @@ namespace DataAccessLayer
                 return result;
             }
         }
+
+        //Checking if Admin Username already exists in database
         public bool IsUidAvailable(Admin admin)
         {
-
             using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))
             {
                 connection.Open();
@@ -45,9 +46,6 @@ namespace DataAccessLayer
                 else
                     return true;
             }
-
         }
-
-
     }
 }
