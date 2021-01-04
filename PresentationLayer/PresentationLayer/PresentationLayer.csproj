@@ -138,5 +138,8 @@
   <ItemGroup>
     <None Include="Resources\pngtree-love-song-icon-png-image_2036603.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

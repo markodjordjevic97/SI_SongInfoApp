@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLayer;
+using PresentationLayer.Properties;
 
 namespace PresentationLayer
 {
@@ -38,6 +39,7 @@ namespace PresentationLayer
             {
                 // Song info
                 listSongs[i] = new SongCard();
+                listSongs[i].Icon = Resources.music;
                 listSongs[i].Title = Title;
                 listSongs[i].Genre = Genre;
                 listSongs[i].Performer = Performer;
