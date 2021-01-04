@@ -53,6 +53,7 @@
             this.btnSignInNoFunction = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.songinfoinput1 = new PresentationLayer.songinfoinput();
             this.bunifuGradientPanel1.SuspendLayout();
             this.panelRegistration.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +62,7 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.songinfoinput1);
             this.bunifuGradientPanel1.Controls.Add(this.panelRegistration);
             this.bunifuGradientPanel1.Controls.Add(this.labelRegistration);
             this.bunifuGradientPanel1.Controls.Add(this.btnRegisterNow);
@@ -74,6 +76,7 @@
             this.bunifuGradientPanel1.Controls.Add(this.btnSignInNoFunction);
             this.bunifuGradientPanel1.Controls.Add(this.label2);
             this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
@@ -86,7 +89,6 @@
             // 
             // panelRegistration
             // 
-            this.panelRegistration.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panelRegistration.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelRegistration.BackgroundImage")));
             this.panelRegistration.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelRegistration.Controls.Add(this.star12);
@@ -103,7 +105,7 @@
             this.panelRegistration.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
             this.panelRegistration.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panelRegistration.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
-            this.panelRegistration.Location = new System.Drawing.Point(433, 3);
+            this.panelRegistration.Location = new System.Drawing.Point(436, 3);
             this.panelRegistration.Name = "panelRegistration";
             this.panelRegistration.Quality = 10;
             this.panelRegistration.Size = new System.Drawing.Size(512, 633);
@@ -214,7 +216,7 @@
             this.btnRegisterNowCreate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnRegisterNowCreate.ActiveForecolor = System.Drawing.Color.White;
             this.btnRegisterNowCreate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnRegisterNowCreate.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegisterNowCreate.BackColor = System.Drawing.SystemColors.Control;
             this.btnRegisterNowCreate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegisterNowCreate.BackgroundImage")));
             this.btnRegisterNowCreate.ButtonText = "Register Now";
             this.btnRegisterNowCreate.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -290,7 +292,7 @@
             this.btnRegisterNow.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnRegisterNow.ActiveForecolor = System.Drawing.Color.White;
             this.btnRegisterNow.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnRegisterNow.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegisterNow.BackColor = System.Drawing.SystemColors.Control;
             this.btnRegisterNow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegisterNow.BackgroundImage")));
             this.btnRegisterNow.ButtonText = "Register Now";
             this.btnRegisterNow.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -428,7 +430,7 @@
             this.btnSignInNoFunction.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnSignInNoFunction.ActiveForecolor = System.Drawing.Color.White;
             this.btnSignInNoFunction.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnSignInNoFunction.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignInNoFunction.BackColor = System.Drawing.SystemColors.Control;
             this.btnSignInNoFunction.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSignInNoFunction.BackgroundImage")));
             this.btnSignInNoFunction.ButtonText = "Sign In";
             this.btnSignInNoFunction.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -471,6 +473,14 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Welcome Admin";
             // 
+            // songinfoinput1
+            // 
+            this.songinfoinput1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.songinfoinput1.Location = new System.Drawing.Point(0, 0);
+            this.songinfoinput1.Name = "songinfoinput1";
+            this.songinfoinput1.Size = new System.Drawing.Size(948, 633);
+            this.songinfoinput1.TabIndex = 21;
+            // 
             // adminlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -478,6 +488,7 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "adminlogin";
             this.Size = new System.Drawing.Size(948, 633);
+            this.Load += new System.EventHandler(this.adminlogin_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             this.panelRegistration.ResumeLayout(false);
@@ -512,5 +523,6 @@
         private System.Windows.Forms.Label star11;
         private System.Windows.Forms.Label star10;
         private System.Windows.Forms.Label star9;
+        private songinfoinput songinfoinput1;
     }
 }

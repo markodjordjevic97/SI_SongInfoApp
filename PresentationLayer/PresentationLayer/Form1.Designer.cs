@@ -412,7 +412,6 @@
             this.adminlogin1.Name = "adminlogin1";
             this.adminlogin1.Size = new System.Drawing.Size(958, 630);
             this.adminlogin1.TabIndex = 2;
-            this.adminlogin1.Load += new System.EventHandler(this.adminlogin1_Load);
             // 
             // songinfoinput1
             // 
