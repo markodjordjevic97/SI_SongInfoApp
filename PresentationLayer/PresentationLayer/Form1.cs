@@ -13,6 +13,12 @@ namespace PresentationLayer
 {
     public partial class Form1 : Form
     {
+        
+
+      
+
+      
+
         private readonly BusinessAdmin businessAdmin;
         
 
@@ -113,8 +119,6 @@ namespace PresentationLayer
             }
         }
 
-        private void adminlogin1_Load(object sender, EventArgs e)
-        {
-        }
+     
     }
 }

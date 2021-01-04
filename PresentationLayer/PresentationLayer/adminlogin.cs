@@ -7,26 +7,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BusinessLayer;
+using DataAccessLayer.Models;
 
 namespace PresentationLayer
 {
     public partial class adminlogin : UserControl
     {
-       
 
+
+        public BusinessAdmin business;
+        
+        
 
         public adminlogin()
         {
             
-           
+            business = new BusinessAdmin();
+
+            
+
             InitializeComponent();
             star1.Hide();
             star2.Hide();
             panelRegistration.Hide();
-           
-            
 
+        }
+
+        private void adminlogin_Load(object sender, EventArgs e)
+        {
+            songinfoinput1.Hide();
+
+           /* Admin a = new Admin();*/
+
+            /*if (this.business.IsUidAvailable(a))
+            {
+                labelRegistration.Hide();
+                btnRegisterNow.Hide();
+            }*/
         }
 
         /*Sprecavanje unosa praznih polja*/
@@ -61,15 +79,58 @@ namespace PresentationLayer
         /*Sprecavanje unosa praznih polja*/
         private void btnRegisterNowCreate_Click(object sender, EventArgs e)
         {
-            if(textBoxName.Text.Length == 0 || textBoxSurname.Text.Length == 0 
-                || textBoxUsername.Text.Length ==0 || textBoxPassword.Text.Length == 0)
+            Admin a = new Admin();
+
+            
+
+            if (textBoxName.Text.Length == 0 
+                || textBoxSurname.Text.Length == 0
+                || textBoxUsername.Text.Length == 0 
+                || textBoxPassword.Text.Length == 0 
+                || this.business.IsValidPassword(textBoxPassword.Text) != true 
+                || this.business.IsValidUsername(textBoxUsername.Text) != true) 
+
+               
             {
                 star9.Show();
                 star10.Show();
                 star11.Show();
                 star12.Show();
-                MessageBox.Show("Unesite podatke!");
+
+                MessageBox.Show("Enter correct data!(Username: characters only, min 8 char;Password: one Uppercase, one Number, min 8 char)");
+
+                
             }
+            else
+            {
+                a.Name = textBoxName.Text;
+                a.Surname = textBoxSurname.Text;
+                a.Username = textBoxUsername.Text;
+                a.Password = textBoxPassword.Text;
+                
+            }
+
+            if(this.business.RegisterAdmin(a) > 0)
+            {
+                
+                MessageBox.Show("Successfull registration!");
+                songinfoinput1.Show();
+
+            } else
+            {
+                MessageBox.Show("Unsuccessfull registration!");
+            }
+
+           
+           
+
+
+
+
+
+
         }
+
+      
     }
 }
