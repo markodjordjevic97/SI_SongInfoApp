@@ -24,27 +24,30 @@ namespace DataAccessLayer
         }
 
         //Checking if Admin Username already exists in database
-        public bool IsUidAvailable(Admin admin)
+        public List<Admin> GetAdmin(Admin admin)
         {
             using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))
             {
                 connection.Open();
-
+                List<Admin> list2 = new List<Admin>();
                 MySqlCommand command = new MySqlCommand();
                 command.Connection = connection;
-                command.CommandText = string.Format("SELECT * FROM admin WHERE username = {0};", admin.Username);
+                command.CommandText = "SELECT * FROM admin;";
 
                 MySqlDataReader reader = command.ExecuteReader();
                 Admin temp = new Admin();
                 while (reader.Read())
                 {
+                    temp.Admin_Id = Convert.ToInt32(reader.GetString(0));
+                    temp.Name = reader.GetString(1);
+                    temp.Surname = reader.GetString(2);
                     temp.Username = reader.GetString(3);
+                    temp.Password = reader.GetString(4);
+                    list2.Add(temp);
                 }
 
-                if (temp.Username == admin.Username)
-                    return false;
-                else
-                    return true;
+                return list2;
+              
             }
         }
     }

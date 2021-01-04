@@ -18,10 +18,14 @@ namespace PresentationLayer
         }
 
         private Image _icon;
+        private Image _iconRating;
         private string _title;
         private string _genre;
         private string _performer;
         private double _rating;
+
+        // Colors
+        private Color _iconBackground;
 
         #region Properties
 
@@ -30,6 +34,12 @@ namespace PresentationLayer
         {
             get { return _icon; }
             set { _icon = value; lblIcon.Image = value; }
+        }
+        [Category("Custom props")]
+        public Image IconRating
+        {
+            get { return _iconRating; }
+            set { _iconRating = value; lblIconRating.Image = value; }
         }
 
         [Category("Custom props")]
@@ -60,6 +70,24 @@ namespace PresentationLayer
             set { _rating = value; lblRating.Text = value.ToString(); }
         }
 
+        [Category("Custom props")]
+        public Color IconBackground
+        {
+            get { return _iconBackground; }
+            set { _iconBackground = value; IconBackColor.BackColor = value; }
+        }
+
         #endregion
+
+        private void SongCard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SongCard_MouseEnter_1(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(104, 66, 81);
+            this.ForeColor = Color.White;
+        }
     }
 }

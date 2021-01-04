@@ -68,7 +68,7 @@
             this.flowListSongs.AutoScroll = true;
             this.flowListSongs.Location = new System.Drawing.Point(3, 142);
             this.flowListSongs.Name = "flowListSongs";
-            this.flowListSongs.Size = new System.Drawing.Size(1060, 649);
+            this.flowListSongs.Size = new System.Drawing.Size(1077, 649);
             this.flowListSongs.TabIndex = 3;
             // 
             // comboBoxSort
