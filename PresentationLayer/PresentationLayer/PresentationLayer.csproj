@@ -89,6 +89,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SongCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SongCard.Designer.cs">
+      <DependentUpon>SongCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="songinfoinput.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -112,7 +118,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SongCard.resx">
+      <DependentUpon>SongCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="songinfoinput.resx">
       <DependentUpon>songinfoinput.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +145,13 @@
       <Project>{06f0c461-0ef3-4878-a85c-571f044ce93f}</Project>
       <Name>BusinessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{80051741-F933-49EC-A394-7D2A0A15ECD3}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-love-song-icon-png-image_2036603.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

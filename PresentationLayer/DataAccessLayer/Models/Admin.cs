@@ -12,7 +12,7 @@ namespace DataAccessLayer.Models
         public string Username { get; set; }
         public string Password { get; set; }
 
-        public string ToString()
+        public string ToStringg() // ne moze ToString samo, baca gresku neku za Override !
         {
             return (Admin_Id + " " + Name + " " + Surname + " " + Username + " " + Password);
         }

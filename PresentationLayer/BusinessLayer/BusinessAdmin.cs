@@ -12,7 +12,8 @@ namespace BusinessLayer
         {
             adminRepository = new AdminRepository();
         }
-        // Method for registration
+
+        // Method for  admin registration
         public int RegisterAdmin(Admin admin)
         {
             return this.adminRepository.RegisterAdmin(admin);
@@ -39,6 +40,12 @@ namespace BusinessLayer
             if (isValidated)
                 return true;
             return false;
+        }
+
+        //Method for Admin Login
+        public bool IsUidAvailable(Admin admin)
+        {
+            return this.adminRepository.IsUidAvailable(admin);
         }
 
     }
