@@ -16,7 +16,7 @@ namespace DataAccessLayer
 
                 MySqlCommand command = new MySqlCommand();
                 command.Connection = connection;
-                command.CommandText = string.Format("INSERT INTO admin(name, surname, username, password) VALUES ('{0}','{1}','{2}',md5('{3}'));", admin.Name, admin.Surname, admin.Username, admin.Password);
+                command.CommandText = string.Format("INSERT INTO admins(name, surname, username, password) VALUES ('{0}','{1}','{2}',md5('{3}'));", admin.Name, admin.Surname, admin.Username, admin.Password);
 
                 int result = command.ExecuteNonQuery();
                 return result;

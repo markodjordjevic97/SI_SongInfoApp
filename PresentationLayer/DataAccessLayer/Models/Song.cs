@@ -6,5 +6,19 @@ namespace DataAccessLayer.Models
 {
     public class Song
     {
+        public int Song_Id { get; set; }
+        public Performer Performer { get; set; }
+        public string Title { get; set; }
+        public DateTime Created_At { get; set; }
+        public string Picture_Url { get; set; }
+        public string Genre { get; set; }
+        public Admin Admin { get; set; }
+        public string Youtube_Url { get; set; }
+
+        public string ToString()
+        {
+            return Song_Id + " " + Performer.ToString() + " " + Title + " " + Created_At + " " + Picture_Url + " " + Genre + " " + Admin.ToString() + " " + Youtube_Url;
+        }
+
     }
 }
