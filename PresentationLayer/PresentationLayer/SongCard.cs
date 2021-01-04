@@ -19,16 +19,22 @@ namespace PresentationLayer
 
         private Image _icon;
         private Image _iconRating;
+        private Image _iconYoutube;
         private string _title;
         private string _genre;
         private string _performer;
         private double _rating;
-
+        private string _lblYoutube;
         // Colors
         private Color _iconBackground;
 
         #region Properties
-
+        [Category("Custom props")]
+        public string PROBAYOUTUBE
+        {
+            get { return _lblYoutube; }
+            set { _lblYoutube = value; }
+        }
         [Category("Custom props")]
         public Image Icon
         {
@@ -40,6 +46,12 @@ namespace PresentationLayer
         {
             get { return _iconRating; }
             set { _iconRating = value; lblIconRating.Image = value; }
+        }
+        [Category("Custom props")]
+        public Image IconYoutube
+        {
+            get { return _iconYoutube; }
+            set { _iconYoutube = value; lblIconYoutube.Image = value; }
         }
 
         [Category("Custom props")]
@@ -79,15 +91,25 @@ namespace PresentationLayer
 
         #endregion
 
-        private void SongCard_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void SongCard_MouseEnter_1(object sender, EventArgs e)
         {
             this.BackColor = Color.FromArgb(104, 66, 81);
             this.ForeColor = Color.White;
         }
+
+        private void SongCard_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(44, 62, 80);
+            this.ForeColor = Color.White;
+        }
+
+        private void lblYoutubeClick_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(PROBAYOUTUBE);
+        }
+
+
+        // System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=A8sFkwwf8Xk");
     }
 }

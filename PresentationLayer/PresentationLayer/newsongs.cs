@@ -43,6 +43,8 @@ namespace PresentationLayer
                 listSongs[i] = new SongCard();
                 listSongs[i].Icon = Resources.music;
                 listSongs[i].IconRating = Resources.star;
+                listSongs[i].IconYoutube = Resources.youtube;
+                listSongs[i].PROBAYOUTUBE = "https://www.youtube.com/watch?v=A8sFkwwf8Xk";
                 listSongs[i].IconBackground = Color.FromArgb(44, 62, 80);
                 listSongs[i].Title = Title;
                 listSongs[i].Genre = Genre;
