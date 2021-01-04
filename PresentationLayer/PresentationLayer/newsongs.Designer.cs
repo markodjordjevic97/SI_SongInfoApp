@@ -28,21 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(newsongs));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.comboBoxSort = new System.Windows.Forms.ComboBox();
             this.textBoxSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.flowListSongs = new System.Windows.Forms.FlowLayoutPanel();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.songCard1 = new PresentationLayer.SongCard();
             this.bunifuGradientPanel1.SuspendLayout();
+            this.flowListSongs.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.flowListSongs);
             this.bunifuGradientPanel1.Controls.Add(this.comboBoxSort);
             this.bunifuGradientPanel1.Controls.Add(this.textBoxSearch);
-            this.bunifuGradientPanel1.Controls.Add(this.label1);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
@@ -54,6 +59,7 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1066, 791);
             this.bunifuGradientPanel1.TabIndex = 0;
+            this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
             // comboBoxSort
             // 
@@ -94,17 +100,27 @@
             this.textBoxSearch.Text = "Search";
             this.textBoxSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // label1
+            // flowListSongs
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(350, 117);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "List of New Songs";
+            this.flowListSongs.AutoScroll = true;
+            this.flowListSongs.Controls.Add(this.songCard1);
+            this.flowListSongs.Location = new System.Drawing.Point(73, 142);
+            this.flowListSongs.Name = "flowListSongs";
+            this.flowListSongs.Size = new System.Drawing.Size(933, 649);
+            this.flowListSongs.TabIndex = 3;
+            // 
+            // songCard1
+            // 
+            this.songCard1.BackColor = System.Drawing.Color.White;
+            this.songCard1.Genre = null;
+            this.songCard1.Icon = ((System.Drawing.Image)(resources.GetObject("songCard1.Icon")));
+            this.songCard1.Location = new System.Drawing.Point(3, 3);
+            this.songCard1.Name = "songCard1";
+            this.songCard1.Performer = null;
+            this.songCard1.Rating = 0D;
+            this.songCard1.Size = new System.Drawing.Size(919, 153);
+            this.songCard1.TabIndex = 0;
+            this.songCard1.Title = null;
             // 
             // newsongs
             // 
@@ -115,7 +131,8 @@
             this.Name = "newsongs";
             this.Size = new System.Drawing.Size(1066, 791);
             this.bunifuGradientPanel1.ResumeLayout(false);
-            this.bunifuGradientPanel1.PerformLayout();
+            this.flowListSongs.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -123,8 +140,10 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuMetroTextbox textBoxSearch;
         private System.Windows.Forms.ComboBox comboBoxSort;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.FlowLayoutPanel flowListSongs;
+        private SongCard songCard1;
     }
 }

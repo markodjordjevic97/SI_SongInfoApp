@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace BusinessLayer
 {
-    class BusinessSongs
+    public class BusinessSongs
     {
         private readonly SongRepository songRepository;
 
