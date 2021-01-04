@@ -11,6 +11,11 @@ namespace DataAccessLayer
         {
             return 2;
         }
-        
+        public bool IsUidAvailable(Admin admin)
+        {
+            return true;
+        }
+
+
     }
 }
