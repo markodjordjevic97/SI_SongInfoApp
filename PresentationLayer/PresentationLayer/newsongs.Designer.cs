@@ -31,14 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(newsongs));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.flowListSongs = new System.Windows.Forms.FlowLayoutPanel();
             this.comboBoxSort = new System.Windows.Forms.ComboBox();
             this.textBoxSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.flowListSongs = new System.Windows.Forms.FlowLayoutPanel();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.songCard1 = new PresentationLayer.SongCard();
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
-            this.flowListSongs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
@@ -60,6 +62,14 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1066, 791);
             this.bunifuGradientPanel1.TabIndex = 0;
             this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
+            // 
+            // flowListSongs
+            // 
+            this.flowListSongs.AutoScroll = true;
+            this.flowListSongs.Location = new System.Drawing.Point(3, 142);
+            this.flowListSongs.Name = "flowListSongs";
+            this.flowListSongs.Size = new System.Drawing.Size(1060, 649);
+            this.flowListSongs.TabIndex = 3;
             // 
             // comboBoxSort
             // 
@@ -100,28 +110,6 @@
             this.textBoxSearch.Text = "Search";
             this.textBoxSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // flowListSongs
-            // 
-            this.flowListSongs.AutoScroll = true;
-            this.flowListSongs.Controls.Add(this.songCard1);
-            this.flowListSongs.Location = new System.Drawing.Point(73, 142);
-            this.flowListSongs.Name = "flowListSongs";
-            this.flowListSongs.Size = new System.Drawing.Size(933, 649);
-            this.flowListSongs.TabIndex = 3;
-            // 
-            // songCard1
-            // 
-            this.songCard1.BackColor = System.Drawing.Color.White;
-            this.songCard1.Genre = null;
-            this.songCard1.Icon = ((System.Drawing.Image)(resources.GetObject("songCard1.Icon")));
-            this.songCard1.Location = new System.Drawing.Point(3, 3);
-            this.songCard1.Name = "songCard1";
-            this.songCard1.Performer = null;
-            this.songCard1.Rating = 0D;
-            this.songCard1.Size = new System.Drawing.Size(919, 153);
-            this.songCard1.TabIndex = 0;
-            this.songCard1.Title = null;
-            // 
             // newsongs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -131,8 +119,9 @@
             this.Name = "newsongs";
             this.Size = new System.Drawing.Size(1066, 791);
             this.bunifuGradientPanel1.ResumeLayout(false);
-            this.flowListSongs.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -145,5 +134,7 @@
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.FlowLayoutPanel flowListSongs;
         private SongCard songCard1;
+        private System.Windows.Forms.BindingSource bindingSource2;
+        private System.Windows.Forms.BindingSource bindingSource3;
     }
 }

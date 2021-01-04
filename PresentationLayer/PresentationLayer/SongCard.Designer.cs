@@ -43,7 +43,7 @@
             this.lblTitle.AutoEllipsis = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblTitle.Location = new System.Drawing.Point(246, 12);
+            this.lblTitle.Location = new System.Drawing.Point(249, 12);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(575, 39);
             this.lblTitle.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             this.lblGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGenre.ForeColor = System.Drawing.Color.Red;
-            this.lblGenre.Location = new System.Drawing.Point(246, 51);
+            this.lblGenre.Location = new System.Drawing.Point(250, 51);
             this.lblGenre.Name = "lblGenre";
             this.lblGenre.Size = new System.Drawing.Size(210, 30);
             this.lblGenre.TabIndex = 2;
@@ -62,7 +62,7 @@
             // lblPerformer
             // 
             this.lblPerformer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPerformer.Location = new System.Drawing.Point(242, 106);
+            this.lblPerformer.Location = new System.Drawing.Point(249, 106);
             this.lblPerformer.Name = "lblPerformer";
             this.lblPerformer.Size = new System.Drawing.Size(214, 34);
             this.lblPerformer.TabIndex = 3;
@@ -71,7 +71,7 @@
             // lblRating
             // 
             this.lblRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRating.Location = new System.Drawing.Point(780, 106);
+            this.lblRating.Location = new System.Drawing.Point(868, 106);
             this.lblRating.Name = "lblRating";
             this.lblRating.Size = new System.Drawing.Size(110, 34);
             this.lblRating.TabIndex = 5;
@@ -89,7 +89,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.BackColor = System.Drawing.Color.Maroon;
             this.panel1.Controls.Add(this.lblIcon);
             this.panel1.ForeColor = System.Drawing.Color.Maroon;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -108,7 +108,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.panel1);
             this.Name = "SongCard";
-            this.Size = new System.Drawing.Size(933, 153);
+            this.Size = new System.Drawing.Size(1018, 153);
             ((System.ComponentModel.ISupportInitialize)(this.lblIcon)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
