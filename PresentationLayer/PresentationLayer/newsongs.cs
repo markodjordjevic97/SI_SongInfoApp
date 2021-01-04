@@ -33,13 +33,17 @@ namespace PresentationLayer
             string Genre = "Ex-yu";
             string Performer = "Bajaga";
             double Rating = 8.5;
+            // Posle kad budu bile pesme u bazi
             var listLength = this.blSong.GetAllSongs().ToArray().Length;
             SongCard[] listSongs = new SongCard[20];
-            for (int i = 0; i < 20; i++)
+
+            for (int i = 0; i < 20; ++i)
             {
                 // Song info
                 listSongs[i] = new SongCard();
                 listSongs[i].Icon = Resources.music;
+                listSongs[i].IconRating = Resources.star;
+                listSongs[i].IconBackground = Color.FromArgb(44, 62, 80);
                 listSongs[i].Title = Title;
                 listSongs[i].Genre = Genre;
                 listSongs[i].Performer = Performer;

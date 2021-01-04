@@ -37,9 +37,7 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.songCard2 = new PresentationLayer.SongCard();
             this.bunifuGradientPanel1.SuspendLayout();
-            this.flowListSongs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
@@ -68,7 +66,6 @@
             // flowListSongs
             // 
             this.flowListSongs.AutoScroll = true;
-            this.flowListSongs.Controls.Add(this.songCard2);
             this.flowListSongs.Location = new System.Drawing.Point(3, 142);
             this.flowListSongs.Name = "flowListSongs";
             this.flowListSongs.Size = new System.Drawing.Size(1077, 649);
@@ -113,19 +110,6 @@
             this.textBoxSearch.Text = "Search";
             this.textBoxSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // songCard2
-            // 
-            this.songCard2.BackColor = System.Drawing.Color.White;
-            this.songCard2.Genre = null;
-            this.songCard2.Icon = null;
-            this.songCard2.Location = new System.Drawing.Point(3, 3);
-            this.songCard2.Name = "songCard2";
-            this.songCard2.Performer = null;
-            this.songCard2.Rating = 0D;
-            this.songCard2.Size = new System.Drawing.Size(1018, 153);
-            this.songCard2.TabIndex = 0;
-            this.songCard2.Title = null;
-            // 
             // newsongs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -135,7 +119,6 @@
             this.Name = "newsongs";
             this.Size = new System.Drawing.Size(1066, 791);
             this.bunifuGradientPanel1.ResumeLayout(false);
-            this.flowListSongs.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
@@ -153,6 +136,5 @@
         private SongCard songCard1;
         private System.Windows.Forms.BindingSource bindingSource2;
         private System.Windows.Forms.BindingSource bindingSource3;
-        private SongCard songCard2;
     }
 }

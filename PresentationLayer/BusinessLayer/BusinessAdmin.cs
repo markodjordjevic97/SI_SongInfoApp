@@ -43,9 +43,11 @@ namespace BusinessLayer
         }
 
         //Method for Admin Login
-        public bool IsUidAvailable(Admin admin)
+        public bool GetAdmin(Admin admin)
         {
-            return this.adminRepository.IsUidAvailable(admin);
+            if (this.adminRepository.GetAdmin(admin).Count > 0)
+                return true;
+            return false;
         }
 
     }
