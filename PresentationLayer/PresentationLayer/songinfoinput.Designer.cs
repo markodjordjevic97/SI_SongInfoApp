@@ -188,7 +188,7 @@
             this.btnDeletePic.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnDeletePic.ActiveForecolor = System.Drawing.Color.Transparent;
             this.btnDeletePic.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnDeletePic.BackColor = System.Drawing.Color.Transparent;
+            this.btnDeletePic.BackColor = System.Drawing.Color.White;
             this.btnDeletePic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeletePic.BackgroundImage")));
             this.btnDeletePic.ButtonText = "Delete Picture";
             this.btnDeletePic.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -214,7 +214,7 @@
             this.btnInsertPic.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnInsertPic.ActiveForecolor = System.Drawing.Color.Transparent;
             this.btnInsertPic.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnInsertPic.BackColor = System.Drawing.Color.Transparent;
+            this.btnInsertPic.BackColor = System.Drawing.Color.White;
             this.btnInsertPic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInsertPic.BackgroundImage")));
             this.btnInsertPic.ButtonText = "Insert Picture";
             this.btnInsertPic.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -248,7 +248,7 @@
             this.btnDelete.ActiveFillColor = System.Drawing.Color.Red;
             this.btnDelete.ActiveForecolor = System.Drawing.Color.White;
             this.btnDelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.BackColor = System.Drawing.Color.White;
             this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
             this.btnDelete.ButtonText = "Delete";
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -265,6 +265,7 @@
             this.btnDelete.Size = new System.Drawing.Size(188, 57);
             this.btnDelete.TabIndex = 15;
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -273,7 +274,7 @@
             this.btnUpdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
             this.btnUpdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.BackColor = System.Drawing.Color.White;
             this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
             this.btnUpdate.ButtonText = "Update Info";
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -290,6 +291,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(191, 57);
             this.btnUpdate.TabIndex = 14;
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -298,7 +300,7 @@
             this.btnAdd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAdd.ActiveForecolor = System.Drawing.Color.White;
             this.btnAdd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.BackColor = System.Drawing.Color.White;
             this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
             this.btnAdd.ButtonText = "Add";
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;

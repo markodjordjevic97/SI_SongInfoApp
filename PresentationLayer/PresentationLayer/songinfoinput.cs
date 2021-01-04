@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using DataAccessLayer.Models;
 
 namespace PresentationLayer
 {
@@ -47,6 +48,7 @@ namespace PresentationLayer
         /*Sprecavanje unosa praznih polja*/
         private void btnAdd_Click(object sender, EventArgs e)
         {
+           
             if(textBoxGenre.Text.Length == 0 || textBoxTitle.Text.Length == 0 || textBoxInputDate.Text.Length == 0||
                 textBoxPerfName.Text.Length == 0 || textBoxPerfSurname.Text.Length == 0 || pictureBoxSong.Image == null)
             {
@@ -58,10 +60,20 @@ namespace PresentationLayer
                 star8.Show();
                 MessageBox.Show("Niste uneli sve podatke!");
             }
+            else
+            {
+                
+            }
         }
 
-       
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
 
-       
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
