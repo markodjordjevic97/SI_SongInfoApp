@@ -50,5 +50,13 @@ namespace BusinessLayer
             return false;
         }
 
+        public bool AuthenticateAdmin(Admin admin)
+        {
+            if (this.adminRepository.AuthencauthenticateAdmin(admin) != null)
+                return true;
+            else
+                return false;
+        }
+
     }
 }

@@ -51,6 +51,30 @@ namespace DataAccessLayer
             }
         }
 
+        public Admin AuthenticateAdmin(Admin admin)
+        {
+            using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))
+            {
+                Admin temp = new Admin();
+                connection.Open();
 
+                MySqlCommand command = new MySqlCommand();
+                command.Connection = connection;
+                command.CommandText = string.Format("SELECT * FROM admins WHERE username = {0} AND password = '{1}';", admin.Username, admin.Password);
+
+                MySqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+
+                    temp.Admin_Id = reader.GetInt32(0);
+                    temp.Name = reader.GetString(1);
+                    temp.Surname = reader.GetString(2);
+                    temp.Username = reader.GetString(3);
+                    temp.Password = reader.GetString(4);
+                }
+                return temp;
+            }
+        }
     }
 }
