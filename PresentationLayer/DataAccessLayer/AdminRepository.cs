@@ -32,7 +32,7 @@ namespace DataAccessLayer
                 List<Admin> list2 = new List<Admin>();
                 MySqlCommand command = new MySqlCommand();
                 command.Connection = connection;
-                command.CommandText = "SELECT * FROM admin;";
+                command.CommandText = "SELECT * FROM admins;";
 
                 MySqlDataReader reader = command.ExecuteReader();
                 Admin temp = new Admin();
@@ -50,5 +50,7 @@ namespace DataAccessLayer
               
             }
         }
+
+
     }
 }

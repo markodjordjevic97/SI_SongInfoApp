@@ -21,9 +21,9 @@ namespace BusinessLayer
             return this.songRepository.InsertSong(song);
         }
         // Method for update song info
-        public int UpdateSong(Song song)
+        public int UpdateSong(string columnName, string newValue, string conditionColumn, string value)
         {
-            return this.songRepository.UpdateSong(song);
+            return this.songRepository.UpdateSong(columnName, newValue, conditionColumn, value);
         }
         // Method for delete song
         public int DeleteSong(Song song)
