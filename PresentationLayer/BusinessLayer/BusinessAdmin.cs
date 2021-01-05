@@ -18,6 +18,7 @@ namespace BusinessLayer
         {
             return this.adminRepository.RegisterAdmin(admin);
         }
+
         // Method for check password validation
         public bool IsValidPassword(string passw)
         { 
@@ -30,6 +31,7 @@ namespace BusinessLayer
                 return true;
             return false;
         }
+
         // Method for check username validation
         public bool IsValidUsername(string username)
         {
@@ -49,12 +51,16 @@ namespace BusinessLayer
                 return true;
             return false;
         }
-        
-
+     
         // Method for Authenticate
         public Admin AuthenticateAdmin(Admin admin)
         {
             return this.adminRepository.AuthenticateAdmin(admin);
+        }
+        // Method for update admin info
+        public int UpdateAdmin(Admin admin)
+        {
+            return this.adminRepository.UpdateAdmin(admin);
         }
 
     }
