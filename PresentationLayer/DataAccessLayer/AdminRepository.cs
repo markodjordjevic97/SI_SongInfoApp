@@ -60,7 +60,7 @@ namespace DataAccessLayer
 
                 MySqlCommand command = new MySqlCommand();
                 command.Connection = connection;
-                command.CommandText = string.Format("SELECT * FROM admins WHERE username = {0} AND password = '{1}';", admin.Username, admin.Password);
+                command.CommandText = string.Format("SELECT * FROM admins WHERE username = '{0}' AND password = md5('{1}');", admin.Username, admin.Password);
 
                 MySqlDataReader reader = command.ExecuteReader();
 

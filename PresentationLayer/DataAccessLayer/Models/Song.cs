@@ -15,7 +15,7 @@ namespace DataAccessLayer.Models
         public Admin Admin { get; set; }
         public string Youtube_Url { get; set; }
 
-        public string ToString()
+        public override string ToString()
         {
             return Song_Id + " " + Performer.ToString() + " " + Title + " " + Created_At + " " + Picture_Url + " " + Genre + " " + Admin.ToString() + " " + Youtube_Url;
         }

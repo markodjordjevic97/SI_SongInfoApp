@@ -60,7 +60,7 @@ namespace PresentationLayer
             adminlogin1.Show();
             songinfoinput1.Hide();
             
-            btnEditSongs.Show();
+            
         }
 
         private void btnContact_Click(object sender, EventArgs e)
