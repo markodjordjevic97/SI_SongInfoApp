@@ -16,17 +16,19 @@ namespace PresentationLayer
     public partial class songinfoinput : UserControl
     {
         public BusinessSongs business;
+        public BusinessPerfomer performer;
+        public BusinessAdmin admin1;
         public songinfoinput()
         {
             this.business = new BusinessSongs();
             InitializeComponent();
             star3.Hide();
             star4.Hide();
-            star5.Hide();
             star6.Hide();
             star7.Hide();
             star8.Hide();
             star11.Show();
+            
         }
 
         /*Unos slike*/
@@ -53,51 +55,65 @@ namespace PresentationLayer
         private void FillList()
         {
             listBoxSongsForAdmin.Items.Clear();
-            List<Song> list = this.business.GetAllSongs();
-            foreach (var item in list)
-            {
-                listBoxSongsForAdmin.Items.Add(item.ToString());
-            }
+           // List<Song> list = this.business.GetAllSongs();
+           // foreach (var item in list)
+          //  {
+           //     listBoxSongsForAdmin.Items.Add(item.ToString());
+           // }
         }
 
         /*Sprecavanje unosa praznih polja*/
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Song s = new Song();
-
-            if(textBoxGenre.Text.Length == 0 || textBoxTitle.Text.Length == 0 || textBoxInputDate.Text.Length == 0||
-                textBoxPerfName.Text.Length == 0 || textBoxPerfSurname.Text.Length == 0 || textBoxURLYoutube.Text.Length==0
-                || pictureBoxSong.Image == null)
+            Performer p = new Performer();
+            Admin a = new Admin();
+            Performer tmp = new Performer();
+            //|| pictureBoxSong.Image == null
+            if (textBoxGenre.Text.Length == 0 || textBoxTitle.Text.Length == 0 ||
+                textBoxPerfName.Text.Length == 0 || textBoxPerfSurname.Text.Length == 0 || textBoxURLYoutube.Text.Length==0)  
             {
                 star3.Show();
                 star4.Show();
-                star5.Show();
                 star6.Show();
                 star7.Show();
                 star8.Show();
                 star11.Show();
+                
                 MessageBox.Show("Niste uneli sve podatke!");
             }
             else
             {
+                // Song
                 s.Title = textBoxTitle.Text;
                 s.Genre = textBoxGenre.Text;
                 s.Youtube_Url = textBoxURLYoutube.Text;
-                // s.Picture_Url 
-                s.Created_At = Convert.ToDateTime(textBoxInputDate.Text);
-                s.Performer.Name = textBoxPerfName.Text;
-                s.Performer.Surname = textBoxPerfSurname.Text;
+                s.Jim_Rating = Convert.ToDecimal(textBoxRatingJIM.Text);
+                s.Picture_Url = "slika";
+                p.Name = textBoxPerfName.Text;
+                p.Surname = textBoxPerfSurname.Text;
 
-            }
+                // Insert perfomer
+                int idk = this.performer.InsertPerformer(p.Name, p.Surname);
+                
+                // Get Perfomer
 
-            if(this.business.InsertSong(s) > 0)
-            {
-                MessageBox.Show("Successfull input of song!");
-                FillList();
-            }
-            else
-            {
-                MessageBox.Show("Unsuccessfull input of song!");
+                tmp = this.performer.GetPerformer(p.Name, p.Surname);
+
+               
+
+                //adminlogin.username, adminlogin.password
+                a = this.admin1.AuthenticateAdmin(adminlogin.adminIDGET);
+
+                if (this.business.InsertSong(tmp, a, s) > 0)
+                {
+                    MessageBox.Show("Successfull input of song!");
+                    FillList();
+                }
+                else
+                {
+                    MessageBox.Show("Unsuccessfull input of song!");
+                }
             }
         }
 

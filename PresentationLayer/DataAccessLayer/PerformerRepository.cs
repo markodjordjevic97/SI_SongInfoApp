@@ -8,6 +8,20 @@ namespace DataAccessLayer
 {
     public class PerformerRepository
     {
+        public int InsertPerfomer(string name, string surname)
+        {
+            using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))
+            {
+                connection.Open();
+
+                MySqlCommand command = new MySqlCommand();
+                command.Connection = connection;
+                command.CommandText = string.Format("INSERT INTO performers (name,surname) VALUES ('{0}', '{1}');", name, surname);
+
+                int result = command.ExecuteNonQuery();
+                return result;
+            }
+        }
         public Performer GetPerformerId(string name, string surname)
         {
             using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))

@@ -17,8 +17,8 @@ namespace PresentationLayer
 
 
         public BusinessAdmin business;
-        
-        
+        public static Admin adminIDGET;
+       
 
         public adminlogin()
         {
@@ -37,7 +37,6 @@ namespace PresentationLayer
         private void adminlogin_Load(object sender, EventArgs e)
         {
             songinfoinput1.Hide();
-
            Admin a = new Admin();
 
              if(this.business.GetAdmin(a))
@@ -69,8 +68,12 @@ namespace PresentationLayer
                 
                 a.Username = textBoxUserNameHaveAccount.Text;
                 a.Password = textBoxPasswordHaveAccount.Text;
-
-                if (this.business.AuthenticateAdmin(a))
+                // Kupim podatke
+                adminIDGET = new Admin();
+                adminIDGET.Username = a.Username;
+                adminIDGET.Password = a.Password;
+                
+                if (this.business.AuthenticateAdmin(a) != null)
                 {
                     MessageBox.Show("Successfull login!");
                     songinfoinput1.Show();
@@ -80,12 +83,10 @@ namespace PresentationLayer
                     MessageBox.Show("Unsuccessful login!");
                 }
             }
-
-            
-
-
-
+ 
         }
+        
+
         /*Prikaz panela za registraciju*/
         private void btnRegisterNow_Click(object sender, EventArgs e)
         {

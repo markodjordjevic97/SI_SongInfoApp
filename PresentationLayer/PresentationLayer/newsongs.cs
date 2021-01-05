@@ -34,7 +34,7 @@ namespace PresentationLayer
             string Performer = "Bajaga";
             double Rating = 8.5;
             // Posle kad budu bile pesme u bazi
-            var listLength = this.blSong.GetAllSongs().ToArray().Length;
+           // var listLength = this.blSong.GetAllSongs().ToArray().Length;
             SongCard[] listSongs = new SongCard[20];
 
             for (int i = 0; i < 20; ++i)
