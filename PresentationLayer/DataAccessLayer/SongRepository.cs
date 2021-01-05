@@ -31,7 +31,7 @@ namespace DataAccessLayer
 
                 MySqlCommand command = new MySqlCommand();
                 command.Connection = connection;
-                command.CommandText = string.Format("UPDATE songs SET title = '{0}', created_at = '{1}', picture_url = '{2}', genre = '{3}', jim_rating = {4}, youtube_url = '{5}' WHERE songs.id = {6};", song.Title, song.Created_At, song.Picture_Url, song.Genre, song.Jim_Rating, song.Youtube_Url, song.Song_Id);
+                command.CommandText = string.Format("UPDATE songs SET title = '{0}', genre = '{1}', jim_rating = {2}, youtube_url = '{3}' WHERE songs.id = {4};", song.Title, song.Genre, song.Jim_Rating, song.Youtube_Url, song.Song_Id);
 
                 int result = command.ExecuteNonQuery();
                 return result;

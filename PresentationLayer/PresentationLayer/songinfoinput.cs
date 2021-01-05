@@ -123,6 +123,8 @@ namespace PresentationLayer
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             Song s = new Song();
+            Performer p = new Performer();
+            
 
             s.Title = textBoxTitle.Text;
             s.Genre = textBoxGenre.Text;
@@ -130,11 +132,13 @@ namespace PresentationLayer
             s.Youtube_Url = textBoxURLYoutube.Text;
             
 
-
-
             s.Song_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split(' ')[0]);
 
-            if(this.business.UpdateSong(s) > 0)
+            p.Name = textBoxPerfName.Text;
+            p.Surname = textBoxPerfSurname.Text;
+
+
+            if((this.performer.UpdatePerformer(p)) && this.business.UpdateSong(s) > 0)
             {
                 MessageBox.Show("Successfull song update!");
                 FillList();
