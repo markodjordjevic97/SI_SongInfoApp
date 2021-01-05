@@ -87,10 +87,9 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1066, 791);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(948, 633);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
             // star11
@@ -99,9 +98,9 @@
             this.star11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.star11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.star11.ForeColor = System.Drawing.Color.Red;
-            this.star11.Location = new System.Drawing.Point(741, 192);
+            this.star11.Location = new System.Drawing.Point(659, 154);
             this.star11.Name = "star11";
-            this.star11.Size = new System.Drawing.Size(25, 32);
+            this.star11.Size = new System.Drawing.Size(20, 28);
             this.star11.TabIndex = 28;
             this.star11.Text = "*";
             // 
@@ -116,10 +115,10 @@
             this.textBoxURLYoutube.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.textBoxURLYoutube.ForeColor = System.Drawing.Color.White;
             this.textBoxURLYoutube.isPassword = false;
-            this.textBoxURLYoutube.Location = new System.Drawing.Point(560, 182);
-            this.textBoxURLYoutube.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxURLYoutube.Location = new System.Drawing.Point(498, 146);
+            this.textBoxURLYoutube.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxURLYoutube.Name = "textBoxURLYoutube";
-            this.textBoxURLYoutube.Size = new System.Drawing.Size(210, 42);
+            this.textBoxURLYoutube.Size = new System.Drawing.Size(187, 34);
             this.textBoxURLYoutube.TabIndex = 27;
             this.textBoxURLYoutube.Text = "URL Youtube";
             this.textBoxURLYoutube.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -127,11 +126,10 @@
             // listBoxSongsForAdmin
             // 
             this.listBoxSongsForAdmin.FormattingEnabled = true;
-            this.listBoxSongsForAdmin.ItemHeight = 20;
-            this.listBoxSongsForAdmin.Location = new System.Drawing.Point(96, 648);
-            this.listBoxSongsForAdmin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.listBoxSongsForAdmin.ItemHeight = 16;
+            this.listBoxSongsForAdmin.Location = new System.Drawing.Point(85, 518);
             this.listBoxSongsForAdmin.Name = "listBoxSongsForAdmin";
-            this.listBoxSongsForAdmin.Size = new System.Drawing.Size(826, 124);
+            this.listBoxSongsForAdmin.Size = new System.Drawing.Size(735, 100);
             this.listBoxSongsForAdmin.TabIndex = 26;
             // 
             // star8
@@ -140,9 +138,9 @@
             this.star8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.star8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.star8.ForeColor = System.Drawing.Color.Red;
-            this.star8.Location = new System.Drawing.Point(741, 262);
+            this.star8.Location = new System.Drawing.Point(659, 210);
             this.star8.Name = "star8";
-            this.star8.Size = new System.Drawing.Size(25, 32);
+            this.star8.Size = new System.Drawing.Size(20, 28);
             this.star8.TabIndex = 25;
             this.star8.Text = "*";
             // 
@@ -157,10 +155,10 @@
             this.textBoxRatingJIM.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.textBoxRatingJIM.ForeColor = System.Drawing.Color.White;
             this.textBoxRatingJIM.isPassword = false;
-            this.textBoxRatingJIM.Location = new System.Drawing.Point(560, 255);
-            this.textBoxRatingJIM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxRatingJIM.Location = new System.Drawing.Point(498, 204);
+            this.textBoxRatingJIM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxRatingJIM.Name = "textBoxRatingJIM";
-            this.textBoxRatingJIM.Size = new System.Drawing.Size(210, 42);
+            this.textBoxRatingJIM.Size = new System.Drawing.Size(187, 34);
             this.textBoxRatingJIM.TabIndex = 24;
             this.textBoxRatingJIM.Text = "JIM Rating";
             this.textBoxRatingJIM.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -171,9 +169,9 @@
             this.star7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.star7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.star7.ForeColor = System.Drawing.Color.Red;
-            this.star7.Location = new System.Drawing.Point(992, 262);
+            this.star7.Location = new System.Drawing.Point(882, 210);
             this.star7.Name = "star7";
-            this.star7.Size = new System.Drawing.Size(25, 32);
+            this.star7.Size = new System.Drawing.Size(20, 28);
             this.star7.TabIndex = 23;
             this.star7.Text = "*";
             // 
@@ -183,9 +181,9 @@
             this.star6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.star6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.star6.ForeColor = System.Drawing.Color.Red;
-            this.star6.Location = new System.Drawing.Point(992, 192);
+            this.star6.Location = new System.Drawing.Point(882, 154);
             this.star6.Name = "star6";
-            this.star6.Size = new System.Drawing.Size(25, 32);
+            this.star6.Size = new System.Drawing.Size(20, 28);
             this.star6.TabIndex = 22;
             this.star6.Text = "*";
             // 
@@ -195,9 +193,9 @@
             this.star4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.star4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.star4.ForeColor = System.Drawing.Color.Red;
-            this.star4.Location = new System.Drawing.Point(500, 262);
+            this.star4.Location = new System.Drawing.Point(444, 210);
             this.star4.Name = "star4";
-            this.star4.Size = new System.Drawing.Size(25, 32);
+            this.star4.Size = new System.Drawing.Size(20, 28);
             this.star4.TabIndex = 20;
             this.star4.Text = "*";
             // 
@@ -207,9 +205,9 @@
             this.star3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.star3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.star3.ForeColor = System.Drawing.Color.Red;
-            this.star3.Location = new System.Drawing.Point(500, 192);
+            this.star3.Location = new System.Drawing.Point(444, 154);
             this.star3.Name = "star3";
-            this.star3.Size = new System.Drawing.Size(25, 32);
+            this.star3.Size = new System.Drawing.Size(20, 28);
             this.star3.TabIndex = 19;
             this.star3.Text = "*";
             // 
@@ -231,10 +229,10 @@
             this.btnDeletePic.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnDeletePic.IdleForecolor = System.Drawing.Color.White;
             this.btnDeletePic.IdleLineColor = System.Drawing.Color.White;
-            this.btnDeletePic.Location = new System.Drawing.Point(53, 475);
-            this.btnDeletePic.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnDeletePic.Location = new System.Drawing.Point(47, 380);
+            this.btnDeletePic.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnDeletePic.Name = "btnDeletePic";
-            this.btnDeletePic.Size = new System.Drawing.Size(213, 56);
+            this.btnDeletePic.Size = new System.Drawing.Size(196, 45);
             this.btnDeletePic.TabIndex = 18;
             this.btnDeletePic.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDeletePic.Click += new System.EventHandler(this.btnDeletePic_Click);
@@ -257,20 +255,19 @@
             this.btnInsertPic.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnInsertPic.IdleForecolor = System.Drawing.Color.White;
             this.btnInsertPic.IdleLineColor = System.Drawing.Color.White;
-            this.btnInsertPic.Location = new System.Drawing.Point(53, 410);
-            this.btnInsertPic.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnInsertPic.Location = new System.Drawing.Point(47, 328);
+            this.btnInsertPic.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnInsertPic.Name = "btnInsertPic";
-            this.btnInsertPic.Size = new System.Drawing.Size(213, 56);
+            this.btnInsertPic.Size = new System.Drawing.Size(196, 45);
             this.btnInsertPic.TabIndex = 17;
             this.btnInsertPic.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnInsertPic.Click += new System.EventHandler(this.btnInsertPic_Click);
             // 
             // pictureBoxSong
             // 
-            this.pictureBoxSong.Location = new System.Drawing.Point(53, 145);
-            this.pictureBoxSong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBoxSong.Location = new System.Drawing.Point(47, 116);
             this.pictureBoxSong.Name = "pictureBoxSong";
-            this.pictureBoxSong.Size = new System.Drawing.Size(194, 228);
+            this.pictureBoxSong.Size = new System.Drawing.Size(172, 182);
             this.pictureBoxSong.TabIndex = 16;
             this.pictureBoxSong.TabStop = false;
             // 
@@ -292,10 +289,10 @@
             this.btnDelete.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnDelete.IdleForecolor = System.Drawing.Color.White;
             this.btnDelete.IdleLineColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(828, 528);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnDelete.Location = new System.Drawing.Point(736, 422);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(218, 71);
+            this.btnDelete.Size = new System.Drawing.Size(201, 57);
             this.btnDelete.TabIndex = 15;
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -318,10 +315,10 @@
             this.btnUpdate.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnUpdate.IdleForecolor = System.Drawing.Color.White;
             this.btnUpdate.IdleLineColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(575, 528);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnUpdate.Location = new System.Drawing.Point(511, 422);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(221, 71);
+            this.btnUpdate.Size = new System.Drawing.Size(203, 57);
             this.btnUpdate.TabIndex = 14;
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -344,10 +341,10 @@
             this.btnAdd.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnAdd.IdleForecolor = System.Drawing.Color.White;
             this.btnAdd.IdleLineColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(318, 528);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnAdd.Location = new System.Drawing.Point(283, 422);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(217, 71);
+            this.btnAdd.Size = new System.Drawing.Size(200, 57);
             this.btnAdd.TabIndex = 13;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -363,10 +360,10 @@
             this.textBoxGenre.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.textBoxGenre.ForeColor = System.Drawing.Color.White;
             this.textBoxGenre.isPassword = false;
-            this.textBoxGenre.Location = new System.Drawing.Point(318, 255);
-            this.textBoxGenre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxGenre.Location = new System.Drawing.Point(283, 204);
+            this.textBoxGenre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxGenre.Name = "textBoxGenre";
-            this.textBoxGenre.Size = new System.Drawing.Size(210, 42);
+            this.textBoxGenre.Size = new System.Drawing.Size(187, 34);
             this.textBoxGenre.TabIndex = 11;
             this.textBoxGenre.Text = "Genre";
             this.textBoxGenre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -382,10 +379,10 @@
             this.textBoxTitle.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.textBoxTitle.ForeColor = System.Drawing.Color.White;
             this.textBoxTitle.isPassword = false;
-            this.textBoxTitle.Location = new System.Drawing.Point(318, 185);
-            this.textBoxTitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxTitle.Location = new System.Drawing.Point(283, 148);
+            this.textBoxTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(210, 42);
+            this.textBoxTitle.Size = new System.Drawing.Size(187, 34);
             this.textBoxTitle.TabIndex = 10;
             this.textBoxTitle.Text = "Title";
             this.textBoxTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -401,10 +398,10 @@
             this.textBoxPerfSurname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.textBoxPerfSurname.ForeColor = System.Drawing.Color.White;
             this.textBoxPerfSurname.isPassword = false;
-            this.textBoxPerfSurname.Location = new System.Drawing.Point(819, 255);
-            this.textBoxPerfSurname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPerfSurname.Location = new System.Drawing.Point(728, 204);
+            this.textBoxPerfSurname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPerfSurname.Name = "textBoxPerfSurname";
-            this.textBoxPerfSurname.Size = new System.Drawing.Size(210, 42);
+            this.textBoxPerfSurname.Size = new System.Drawing.Size(187, 34);
             this.textBoxPerfSurname.TabIndex = 9;
             this.textBoxPerfSurname.Text = "Surname";
             this.textBoxPerfSurname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -420,10 +417,10 @@
             this.textBoxPerfName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.textBoxPerfName.ForeColor = System.Drawing.Color.White;
             this.textBoxPerfName.isPassword = false;
-            this.textBoxPerfName.Location = new System.Drawing.Point(819, 185);
-            this.textBoxPerfName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPerfName.Location = new System.Drawing.Point(728, 148);
+            this.textBoxPerfName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxPerfName.Name = "textBoxPerfName";
-            this.textBoxPerfName.Size = new System.Drawing.Size(210, 42);
+            this.textBoxPerfName.Size = new System.Drawing.Size(187, 34);
             this.textBoxPerfName.TabIndex = 8;
             this.textBoxPerfName.Text = "Name";
             this.textBoxPerfName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -434,9 +431,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(844, 121);
+            this.label1.Location = new System.Drawing.Point(750, 97);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 30);
+            this.label1.Size = new System.Drawing.Size(96, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "Performer";
             // 
@@ -446,20 +443,19 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(344, 121);
+            this.label2.Location = new System.Drawing.Point(306, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 30);
+            this.label2.Size = new System.Drawing.Size(93, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Song Info\r\n";
             // 
             // songinfoinput
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuGradientPanel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "songinfoinput";
-            this.Size = new System.Drawing.Size(1066, 791);
+            this.Size = new System.Drawing.Size(948, 633);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSong)).EndInit();

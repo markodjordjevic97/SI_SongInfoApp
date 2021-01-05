@@ -124,19 +124,27 @@ namespace PresentationLayer
         {
             Song s = new Song();
 
-            int Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split(' ')[0]);
-
+            s.Title = textBoxTitle.Text;
+            s.Genre = textBoxGenre.Text;
+            s.Jim_Rating =Convert.ToDecimal(textBoxRatingJIM.Text);
+            s.Youtube_Url = textBoxURLYoutube.Text;
             
 
-           /* if(this.business.UpdateSong(s.Title, textBoxTitle.Text, s.Song_Id, Id) > 0)
+
+
+            s.Song_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split(' ')[0]);
+
+            if(this.business.UpdateSong(s) > 0)
             {
-                MessageBox.Show("Successful update!");
+                MessageBox.Show("Successfull song update!");
                 FillList();
-                  
-            }else
+            }
+            else
             {
-                MessageBox.Show("Unsuccessfull update!");
-            }*/
+                MessageBox.Show("Unsuccessfull song update!");
+            }
+
+           
                 
         }
 
