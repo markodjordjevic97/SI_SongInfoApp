@@ -23,26 +23,23 @@ namespace PresentationLayer
 
         private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
+            FillList();
             SongsItems();
         }
 
         private void SongsItems()
         {
-            // primer pesme
-            string Title = "Tisina";
-            string Genre = "Ex-yu";
-            string Performer = "Bajaga";
-            double Rating = 8.5;
+            
             // Posle kad budu bile pesme u bazi
-            var listLength = this.blSong.GetAllSongs().ToArray().Length;
+            var listLength = this.blSong.GetAllSongs().Count;
             var Songs = this.blSong.GetAllSongs();
             SongCard[] listSongs = new SongCard[listLength];
 
-            for (int i = 0; i < 20; ++i)
+            for (int i = 0; i < listLength; i++)
             {
                 // Song info
                 listSongs[i] = new SongCard();
-                listSongs[i].Icon = Resources.music;
+                listSongs[i].Icon = Resources.music; 
                 listSongs[i].IconRating = Resources.star;
                 listSongs[i].IconYoutube = Resources.youtube;
                 listSongs[i].IconBackground = Color.FromArgb(44, 62, 80);
@@ -53,13 +50,19 @@ namespace PresentationLayer
                 listSongs[i].Rating = Songs[i].Jim_Rating;
 
                 // Add to flow panel
-                if(flowListSongs.Controls.Count < 0)
-                {
-                    flowListSongs.Controls.Clear();
-                }
-                else
-                    flowListSongs.Controls.Add(listSongs[i]);
+               flowListSongs.Controls.Add(listSongs[i]);
             }
         }
+        private void FillList()
+        {
+            flowListSongs.Controls.Clear();
+           
+        }
+        /* List<Song> list = this.business.GetAllSongs();
+
+            foreach (Song item in list)
+            {
+                listBoxSongsForAdmin.Items.Add(item.ToString());
+            } */
     }
 }

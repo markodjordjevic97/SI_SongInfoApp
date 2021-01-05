@@ -72,7 +72,7 @@ namespace PresentationLayer
             Performer p = new Performer();
             Admin a = new Admin();
             Performer tmp = new Performer();
-            //|| pictureBoxSong.Image == null
+
             if (textBoxGenre.Text.Length == 0 || textBoxTitle.Text.Length == 0 ||
                 textBoxPerfName.Text.Length == 0 || textBoxPerfSurname.Text.Length == 0 || textBoxURLYoutube.Text.Length==0)  
             {
