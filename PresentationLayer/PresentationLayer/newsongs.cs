@@ -34,8 +34,9 @@ namespace PresentationLayer
             string Performer = "Bajaga";
             double Rating = 8.5;
             // Posle kad budu bile pesme u bazi
-           // var listLength = this.blSong.GetAllSongs().ToArray().Length;
-            SongCard[] listSongs = new SongCard[20];
+            var listLength = this.blSong.GetAllSongs().ToArray().Length;
+            var Songs = this.blSong.GetAllSongs();
+            SongCard[] listSongs = new SongCard[listLength];
 
             for (int i = 0; i < 20; ++i)
             {
@@ -44,12 +45,12 @@ namespace PresentationLayer
                 listSongs[i].Icon = Resources.music;
                 listSongs[i].IconRating = Resources.star;
                 listSongs[i].IconYoutube = Resources.youtube;
-                listSongs[i].PROBAYOUTUBE = "https://www.youtube.com/watch?v=A8sFkwwf8Xk";
                 listSongs[i].IconBackground = Color.FromArgb(44, 62, 80);
-                listSongs[i].Title = Title;
-                listSongs[i].Genre = Genre;
-                listSongs[i].Performer = Performer;
-                listSongs[i].Rating = Rating;
+                listSongs[i].PROBAYOUTUBE = Songs[i].Youtube_Url;
+                listSongs[i].Title = Songs[i].Title;
+                listSongs[i].Genre = Songs[i].Genre;
+                listSongs[i].Performer = Songs[i].Performer.Name + Songs[i].Performer.Surname;
+                listSongs[i].Rating = Songs[i].Jim_Rating;
 
                 // Add to flow panel
                 if(flowListSongs.Controls.Count < 0)
