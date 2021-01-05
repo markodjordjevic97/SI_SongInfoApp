@@ -75,5 +75,20 @@ namespace DataAccessLayer
                 return temp;
             }
         }
+
+        public int UpdateAdmin(Admin admin)
+        {
+            using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))
+            {
+                connection.Open();
+
+                MySqlCommand command = new MySqlCommand();
+                command.Connection = connection;
+                command.CommandText = string.Format("UPDATE admins SET name = '{0}', surname='{1}', username='{2}', password=md5('{3}') WHERE id = {4};",admin.Name, admin.Surname, admin.Username, admin.Password, admin.Admin_Id);
+
+                int result = command.ExecuteNonQuery();
+                return result;
+            }
+        }
     }
 }
