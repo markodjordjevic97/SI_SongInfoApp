@@ -13,11 +13,14 @@ namespace DataAccessLayer.Models
         public string Picture_Url { get; set; }
         public string Genre { get; set; }
         public Admin Admin { get; set; }
+
+        public decimal Jim_Rating { get; set; }
+
         public string Youtube_Url { get; set; }
 
         public override string ToString()
         {
-            return Song_Id + " " + Performer.ToString() + " " + Title + " " + Created_At + " " + Picture_Url + " " + Genre + " " + Admin.ToString() + " " + Youtube_Url;
+            return Song_Id + " " + Performer.ToString() + " " + Title + " " + Created_At + " " + Picture_Url + " " + Genre + " " + Admin.ToString() + " "+ Jim_Rating + " " + Youtube_Url;
         }
 
     }

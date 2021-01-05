@@ -66,7 +66,6 @@ namespace DataAccessLayer
 
                 while (reader.Read())
                 {
-
                     temp.Admin_Id = reader.GetInt32(0);
                     temp.Name = reader.GetString(1);
                     temp.Surname = reader.GetString(2);

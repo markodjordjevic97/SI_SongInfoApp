@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(songinfoinput));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.star11 = new System.Windows.Forms.Label();
+            this.textBoxURLYoutube = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.listBoxSongsForAdmin = new System.Windows.Forms.ListBox();
             this.star8 = new System.Windows.Forms.Label();
             this.textBoxRatingJIM = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.star7 = new System.Windows.Forms.Label();
@@ -50,9 +53,6 @@
             this.textBoxPerfName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.listBoxSongsForAdmin = new System.Windows.Forms.ListBox();
-            this.star11 = new System.Windows.Forms.Label();
-            this.textBoxURLYoutube = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSong)).BeginInit();
             this.SuspendLayout();
@@ -95,6 +95,46 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(948, 633);
             this.bunifuGradientPanel1.TabIndex = 0;
+            // 
+            // star11
+            // 
+            this.star11.AutoSize = true;
+            this.star11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.star11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.star11.ForeColor = System.Drawing.Color.Red;
+            this.star11.Location = new System.Drawing.Point(445, 270);
+            this.star11.Name = "star11";
+            this.star11.Size = new System.Drawing.Size(20, 28);
+            this.star11.TabIndex = 28;
+            this.star11.Text = "*";
+            // 
+            // textBoxURLYoutube
+            // 
+            this.textBoxURLYoutube.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.textBoxURLYoutube.BorderColorFocused = System.Drawing.Color.Transparent;
+            this.textBoxURLYoutube.BorderColorIdle = System.Drawing.Color.Transparent;
+            this.textBoxURLYoutube.BorderColorMouseHover = System.Drawing.Color.Transparent;
+            this.textBoxURLYoutube.BorderThickness = 3;
+            this.textBoxURLYoutube.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxURLYoutube.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textBoxURLYoutube.ForeColor = System.Drawing.Color.White;
+            this.textBoxURLYoutube.isPassword = false;
+            this.textBoxURLYoutube.Location = new System.Drawing.Point(284, 264);
+            this.textBoxURLYoutube.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxURLYoutube.Name = "textBoxURLYoutube";
+            this.textBoxURLYoutube.Size = new System.Drawing.Size(187, 34);
+            this.textBoxURLYoutube.TabIndex = 27;
+            this.textBoxURLYoutube.Text = "URL Youtube";
+            this.textBoxURLYoutube.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // listBoxSongsForAdmin
+            // 
+            this.listBoxSongsForAdmin.FormattingEnabled = true;
+            this.listBoxSongsForAdmin.ItemHeight = 16;
+            this.listBoxSongsForAdmin.Location = new System.Drawing.Point(85, 518);
+            this.listBoxSongsForAdmin.Name = "listBoxSongsForAdmin";
+            this.listBoxSongsForAdmin.Size = new System.Drawing.Size(735, 100);
+            this.listBoxSongsForAdmin.TabIndex = 26;
             // 
             // star8
             // 
@@ -194,7 +234,7 @@
             this.btnDeletePic.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnDeletePic.ActiveForecolor = System.Drawing.Color.Transparent;
             this.btnDeletePic.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnDeletePic.BackColor = System.Drawing.Color.Transparent;
+            this.btnDeletePic.BackColor = System.Drawing.Color.White;
             this.btnDeletePic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeletePic.BackgroundImage")));
             this.btnDeletePic.ButtonText = "Delete Picture";
             this.btnDeletePic.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -220,7 +260,7 @@
             this.btnInsertPic.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnInsertPic.ActiveForecolor = System.Drawing.Color.Transparent;
             this.btnInsertPic.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnInsertPic.BackColor = System.Drawing.Color.Transparent;
+            this.btnInsertPic.BackColor = System.Drawing.Color.White;
             this.btnInsertPic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInsertPic.BackgroundImage")));
             this.btnInsertPic.ButtonText = "Insert Picture";
             this.btnInsertPic.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -254,7 +294,7 @@
             this.btnDelete.ActiveFillColor = System.Drawing.Color.Red;
             this.btnDelete.ActiveForecolor = System.Drawing.Color.White;
             this.btnDelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.BackColor = System.Drawing.Color.White;
             this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
             this.btnDelete.ButtonText = "Delete";
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -280,7 +320,7 @@
             this.btnUpdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
             this.btnUpdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.BackColor = System.Drawing.Color.White;
             this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
             this.btnUpdate.ButtonText = "Update Info";
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -306,7 +346,7 @@
             this.btnAdd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAdd.ActiveForecolor = System.Drawing.Color.White;
             this.btnAdd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.BackColor = System.Drawing.Color.White;
             this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
             this.btnAdd.ButtonText = "Add";
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -443,46 +483,6 @@
             this.label2.Size = new System.Drawing.Size(93, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "Song Info\r\n";
-            // 
-            // listBoxSongsForAdmin
-            // 
-            this.listBoxSongsForAdmin.FormattingEnabled = true;
-            this.listBoxSongsForAdmin.ItemHeight = 16;
-            this.listBoxSongsForAdmin.Location = new System.Drawing.Point(85, 518);
-            this.listBoxSongsForAdmin.Name = "listBoxSongsForAdmin";
-            this.listBoxSongsForAdmin.Size = new System.Drawing.Size(735, 100);
-            this.listBoxSongsForAdmin.TabIndex = 26;
-            // 
-            // star11
-            // 
-            this.star11.AutoSize = true;
-            this.star11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.star11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.star11.ForeColor = System.Drawing.Color.Red;
-            this.star11.Location = new System.Drawing.Point(445, 270);
-            this.star11.Name = "star11";
-            this.star11.Size = new System.Drawing.Size(20, 28);
-            this.star11.TabIndex = 28;
-            this.star11.Text = "*";
-            // 
-            // textBoxURLYoutube
-            // 
-            this.textBoxURLYoutube.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.textBoxURLYoutube.BorderColorFocused = System.Drawing.Color.Transparent;
-            this.textBoxURLYoutube.BorderColorIdle = System.Drawing.Color.Transparent;
-            this.textBoxURLYoutube.BorderColorMouseHover = System.Drawing.Color.Transparent;
-            this.textBoxURLYoutube.BorderThickness = 3;
-            this.textBoxURLYoutube.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxURLYoutube.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textBoxURLYoutube.ForeColor = System.Drawing.Color.White;
-            this.textBoxURLYoutube.isPassword = false;
-            this.textBoxURLYoutube.Location = new System.Drawing.Point(284, 264);
-            this.textBoxURLYoutube.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxURLYoutube.Name = "textBoxURLYoutube";
-            this.textBoxURLYoutube.Size = new System.Drawing.Size(187, 34);
-            this.textBoxURLYoutube.TabIndex = 27;
-            this.textBoxURLYoutube.Text = "URL Youtube";
-            this.textBoxURLYoutube.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // songinfoinput
             // 
