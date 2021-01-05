@@ -42,20 +42,19 @@ namespace BusinessLayer
             return false;
         }
 
-        //Method for Admin Login
+        // Method for Admin Login
         public bool GetAdmin(Admin admin)
         {
             if (this.adminRepository.GetAdmin(admin).Count > 0)
                 return true;
             return false;
         }
+        
 
-        public bool AuthenticateAdmin(Admin admin)
+        // Method for Authenticate
+        public Admin AuthenticateAdmin(Admin admin)
         {
-            if (this.adminRepository.AuthenticateAdmin(admin).Username.Equals(admin.Username))
-                return true;
-            else
-                return false;
+            return this.adminRepository.AuthenticateAdmin(admin);
         }
 
     }

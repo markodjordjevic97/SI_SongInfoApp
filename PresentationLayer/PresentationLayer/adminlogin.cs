@@ -17,33 +17,30 @@ namespace PresentationLayer
 
 
         public BusinessAdmin business;
-        
-        
+        public static Admin adminIDGET;
+       
 
         public adminlogin()
         {
-            
             business = new BusinessAdmin();
-
             
-
             InitializeComponent();
             star1.Hide();
             star2.Hide();
             panelRegistration.Hide();
-
         }
 
         private void adminlogin_Load(object sender, EventArgs e)
         {
             songinfoinput1.Hide();
-
-           Admin a = new Admin();
+            Admin a = new Admin();
 
              if(this.business.GetAdmin(a))
             {
                 labelRegistration.Hide();
                 btnRegisterNow.Hide();
+                btnSignInNoFunction.Hide();
+                label4.Hide();
             }
         }
 
@@ -69,23 +66,26 @@ namespace PresentationLayer
                 
                 a.Username = textBoxUserNameHaveAccount.Text;
                 a.Password = textBoxPasswordHaveAccount.Text;
-
-                if (this.business.AuthenticateAdmin(a))
+                // Kupim podatke
+                adminIDGET = new Admin();
+                adminIDGET.Username = a.Username;
+                adminIDGET.Password = a.Password;
+                
+                if (this.business.AuthenticateAdmin(a).Admin_Id != 0)
                 {
                     MessageBox.Show("Successfull login!");
                     songinfoinput1.Show();
+
                 }
                 else
                 {
                     MessageBox.Show("Unsuccessful login!");
                 }
             }
-
-            
-
-
-
+ 
         }
+        
+
         /*Prikaz panela za registraciju*/
         private void btnRegisterNow_Click(object sender, EventArgs e)
         {
