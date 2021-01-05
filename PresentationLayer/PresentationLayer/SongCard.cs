@@ -24,17 +24,12 @@ namespace PresentationLayer
         private string _genre;
         private string _performer;
         private decimal _rating;
-        private string _lblYoutube;
         // Colors
         private Color _iconBackground;
 
         #region Properties
         [Category("Custom props")]
-        public string PROBAYOUTUBE
-        {
-            get { return _lblYoutube; }
-            set { _lblYoutube = value; }
-        }
+        public string Youtube_hyperlink { get; set; }
         [Category("Custom props")]
         public Image Icon
         {
@@ -106,10 +101,7 @@ namespace PresentationLayer
 
         private void lblYoutubeClick_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(PROBAYOUTUBE);
+            System.Diagnostics.Process.Start(Youtube_hyperlink);
         }
-
-
-        // System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=A8sFkwwf8Xk");
     }
 }
