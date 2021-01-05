@@ -34,7 +34,7 @@ namespace PresentationLayer
             var listLength = this.blSong.GetAllSongs().Count;
             var Songs = this.blSong.GetAllSongs();
             SongCard[] listSongs = new SongCard[listLength];
-
+            // ADD genre if else****************
             for (int i = 0; i < listLength; i++)
             {
                 // Song info
