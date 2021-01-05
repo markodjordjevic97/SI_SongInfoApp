@@ -10,7 +10,7 @@ namespace DataAccessLayer.Models
         public string Name { get; set; }
         public string Surname { get; set; }
 
-        public string ToString()
+        public override string ToString()
         {
             return Performer_Id + " " + Name + " " + Surname;
         }

@@ -38,27 +38,53 @@ namespace PresentationLayer
         {
             songinfoinput1.Hide();
 
-           /* Admin a = new Admin();
+           Admin a = new Admin();
 
              if(this.business.GetAdmin(a))
             {
                 labelRegistration.Hide();
                 btnRegisterNow.Hide();
-            }*/
+            }
         }
 
         /*Sprecavanje unosa praznih polja*/
         private void btnSignInHaveAccount_Click(object sender, EventArgs e)
         {
+            Admin a = new Admin();
             
             
-            if(textBoxPasswordHaveAccount.Text.Length == 0 || textBoxUserNameHaveAccount.Text.Length ==0)
+            if(textBoxPasswordHaveAccount.Text.Length == 0 
+                || textBoxUserNameHaveAccount.Text.Length ==0
+                || this.business.IsValidPassword(textBoxPasswordHaveAccount.Text) != true
+                || this.business.IsValidUsername(textBoxUserNameHaveAccount.Text) != true  )
             {
+
                 star1.Show();
                 star2.Show();
-                MessageBox.Show("Unesite podatke!");
+                MessageBox.Show("Enter correct data!");
                 
+
+            } else
+            {
+                
+                a.Username = textBoxUserNameHaveAccount.Text;
+                a.Password = textBoxPasswordHaveAccount.Text;
+
+                if (this.business.AuthenticateAdmin(a))
+                {
+                    MessageBox.Show("Successfull login!");
+                    songinfoinput1.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Unsuccessful login!");
+                }
             }
+
+            
+
+
+
         }
         /*Prikaz panela za registraciju*/
         private void btnRegisterNow_Click(object sender, EventArgs e)
@@ -107,19 +133,21 @@ namespace PresentationLayer
                 a.Surname = textBoxSurname.Text;
                 a.Username = textBoxUsername.Text;
                 a.Password = textBoxPassword.Text;
-                
+
+                if (this.business.RegisterAdmin(a) > 0)
+                {
+
+                    MessageBox.Show("Successfull registration!");
+                    songinfoinput1.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("Unsuccessfull registration!");
+                }
             }
 
-            if(this.business.RegisterAdmin(a) > 0)
-            {
-                
-                MessageBox.Show("Successfull registration!");
-                songinfoinput1.Show();
-
-            } else
-            {
-                MessageBox.Show("Unsuccessfull registration!");
-            }
+           
 
            
            
