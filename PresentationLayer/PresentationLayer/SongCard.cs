@@ -23,7 +23,7 @@ namespace PresentationLayer
         private string _title;
         private string _genre;
         private string _performer;
-        private double _rating;
+        private decimal _rating;
         private string _lblYoutube;
         // Colors
         private Color _iconBackground;
@@ -76,7 +76,7 @@ namespace PresentationLayer
         }
 
         [Category("Custom props")]
-        public double Rating
+        public decimal Rating
         {
             get { return _rating; }
             set { _rating = value; lblRating.Text = value.ToString(); }
