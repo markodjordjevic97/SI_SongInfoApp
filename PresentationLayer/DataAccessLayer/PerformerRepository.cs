@@ -22,6 +22,21 @@ namespace DataAccessLayer
                 return result;
             }
         }
+
+        public int UpdatePerformer(Performer performer)
+        {
+            using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))
+            {
+                connection.Open();
+
+                MySqlCommand command = new MySqlCommand();
+                command.Connection = connection;
+                command.CommandText = string.Format("UPDATE performers SET name = '{0}', surname = '{1}' WHERE performers.id = {2};", performer.Name, performer.Surname, performer.Performer_Id);
+
+                int result = command.ExecuteNonQuery();
+                return result;
+            }
+        }
         public Performer GetPerformerId(string name, string surname)
         {
             using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))

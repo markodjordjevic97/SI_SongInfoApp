@@ -25,5 +25,12 @@ namespace BusinessLayer
         {
             return this.perfomer.InsertPerfomer(name, surname);
         }
+
+        public bool UpdatePerformer(Performer performer)
+        {
+            if (this.perfomer.UpdatePerformer(performer) > 0)
+                return true;
+            return false;
+        }
     }
 }
