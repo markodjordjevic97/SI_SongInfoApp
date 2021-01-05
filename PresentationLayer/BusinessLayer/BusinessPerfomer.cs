@@ -15,17 +15,21 @@ namespace BusinessLayer
             this.perfomer = new PerformerRepository();
         }
 
-        // Method for GetPerfomer
+        //************************************ Methods for CRUD performers **************************************
+
+        // Method for Get Perfomer
         public Performer GetPerformer(string name, string surname)
         {
             return this.perfomer.GetPerformerId(name, surname);
         }
+
         // Method for Insert Performer
         public int InsertPerformer(string name, string surname)
         {
             return this.perfomer.InsertPerfomer(name, surname);
         }
 
+        // Method for Update Performer
         public bool UpdatePerformer(Performer performer)
         {
             if (this.perfomer.UpdatePerformer(performer) > 0)

@@ -13,11 +13,35 @@ namespace BusinessLayer
             adminRepository = new AdminRepository();
         }
 
-        // Method for  admin registration
+        //************************************ Methods for CRUD admin **************************************
+
+        // Method for admin registration/add admin
         public int RegisterAdmin(Admin admin)
         {
             return this.adminRepository.RegisterAdmin(admin);
         }
+
+        // Method for Admin Login
+        public bool GetAdmin(Admin admin)
+        {
+            if (this.adminRepository.GetAdmin(admin).Count > 0)
+                return true;
+            return false;
+        }
+
+        // Method for Authenticate
+        public Admin AuthenticateAdmin(Admin admin)
+        {
+            return this.adminRepository.AuthenticateAdmin(admin);
+        }
+
+        // Method for update admin info
+        public int UpdateAdmin(Admin admin)
+        {
+            return this.adminRepository.UpdateAdmin(admin);
+        }
+
+        //************************************ Methods for Check validation **************************************
 
         // Method for check password validation
         public bool IsValidPassword(string passw)
@@ -44,24 +68,7 @@ namespace BusinessLayer
             return false;
         }
 
-        // Method for Admin Login
-        public bool GetAdmin(Admin admin)
-        {
-            if (this.adminRepository.GetAdmin(admin).Count > 0)
-                return true;
-            return false;
-        }
-     
-        // Method for Authenticate
-        public Admin AuthenticateAdmin(Admin admin)
-        {
-            return this.adminRepository.AuthenticateAdmin(admin);
-        }
-        // Method for update admin info
-        public int UpdateAdmin(Admin admin)
-        {
-            return this.adminRepository.UpdateAdmin(admin);
-        }
+        
 
     }
 }

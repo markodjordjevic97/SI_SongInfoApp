@@ -29,12 +29,14 @@ namespace PresentationLayer
 
         private void SongsItems()
         {
-            
-            // Posle kad budu bile pesme u bazi
-            var listLength = this.blSong.GetAllSongs().Count;
-            var Songs = this.blSong.GetAllSongs();
-            SongCard[] listSongs = new SongCard[listLength];
 
+            // Mora jovan da mi prosledi static polje od njegov event
+            var Songs = this.blSong.GetAllSongs();
+            var listLength = this.blSong.GetAllSongs().Count;
+            
+
+            SongCard[] listSongs = new SongCard[listLength];
+           
             for (int i = 0; i < listLength; i++)
             {
                 // Song info
@@ -43,7 +45,7 @@ namespace PresentationLayer
                 listSongs[i].IconRating = Resources.star;
                 listSongs[i].IconYoutube = Resources.youtube;
                 listSongs[i].IconBackground = Color.FromArgb(44, 62, 80);
-                listSongs[i].PROBAYOUTUBE = Songs[i].Youtube_Url;
+                listSongs[i].Youtube_hyperlink = Songs[i].Youtube_Url;
                 listSongs[i].Title = Songs[i].Title;
                 listSongs[i].Genre = Songs[i].Genre;
                 listSongs[i].Performer = Songs[i].Performer.Name + Songs[i].Performer.Surname;
@@ -63,11 +65,5 @@ namespace PresentationLayer
         {
 
         }
-        /* List<Song> list = this.business.GetAllSongs();
-
-   foreach (Song item in list)
-   {
-       listBoxSongsForAdmin.Items.Add(item.ToString());
-   } */
     }
 }
