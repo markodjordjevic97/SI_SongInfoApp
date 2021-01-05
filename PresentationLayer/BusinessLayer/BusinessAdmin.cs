@@ -52,7 +52,7 @@ namespace BusinessLayer
 
         public bool AuthenticateAdmin(Admin admin)
         {
-            if (this.adminRepository.AuthencauthenticateAdmin(admin) != null)
+            if (this.adminRepository.AuthenticateAdmin(admin) != null)
                 return true;
             else
                 return false;
