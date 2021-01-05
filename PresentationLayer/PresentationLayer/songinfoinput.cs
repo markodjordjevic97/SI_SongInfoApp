@@ -29,7 +29,7 @@ namespace PresentationLayer
             star6.Hide();
             star7.Hide();
             star8.Hide();
-            star11.Show();
+            star11.Hide();
             FillList();
         }
 
@@ -64,6 +64,29 @@ namespace PresentationLayer
                 listBoxSongsForAdmin.Items.Add(item.ToString());
             }
         }
+        // Clear fileds
+        private void clearFields()
+        {
+            textBoxTitle.Text = null;
+            textBoxGenre.Text = null;
+            textBoxRatingJIM.Text = null;
+            textBoxURLYoutube.Text = null;
+            textBoxPerfSurname.Text = null;
+            textBoxPerfName.Text = null;
+            FillList();
+        }
+        // listBox
+        private void listBoxSongsForAdmin_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string fields = listBoxSongsForAdmin.SelectedItem.ToString();
+            string[] array = fields.Split(' ');
+            textBoxPerfName.Text = array[2];
+            textBoxPerfSurname.Text = array[3] ;
+            textBoxTitle.Text = array[4] + " " + array[5];
+            textBoxGenre.Text = array[6];
+            textBoxRatingJIM.Text = array[7];
+            textBoxURLYoutube.Text = array[8];
+        }
 
         /*Sprecavanje unosa praznih polja*/
         private void btnAdd_Click(object sender, EventArgs e)
@@ -71,7 +94,7 @@ namespace PresentationLayer
             Song s = new Song();
             Performer p = new Performer();
             Admin a = new Admin();
-            Performer tmp = new Performer();
+            Performer  tmp = new Performer();
 
             if (textBoxGenre.Text.Length == 0 || textBoxTitle.Text.Length == 0 ||
                 textBoxPerfName.Text.Length == 0 || textBoxPerfSurname.Text.Length == 0 || textBoxURLYoutube.Text.Length==0)  
@@ -124,8 +147,6 @@ namespace PresentationLayer
         {
             Song s = new Song();
             Performer p = new Performer();
-            
-
             s.Title = textBoxTitle.Text;
             s.Genre = textBoxGenre.Text;
             s.Jim_Rating =Convert.ToDecimal(textBoxRatingJIM.Text);
@@ -133,15 +154,14 @@ namespace PresentationLayer
             
 
             s.Song_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split(' ')[0]);
-
+            p.Performer_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split(' ')[1]);
             p.Name = textBoxPerfName.Text;
             p.Surname = textBoxPerfSurname.Text;
-
-
-            if((this.performer.UpdatePerformer(p)) && this.business.UpdateSong(s) > 0)
+            //(this.performer.UpdatePerformer(p))
+            if (this.business.UpdateSong(s) > 0 && this.performer.UpdatePerformer(p))
             {
                 MessageBox.Show("Successfull song update!");
-                FillList();
+                clearFields();
             }
             else
             {
@@ -167,5 +187,7 @@ namespace PresentationLayer
                 MessageBox.Show("Unsuccessfull delete!");
             }
         }
+
+       
     }
 }

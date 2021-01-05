@@ -31,7 +31,7 @@ namespace DataAccessLayer
 
                 MySqlCommand command = new MySqlCommand();
                 command.Connection = connection;
-                command.CommandText = string.Format("UPDATE performers SET name = '{0}', surname = '{1}' WHERE performers.id = {2};", performer.Name, performer.Surname, performer.Performer_Id);
+                command.CommandText = string.Format("UPDATE performers SET name = '{0}', surname = '{1}' WHERE id = {2};", performer.Name, performer.Surname, performer.Performer_Id);
 
                 int result = command.ExecuteNonQuery();
                 return result;

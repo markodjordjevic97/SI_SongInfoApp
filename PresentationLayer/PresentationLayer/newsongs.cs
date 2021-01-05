@@ -58,11 +58,16 @@ namespace PresentationLayer
             flowListSongs.Controls.Clear();
            
         }
+
+        private void textBoxSearch_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
         /* List<Song> list = this.business.GetAllSongs();
 
-            foreach (Song item in list)
-            {
-                listBoxSongsForAdmin.Items.Add(item.ToString());
-            } */
+   foreach (Song item in list)
+   {
+       listBoxSongsForAdmin.Items.Add(item.ToString());
+   } */
     }
 }
