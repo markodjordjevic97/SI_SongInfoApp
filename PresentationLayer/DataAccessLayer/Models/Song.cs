@@ -20,7 +20,7 @@ namespace DataAccessLayer.Models
 
         public override string ToString()
         {
-            return Song_Id + " " + Performer.ToString() + " " + Title + " " + Created_At + " " + Picture_Url + " " + Genre + " " + Admin.ToString() + " "+ Jim_Rating + " " + Youtube_Url;
+            return Song_Id + " " + Performer.ToString() + " " + Title  + " " + Genre + " "+ Jim_Rating + " " + Youtube_Url;
         }
 
     }

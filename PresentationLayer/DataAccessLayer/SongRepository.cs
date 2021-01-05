@@ -71,9 +71,12 @@ namespace DataAccessLayer
 
                 MySqlDataReader reader = command.ExecuteReader();
 
-                Song song = new Song();
                 while (reader.Read())
                 {
+                    Song song = new Song();
+                    song.Performer = new Performer();
+                    song.Admin = new Admin();
+
                     song.Song_Id = reader.GetInt32(0);
                     song.Performer.Performer_Id = reader.GetInt32(1);
                     song.Performer.Name = reader.GetString(2);

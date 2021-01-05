@@ -16,9 +16,11 @@ namespace BusinessLayer
         }
 
         // Method for insert song
-        public int InsertSong(Performer performer,Admin admin, Song song)
+        public bool InsertSong(Performer performer,Admin admin, Song song)
         {
-            return this.songRepository.InsertSong(performer, admin, song);
+            if (this.songRepository.InsertSong(performer, admin, song) > 0)
+                return true;
+            return false;
         }
         // Method for update song info
         public int UpdateSong(Song song)

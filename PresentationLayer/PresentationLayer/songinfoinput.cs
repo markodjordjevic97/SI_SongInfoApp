@@ -21,6 +21,8 @@ namespace PresentationLayer
         public songinfoinput()
         {
             this.business = new BusinessSongs();
+            this.performer = new BusinessPerfomer();
+            this.admin1 = new BusinessAdmin();
             InitializeComponent();
             star3.Hide();
             star4.Hide();
@@ -28,7 +30,7 @@ namespace PresentationLayer
             star7.Hide();
             star8.Hide();
             star11.Show();
-            
+            FillList();
         }
 
         /*Unos slike*/
@@ -55,11 +57,12 @@ namespace PresentationLayer
         private void FillList()
         {
             listBoxSongsForAdmin.Items.Clear();
-           // List<Song> list = this.business.GetAllSongs();
-           // foreach (var item in list)
-          //  {
-           //     listBoxSongsForAdmin.Items.Add(item.ToString());
-           // }
+            List<Song> list = this.business.GetAllSongs();
+
+            foreach (Song item in list)
+            {
+                listBoxSongsForAdmin.Items.Add(item.ToString());
+            }
         }
 
         /*Sprecavanje unosa praznih polja*/
@@ -95,17 +98,16 @@ namespace PresentationLayer
 
                 // Insert perfomer
                 int idk = this.performer.InsertPerformer(p.Name, p.Surname);
+
                 
                 // Get Perfomer
 
                 tmp = this.performer.GetPerformer(p.Name, p.Surname);
 
-               
-
                 //adminlogin.username, adminlogin.password
                 a = this.admin1.AuthenticateAdmin(adminlogin.adminIDGET);
 
-                if (this.business.InsertSong(tmp, a, s) > 0)
+                if (this.business.InsertSong(tmp, a, s))
                 {
                     MessageBox.Show("Successfull input of song!");
                     FillList();
@@ -115,6 +117,7 @@ namespace PresentationLayer
                     MessageBox.Show("Unsuccessfull input of song!");
                 }
             }
+           
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
