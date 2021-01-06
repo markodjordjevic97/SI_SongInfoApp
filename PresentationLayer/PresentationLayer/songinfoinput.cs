@@ -33,7 +33,7 @@ namespace PresentationLayer
             FillList();
         }
 
-        /*Unos slike*/
+        /*Input picture*/
         private void btnInsertPic_Click(object sender, EventArgs e)
         {
             OpenFileDialog opf = new OpenFileDialog();
@@ -45,7 +45,7 @@ namespace PresentationLayer
                 pictureBoxSong.Image = image;
             }
         }
-        /*Brisanje slike*/
+        /*Delete picture*/
         private void btnDeletePic_Click(object sender, EventArgs e)
         {
             pictureBoxSong.CancelAsync();
@@ -53,7 +53,7 @@ namespace PresentationLayer
             pictureBoxSong.Image = null;
         }
 
-        //Popunjavanje list boxa pesama za admina
+        //Filling list box of songs for admin
         private void FillList()
         {
             listBoxSongsForAdmin.Items.Clear();
@@ -88,7 +88,7 @@ namespace PresentationLayer
             textBoxURLYoutube.Text = array[8];
         }
 
-        /*Sprecavanje unosa praznih polja*/
+        //Insert song
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Song s = new Song();
@@ -142,7 +142,7 @@ namespace PresentationLayer
             }
            
         }
-
+        //Update song
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             Song s = new Song();
@@ -171,7 +171,7 @@ namespace PresentationLayer
            
                 
         }
-
+        //Delete song
         private void btnDelete_Click(object sender, EventArgs e)
         {
             Song s = new Song();

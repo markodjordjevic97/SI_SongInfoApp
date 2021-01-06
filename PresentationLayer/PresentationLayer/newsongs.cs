@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLayer;
 using PresentationLayer.Properties;
+using DataAccessLayer.Models;
 
 namespace PresentationLayer
 {
     public partial class newsongs : UserControl
     {
+
+       
         private readonly BusinessSongs blSong;
         public newsongs()
         {
@@ -27,6 +30,7 @@ namespace PresentationLayer
             SongsItems();
         }
 
+       
         private void SongsItems()
         {
 
@@ -61,9 +65,64 @@ namespace PresentationLayer
            
         }
 
+        //Search bar, sort buttons
         private void textBoxSearch_OnValueChanged(object sender, EventArgs e)
         {
+            //Upit za search?
+            string searchValue = textBoxSearch.Text;
+
 
         }
+
+        private void btnAZSort_Click(object sender, EventArgs e)
+        {
+
+            List<Song> listAZSort = this.blSong.GetSongByName();
+
+            if (listAZSort.Count != 0)
+            {
+                FillList();
+                SongsItems();
+            }
+            else
+            {
+                MessageBox.Show("There are no songs!");
+            }
+        }
+
+        private void btnRatingSort_Click(object sender, EventArgs e)
+        {
+
+            List<Song> listRatingSort = this.blSong.GetSongByRating();
+
+            if (listRatingSort.Count != 0)
+            {
+                FillList();
+                SongsItems();
+            }
+            else
+            {
+                MessageBox.Show("There are no songs!");
+            }
+
+        }
+
+        private void btnDateSort_Click(object sender, EventArgs e)
+        {
+
+            List<Song> listDateSort = this.blSong.GetSongByDate();
+
+            if (listDateSort.Count != 0)
+            {
+                FillList();
+                SongsItems();
+            }
+            else
+            {
+                MessageBox.Show("There are no songs!");
+            }
+        }
+
+
     }
 }

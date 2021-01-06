@@ -34,8 +34,8 @@ namespace PresentationLayer
         {
             songinfoinput1.Hide();
             Admin a = new Admin();
-
-             if(this.business.GetAdmin(a))
+           
+            if(this.business.GetAdmin(a))
             {
                 labelRegistration.Hide();
                 btnRegisterNow.Hide();

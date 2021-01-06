@@ -15,10 +15,6 @@ namespace PresentationLayer
     {
         
 
-      
-
-      
-
         private readonly BusinessAdmin businessAdmin;
         
 
@@ -36,7 +32,10 @@ namespace PresentationLayer
             songinfoinput1.Hide();
 
             btnEditSongs.Hide();
-           
+            genres1.Hide();
+
+
+          
         }
 
         
@@ -46,11 +45,17 @@ namespace PresentationLayer
             newsongs1.Show();
             adminlogin1.Hide();
             songinfoinput1.Hide();
+            genres1.Hide();
 
         }
         private void btnGenres_Click(object sender, EventArgs e)
         {
-
+            newsongs1.Hide();
+            adminlogin1.Hide();
+            songinfoinput1.Hide();
+            genres1.Show();
+            
+            
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)
@@ -59,8 +64,9 @@ namespace PresentationLayer
             newsongs1.Hide();
             adminlogin1.Show();
             songinfoinput1.Hide();
-            
-            
+            genres1.Hide();
+
+
         }
 
         private void btnContact_Click(object sender, EventArgs e)
@@ -79,6 +85,7 @@ namespace PresentationLayer
             adminlogin1.Hide();
             songinfoinput1.Show();
             btnEditSongs.Show();
+            genres1.Hide();
         }
         private void btnExit_Click(object sender, EventArgs e)
         {

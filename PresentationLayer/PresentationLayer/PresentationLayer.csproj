@@ -77,6 +77,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="genres.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="genres.Designer.cs">
+      <DependentUpon>genres.cs</DependentUpon>
+    </Compile>
     <Compile Include="newsongs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="genres.resx">
+      <DependentUpon>genres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newsongs.resx">
       <DependentUpon>newsongs.cs</DependentUpon>

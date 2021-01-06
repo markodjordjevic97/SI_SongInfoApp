@@ -45,6 +45,7 @@
             this.adminlogin1 = new PresentationLayer.adminlogin();
             this.songinfoinput1 = new PresentationLayer.songinfoinput();
             this.newsongs1 = new PresentationLayer.newsongs();
+            this.genres1 = new PresentationLayer.genres();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHamburger)).BeginInit();
@@ -390,6 +391,7 @@
             this.bunifuGradientPanel3.BackColor = System.Drawing.Color.White;
             this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
             this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel3.Controls.Add(this.genres1);
             this.bunifuGradientPanel3.Controls.Add(this.adminlogin1);
             this.bunifuGradientPanel3.Controls.Add(this.songinfoinput1);
             this.bunifuGradientPanel3.Controls.Add(this.newsongs1);
@@ -428,6 +430,14 @@
             this.newsongs1.Name = "newsongs1";
             this.newsongs1.Size = new System.Drawing.Size(958, 630);
             this.newsongs1.TabIndex = 0;
+            // 
+            // genres1
+            // 
+            this.genres1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.genres1.Location = new System.Drawing.Point(0, 0);
+            this.genres1.Name = "genres1";
+            this.genres1.Size = new System.Drawing.Size(958, 630);
+            this.genres1.TabIndex = 3;
             // 
             // Form1
             // 
@@ -468,5 +478,6 @@
         private songinfoinput songinfoinput1;
         private adminlogin adminlogin1;
         private Bunifu.Framework.UI.BunifuFlatButton btnEditSongs;
+        private genres genres1;
     }
 }
