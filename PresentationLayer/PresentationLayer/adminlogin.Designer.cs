@@ -45,7 +45,7 @@
             this.btnRegisterNow = new Bunifu.Framework.UI.BunifuThinButton2();
             this.star2 = new System.Windows.Forms.Label();
             this.star1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelSignIn = new System.Windows.Forms.Label();
             this.btnSignInHaveAccount = new Bunifu.Framework.UI.BunifuThinButton2();
             this.textBoxPasswordHaveAccount = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.textBoxUserNameHaveAccount = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -53,22 +53,37 @@
             this.btnSignInNoFunction = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelUpdateAdminInfo = new System.Windows.Forms.Label();
+            this.btnUpdateAdminShowPanel = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.panelUpdateAdmin = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.star18 = new System.Windows.Forms.Label();
+            this.star17 = new System.Windows.Forms.Label();
+            this.star16 = new System.Windows.Forms.Label();
+            this.star15 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBoxUpdateAdminSurname = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.textBoxUpdateAdminName = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.btnUpdateAdminInfo = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.textBoxUpdateAdminPassword = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.textBoxUpdateAdminUsername = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.songinfoinput1 = new PresentationLayer.songinfoinput();
             this.bunifuGradientPanel1.SuspendLayout();
             this.panelRegistration.SuspendLayout();
+            this.panelUpdateAdmin.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.panelUpdateAdmin);
             this.bunifuGradientPanel1.Controls.Add(this.songinfoinput1);
             this.bunifuGradientPanel1.Controls.Add(this.panelRegistration);
             this.bunifuGradientPanel1.Controls.Add(this.labelRegistration);
             this.bunifuGradientPanel1.Controls.Add(this.btnRegisterNow);
             this.bunifuGradientPanel1.Controls.Add(this.star2);
             this.bunifuGradientPanel1.Controls.Add(this.star1);
-            this.bunifuGradientPanel1.Controls.Add(this.label3);
+            this.bunifuGradientPanel1.Controls.Add(this.labelSignIn);
             this.bunifuGradientPanel1.Controls.Add(this.btnSignInHaveAccount);
             this.bunifuGradientPanel1.Controls.Add(this.textBoxPasswordHaveAccount);
             this.bunifuGradientPanel1.Controls.Add(this.textBoxUserNameHaveAccount);
@@ -76,6 +91,8 @@
             this.bunifuGradientPanel1.Controls.Add(this.btnSignInNoFunction);
             this.bunifuGradientPanel1.Controls.Add(this.label2);
             this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Controls.Add(this.labelUpdateAdminInfo);
+            this.bunifuGradientPanel1.Controls.Add(this.btnUpdateAdminShowPanel);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
@@ -105,7 +122,7 @@
             this.panelRegistration.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
             this.panelRegistration.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panelRegistration.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
-            this.panelRegistration.Location = new System.Drawing.Point(436, 3);
+            this.panelRegistration.Location = new System.Drawing.Point(433, 3);
             this.panelRegistration.Name = "panelRegistration";
             this.panelRegistration.Quality = 10;
             this.panelRegistration.Size = new System.Drawing.Size(512, 633);
@@ -230,7 +247,7 @@
             this.btnRegisterNowCreate.Location = new System.Drawing.Point(153, 374);
             this.btnRegisterNowCreate.Margin = new System.Windows.Forms.Padding(5);
             this.btnRegisterNowCreate.Name = "btnRegisterNowCreate";
-            this.btnRegisterNowCreate.Size = new System.Drawing.Size(211, 57);
+            this.btnRegisterNowCreate.Size = new System.Drawing.Size(212, 57);
             this.btnRegisterNowCreate.TabIndex = 21;
             this.btnRegisterNowCreate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRegisterNowCreate.Click += new System.EventHandler(this.btnRegisterNowCreate_Click);
@@ -279,7 +296,7 @@
             this.labelRegistration.BackColor = System.Drawing.Color.Transparent;
             this.labelRegistration.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelRegistration.ForeColor = System.Drawing.Color.White;
-            this.labelRegistration.Location = new System.Drawing.Point(164, 454);
+            this.labelRegistration.Location = new System.Drawing.Point(156, 341);
             this.labelRegistration.Name = "labelRegistration";
             this.labelRegistration.Size = new System.Drawing.Size(120, 25);
             this.labelRegistration.TabIndex = 19;
@@ -303,10 +320,10 @@
             this.btnRegisterNow.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnRegisterNow.IdleForecolor = System.Drawing.Color.White;
             this.btnRegisterNow.IdleLineColor = System.Drawing.Color.White;
-            this.btnRegisterNow.Location = new System.Drawing.Point(131, 495);
+            this.btnRegisterNow.Location = new System.Drawing.Point(127, 371);
             this.btnRegisterNow.Margin = new System.Windows.Forms.Padding(5);
             this.btnRegisterNow.Name = "btnRegisterNow";
-            this.btnRegisterNow.Size = new System.Drawing.Size(201, 57);
+            this.btnRegisterNow.Size = new System.Drawing.Size(178, 57);
             this.btnRegisterNow.TabIndex = 18;
             this.btnRegisterNow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRegisterNow.Click += new System.EventHandler(this.btnRegisterNow_Click);
@@ -335,17 +352,17 @@
             this.star1.TabIndex = 16;
             this.star1.Text = "*";
             // 
-            // label3
+            // labelSignIn
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(639, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 38);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Sign In";
+            this.labelSignIn.AutoSize = true;
+            this.labelSignIn.BackColor = System.Drawing.Color.Transparent;
+            this.labelSignIn.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSignIn.ForeColor = System.Drawing.Color.White;
+            this.labelSignIn.Location = new System.Drawing.Point(639, 62);
+            this.labelSignIn.Name = "labelSignIn";
+            this.labelSignIn.Size = new System.Drawing.Size(109, 38);
+            this.labelSignIn.TabIndex = 15;
+            this.labelSignIn.Text = "Sign In";
             // 
             // btnSignInHaveAccount
             // 
@@ -365,10 +382,10 @@
             this.btnSignInHaveAccount.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnSignInHaveAccount.IdleForecolor = System.Drawing.Color.White;
             this.btnSignInHaveAccount.IdleLineColor = System.Drawing.Color.White;
-            this.btnSignInHaveAccount.Location = new System.Drawing.Point(601, 301);
+            this.btnSignInHaveAccount.Location = new System.Drawing.Point(583, 279);
             this.btnSignInHaveAccount.Margin = new System.Windows.Forms.Padding(5);
             this.btnSignInHaveAccount.Name = "btnSignInHaveAccount";
-            this.btnSignInHaveAccount.Size = new System.Drawing.Size(196, 57);
+            this.btnSignInHaveAccount.Size = new System.Drawing.Size(200, 57);
             this.btnSignInHaveAccount.TabIndex = 14;
             this.btnSignInHaveAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignInHaveAccount.Click += new System.EventHandler(this.btnSignInHaveAccount_Click);
@@ -417,7 +434,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(126, 289);
+            this.label4.Location = new System.Drawing.Point(122, 208);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(202, 25);
             this.label4.TabIndex = 11;
@@ -441,10 +458,10 @@
             this.btnSignInNoFunction.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnSignInNoFunction.IdleForecolor = System.Drawing.Color.White;
             this.btnSignInNoFunction.IdleLineColor = System.Drawing.Color.White;
-            this.btnSignInNoFunction.Location = new System.Drawing.Point(131, 332);
+            this.btnSignInNoFunction.Location = new System.Drawing.Point(123, 238);
             this.btnSignInNoFunction.Margin = new System.Windows.Forms.Padding(5);
             this.btnSignInNoFunction.Name = "btnSignInNoFunction";
-            this.btnSignInNoFunction.Size = new System.Drawing.Size(201, 57);
+            this.btnSignInNoFunction.Size = new System.Drawing.Size(178, 57);
             this.btnSignInNoFunction.TabIndex = 7;
             this.btnSignInNoFunction.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignInNoFunction.Click += new System.EventHandler(this.btnSignInNoFunction_Click);
@@ -455,7 +472,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(30, 208);
+            this.label2.Location = new System.Drawing.Point(44, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(348, 25);
             this.label2.TabIndex = 5;
@@ -467,11 +484,235 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(100, 62);
+            this.label1.Location = new System.Drawing.Point(99, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(249, 41);
             this.label1.TabIndex = 4;
             this.label1.Text = "Welcome Admin";
+            // 
+            // labelUpdateAdminInfo
+            // 
+            this.labelUpdateAdminInfo.AutoSize = true;
+            this.labelUpdateAdminInfo.BackColor = System.Drawing.Color.Transparent;
+            this.labelUpdateAdminInfo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelUpdateAdminInfo.ForeColor = System.Drawing.Color.White;
+            this.labelUpdateAdminInfo.Location = new System.Drawing.Point(593, 352);
+            this.labelUpdateAdminInfo.Name = "labelUpdateAdminInfo";
+            this.labelUpdateAdminInfo.Size = new System.Drawing.Size(179, 25);
+            this.labelUpdateAdminInfo.TabIndex = 21;
+            this.labelUpdateAdminInfo.Text = "Update admin info";
+            // 
+            // btnUpdateAdminShowPanel
+            // 
+            this.btnUpdateAdminShowPanel.ActiveBorderThickness = 1;
+            this.btnUpdateAdminShowPanel.ActiveCornerRadius = 20;
+            this.btnUpdateAdminShowPanel.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnUpdateAdminShowPanel.ActiveForecolor = System.Drawing.Color.White;
+            this.btnUpdateAdminShowPanel.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnUpdateAdminShowPanel.BackColor = System.Drawing.SystemColors.Control;
+            this.btnUpdateAdminShowPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdateAdminShowPanel.BackgroundImage")));
+            this.btnUpdateAdminShowPanel.ButtonText = "Update";
+            this.btnUpdateAdminShowPanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdateAdminShowPanel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateAdminShowPanel.ForeColor = System.Drawing.Color.Transparent;
+            this.btnUpdateAdminShowPanel.IdleBorderThickness = 1;
+            this.btnUpdateAdminShowPanel.IdleCornerRadius = 30;
+            this.btnUpdateAdminShowPanel.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnUpdateAdminShowPanel.IdleForecolor = System.Drawing.Color.White;
+            this.btnUpdateAdminShowPanel.IdleLineColor = System.Drawing.Color.White;
+            this.btnUpdateAdminShowPanel.Location = new System.Drawing.Point(594, 382);
+            this.btnUpdateAdminShowPanel.Margin = new System.Windows.Forms.Padding(5);
+            this.btnUpdateAdminShowPanel.Name = "btnUpdateAdminShowPanel";
+            this.btnUpdateAdminShowPanel.Size = new System.Drawing.Size(174, 49);
+            this.btnUpdateAdminShowPanel.TabIndex = 22;
+            this.btnUpdateAdminShowPanel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUpdateAdminShowPanel.Click += new System.EventHandler(this.btnUpdateAdminShowPanel_Click);
+            // 
+            // panelUpdateAdmin
+            // 
+            this.panelUpdateAdmin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelUpdateAdmin.BackgroundImage")));
+            this.panelUpdateAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelUpdateAdmin.Controls.Add(this.star18);
+            this.panelUpdateAdmin.Controls.Add(this.star17);
+            this.panelUpdateAdmin.Controls.Add(this.star16);
+            this.panelUpdateAdmin.Controls.Add(this.star15);
+            this.panelUpdateAdmin.Controls.Add(this.label11);
+            this.panelUpdateAdmin.Controls.Add(this.textBoxUpdateAdminSurname);
+            this.panelUpdateAdmin.Controls.Add(this.textBoxUpdateAdminName);
+            this.panelUpdateAdmin.Controls.Add(this.btnUpdateAdminInfo);
+            this.panelUpdateAdmin.Controls.Add(this.textBoxUpdateAdminPassword);
+            this.panelUpdateAdmin.Controls.Add(this.textBoxUpdateAdminUsername);
+            this.panelUpdateAdmin.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.panelUpdateAdmin.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
+            this.panelUpdateAdmin.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.panelUpdateAdmin.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
+            this.panelUpdateAdmin.Location = new System.Drawing.Point(430, 6);
+            this.panelUpdateAdmin.Name = "panelUpdateAdmin";
+            this.panelUpdateAdmin.Quality = 10;
+            this.panelUpdateAdmin.Size = new System.Drawing.Size(512, 633);
+            this.panelUpdateAdmin.TabIndex = 29;
+            // 
+            // star18
+            // 
+            this.star18.AutoSize = true;
+            this.star18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.star18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.star18.ForeColor = System.Drawing.Color.Red;
+            this.star18.Location = new System.Drawing.Point(443, 270);
+            this.star18.Name = "star18";
+            this.star18.Size = new System.Drawing.Size(20, 28);
+            this.star18.TabIndex = 28;
+            this.star18.Text = "*";
+            // 
+            // star17
+            // 
+            this.star17.AutoSize = true;
+            this.star17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.star17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.star17.ForeColor = System.Drawing.Color.Red;
+            this.star17.Location = new System.Drawing.Point(443, 205);
+            this.star17.Name = "star17";
+            this.star17.Size = new System.Drawing.Size(20, 28);
+            this.star17.TabIndex = 27;
+            this.star17.Text = "*";
+            // 
+            // star16
+            // 
+            this.star16.AutoSize = true;
+            this.star16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.star16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.star16.ForeColor = System.Drawing.Color.Red;
+            this.star16.Location = new System.Drawing.Point(443, 140);
+            this.star16.Name = "star16";
+            this.star16.Size = new System.Drawing.Size(20, 28);
+            this.star16.TabIndex = 26;
+            this.star16.Text = "*";
+            // 
+            // star15
+            // 
+            this.star15.AutoSize = true;
+            this.star15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.star15.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.star15.ForeColor = System.Drawing.Color.Red;
+            this.star15.Location = new System.Drawing.Point(217, 140);
+            this.star15.Name = "star15";
+            this.star15.Size = new System.Drawing.Size(20, 28);
+            this.star15.TabIndex = 25;
+            this.star15.Text = "*";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(133, 42);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(245, 41);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Update Account";
+            // 
+            // textBoxUpdateAdminSurname
+            // 
+            this.textBoxUpdateAdminSurname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.textBoxUpdateAdminSurname.BorderColorFocused = System.Drawing.Color.Transparent;
+            this.textBoxUpdateAdminSurname.BorderColorIdle = System.Drawing.Color.Transparent;
+            this.textBoxUpdateAdminSurname.BorderColorMouseHover = System.Drawing.Color.Transparent;
+            this.textBoxUpdateAdminSurname.BorderThickness = 3;
+            this.textBoxUpdateAdminSurname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxUpdateAdminSurname.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textBoxUpdateAdminSurname.ForeColor = System.Drawing.Color.White;
+            this.textBoxUpdateAdminSurname.isPassword = false;
+            this.textBoxUpdateAdminSurname.Location = new System.Drawing.Point(281, 134);
+            this.textBoxUpdateAdminSurname.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUpdateAdminSurname.Name = "textBoxUpdateAdminSurname";
+            this.textBoxUpdateAdminSurname.Size = new System.Drawing.Size(191, 34);
+            this.textBoxUpdateAdminSurname.TabIndex = 23;
+            this.textBoxUpdateAdminSurname.Text = "Surname";
+            this.textBoxUpdateAdminSurname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // textBoxUpdateAdminName
+            // 
+            this.textBoxUpdateAdminName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.textBoxUpdateAdminName.BorderColorFocused = System.Drawing.Color.Transparent;
+            this.textBoxUpdateAdminName.BorderColorIdle = System.Drawing.Color.Transparent;
+            this.textBoxUpdateAdminName.BorderColorMouseHover = System.Drawing.Color.Transparent;
+            this.textBoxUpdateAdminName.BorderThickness = 3;
+            this.textBoxUpdateAdminName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxUpdateAdminName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textBoxUpdateAdminName.ForeColor = System.Drawing.Color.White;
+            this.textBoxUpdateAdminName.isPassword = false;
+            this.textBoxUpdateAdminName.Location = new System.Drawing.Point(57, 134);
+            this.textBoxUpdateAdminName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUpdateAdminName.Name = "textBoxUpdateAdminName";
+            this.textBoxUpdateAdminName.Size = new System.Drawing.Size(191, 34);
+            this.textBoxUpdateAdminName.TabIndex = 22;
+            this.textBoxUpdateAdminName.Text = "Name";
+            this.textBoxUpdateAdminName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btnUpdateAdminInfo
+            // 
+            this.btnUpdateAdminInfo.ActiveBorderThickness = 1;
+            this.btnUpdateAdminInfo.ActiveCornerRadius = 20;
+            this.btnUpdateAdminInfo.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnUpdateAdminInfo.ActiveForecolor = System.Drawing.Color.White;
+            this.btnUpdateAdminInfo.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.btnUpdateAdminInfo.BackColor = System.Drawing.SystemColors.Control;
+            this.btnUpdateAdminInfo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdateAdminInfo.BackgroundImage")));
+            this.btnUpdateAdminInfo.ButtonText = "Update Info";
+            this.btnUpdateAdminInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdateAdminInfo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateAdminInfo.ForeColor = System.Drawing.Color.Transparent;
+            this.btnUpdateAdminInfo.IdleBorderThickness = 1;
+            this.btnUpdateAdminInfo.IdleCornerRadius = 30;
+            this.btnUpdateAdminInfo.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnUpdateAdminInfo.IdleForecolor = System.Drawing.Color.White;
+            this.btnUpdateAdminInfo.IdleLineColor = System.Drawing.Color.White;
+            this.btnUpdateAdminInfo.Location = new System.Drawing.Point(153, 374);
+            this.btnUpdateAdminInfo.Margin = new System.Windows.Forms.Padding(5);
+            this.btnUpdateAdminInfo.Name = "btnUpdateAdminInfo";
+            this.btnUpdateAdminInfo.Size = new System.Drawing.Size(225, 57);
+            this.btnUpdateAdminInfo.TabIndex = 21;
+            this.btnUpdateAdminInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUpdateAdminInfo.Click += new System.EventHandler(this.btnUpdateAdminInfo_Click);
+            // 
+            // textBoxUpdateAdminPassword
+            // 
+            this.textBoxUpdateAdminPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.textBoxUpdateAdminPassword.BorderColorFocused = System.Drawing.Color.Transparent;
+            this.textBoxUpdateAdminPassword.BorderColorIdle = System.Drawing.Color.Transparent;
+            this.textBoxUpdateAdminPassword.BorderColorMouseHover = System.Drawing.Color.Transparent;
+            this.textBoxUpdateAdminPassword.BorderThickness = 3;
+            this.textBoxUpdateAdminPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxUpdateAdminPassword.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textBoxUpdateAdminPassword.ForeColor = System.Drawing.Color.White;
+            this.textBoxUpdateAdminPassword.isPassword = true;
+            this.textBoxUpdateAdminPassword.Location = new System.Drawing.Point(57, 264);
+            this.textBoxUpdateAdminPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUpdateAdminPassword.Name = "textBoxUpdateAdminPassword";
+            this.textBoxUpdateAdminPassword.Size = new System.Drawing.Size(415, 34);
+            this.textBoxUpdateAdminPassword.TabIndex = 20;
+            this.textBoxUpdateAdminPassword.Text = "Password";
+            this.textBoxUpdateAdminPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // textBoxUpdateAdminUsername
+            // 
+            this.textBoxUpdateAdminUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.textBoxUpdateAdminUsername.BorderColorFocused = System.Drawing.Color.Transparent;
+            this.textBoxUpdateAdminUsername.BorderColorIdle = System.Drawing.Color.Transparent;
+            this.textBoxUpdateAdminUsername.BorderColorMouseHover = System.Drawing.Color.Transparent;
+            this.textBoxUpdateAdminUsername.BorderThickness = 3;
+            this.textBoxUpdateAdminUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxUpdateAdminUsername.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textBoxUpdateAdminUsername.ForeColor = System.Drawing.Color.White;
+            this.textBoxUpdateAdminUsername.isPassword = false;
+            this.textBoxUpdateAdminUsername.Location = new System.Drawing.Point(57, 199);
+            this.textBoxUpdateAdminUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUpdateAdminUsername.Name = "textBoxUpdateAdminUsername";
+            this.textBoxUpdateAdminUsername.Size = new System.Drawing.Size(415, 34);
+            this.textBoxUpdateAdminUsername.TabIndex = 19;
+            this.textBoxUpdateAdminUsername.Text = "Username";
+            this.textBoxUpdateAdminUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // songinfoinput1
             // 
@@ -493,6 +734,8 @@
             this.bunifuGradientPanel1.PerformLayout();
             this.panelRegistration.ResumeLayout(false);
             this.panelRegistration.PerformLayout();
+            this.panelUpdateAdmin.ResumeLayout(false);
+            this.panelUpdateAdmin.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -507,7 +750,7 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox textBoxPasswordHaveAccount;
         private Bunifu.Framework.UI.BunifuMetroTextbox textBoxUserNameHaveAccount;
         private Bunifu.Framework.UI.BunifuThinButton2 btnSignInHaveAccount;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelSignIn;
         private System.Windows.Forms.Label star2;
         private System.Windows.Forms.Label star1;
         private System.Windows.Forms.Label labelRegistration;
@@ -524,5 +767,18 @@
         private System.Windows.Forms.Label star10;
         private System.Windows.Forms.Label star9;
         private songinfoinput songinfoinput1;
+        private Bunifu.Framework.UI.BunifuGradientPanel panelUpdateAdmin;
+        private System.Windows.Forms.Label star18;
+        private System.Windows.Forms.Label star17;
+        private System.Windows.Forms.Label star16;
+        private System.Windows.Forms.Label star15;
+        private System.Windows.Forms.Label label11;
+        private Bunifu.Framework.UI.BunifuMetroTextbox textBoxUpdateAdminSurname;
+        private Bunifu.Framework.UI.BunifuMetroTextbox textBoxUpdateAdminName;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnUpdateAdminInfo;
+        private Bunifu.Framework.UI.BunifuMetroTextbox textBoxUpdateAdminPassword;
+        private Bunifu.Framework.UI.BunifuMetroTextbox textBoxUpdateAdminUsername;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnUpdateAdminShowPanel;
+        private System.Windows.Forms.Label labelUpdateAdminInfo;
     }
 }

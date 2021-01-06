@@ -33,15 +33,16 @@ namespace PresentationLayer
         private void adminlogin_Load(object sender, EventArgs e)
         {
             songinfoinput1.Hide();
+            panelUpdateAdmin.Hide();
             Admin a = new Admin();
 
-             if(this.business.GetAdmin(a))
+           /* if(this.business.GetAdmin(a))
             {
                 labelRegistration.Hide();
                 btnRegisterNow.Hide();
                 btnSignInNoFunction.Hide();
                 label4.Hide();
-            }
+            }*/
         }
 
         /*Sprecavanje unosa praznih polja*/
@@ -90,6 +91,7 @@ namespace PresentationLayer
         private void btnRegisterNow_Click(object sender, EventArgs e)
         {
             panelRegistration.Show();
+            
             star9.Hide();
             star10.Hide();
             star11.Hide();
@@ -100,6 +102,8 @@ namespace PresentationLayer
         private void btnSignInNoFunction_Click(object sender, EventArgs e)
         {
             panelRegistration.Hide();
+            panelUpdateAdmin.Hide();
+            songinfoinput1.Hide();
         }
 
         /*Sprecavanje unosa praznih polja*/
@@ -147,18 +151,84 @@ namespace PresentationLayer
                 }
             }
 
-           
 
-           
-           
+        }
+
+        private void btnUpdateAdminShowPanel_Click(object sender, EventArgs e)
+        {
+            star9.Hide();
+            star10.Hide();
+            star11.Hide();
+            star12.Hide();
+            star15.Hide();
+            star16.Hide();
+            star17.Hide();
+            star18.Hide();
+
+            Admin a = new Admin();
+
+            if (textBoxPasswordHaveAccount.Text.Length == 0
+               || textBoxUserNameHaveAccount.Text.Length == 0
+               || this.business.IsValidPassword(textBoxPasswordHaveAccount.Text) != true
+               || this.business.IsValidUsername(textBoxUserNameHaveAccount.Text) != true)
+            {
+
+                star1.Show();
+                star2.Show();
+                MessageBox.Show("Enter correct data!");
 
 
+            }
+            else
+            {
 
+                a.Username = textBoxUserNameHaveAccount.Text;
+                a.Password = textBoxPasswordHaveAccount.Text;
+                // Kupim podatke
+                adminIDGET = new Admin();
+                adminIDGET.Username = a.Username;
+                adminIDGET.Password = a.Password;
+
+                if (this.business.AuthenticateAdmin(a).Admin_Id != 0)
+                {
+                   
+                    MessageBox.Show("You are registered admin!");
+
+                       panelUpdateAdmin.Show();
+                   
+                }
+                else
+                {
+                    MessageBox.Show("Enter correct data!");
+                }
+              
+            }
 
 
 
         }
 
-      
+        private void btnUpdateAdminInfo_Click(object sender, EventArgs e)
+        {
+            Admin a = new Admin();
+
+                a.Name = textBoxUpdateAdminName.Text;
+                a.Surname = textBoxUpdateAdminSurname.Text;
+                a.Username = textBoxUpdateAdminUsername.Text;
+                a.Password = textBoxUpdateAdminPassword.Text;
+
+            a.Admin_Id = this.business.AuthenticateAdmin(adminlogin.adminIDGET).Admin_Id;
+
+            if(this.business.UpdateAdmin(a) > 0)
+            {
+                MessageBox.Show("Admin info successfully updated!");
+                btnSignInNoFunction.Show();
+                label4.Show();
+            }
+            else
+            {
+                MessageBox.Show("Unsuccessfull update!");
+            }
+        }
     }
 }
