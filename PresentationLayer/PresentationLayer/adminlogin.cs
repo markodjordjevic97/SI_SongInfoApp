@@ -71,8 +71,7 @@ namespace PresentationLayer
             {
                 labelRegistration.Hide();
                 btnRegisterNow.Hide();
-                btnSignInNoFunction.Hide();
-                label4.Hide();
+               
             }
         }
 
@@ -240,7 +239,10 @@ namespace PresentationLayer
 
         }
 
-        private void btnUpdateAdminInfo_Click(object sender, EventArgs e)
+      
+        
+
+        private void btnUpdateAdminInfo_Click_1(object sender, EventArgs e)
         {
             Admin a = new Admin();
 
