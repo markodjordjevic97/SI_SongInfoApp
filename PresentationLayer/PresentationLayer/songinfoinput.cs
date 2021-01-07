@@ -133,8 +133,8 @@ namespace PresentationLayer
             s.Genre = textBoxGenre.Text;
             s.Jim_Rating =Convert.ToDecimal(textBoxRatingJIM.Text);
             s.Youtube_Url = textBoxURLYoutube.Text;
-            s.Song_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split(' ')[0]);
-            p.Performer_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split(' ')[1]);
+            s.Song_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split('-')[0]);
+            p.Performer_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split('-')[1]);
 
             p.Name = textBoxPerfName.Text;
             p.Surname = textBoxPerfSurname.Text;
@@ -155,7 +155,7 @@ namespace PresentationLayer
         {
             Song s = new Song();
 
-            s.Song_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split(' ')[0]);
+            s.Song_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split('-')[0]);
 
             if(this.business.DeleteSong(s) > 0)
             {
