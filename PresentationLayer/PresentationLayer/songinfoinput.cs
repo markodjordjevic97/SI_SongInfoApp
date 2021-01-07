@@ -61,7 +61,7 @@ namespace PresentationLayer
         private void listBoxSongsForAdmin_SelectedIndexChanged(object sender, EventArgs e)
         {
             string fields = listBoxSongsForAdmin.SelectedItem.ToString();
-            string[] array = fields.Split(' ');
+            string[] array = fields.Split('-');
             textBoxPerfName.Text = array[2];
             textBoxPerfSurname.Text = array[3] ;
             textBoxTitle.Text = array[4];
