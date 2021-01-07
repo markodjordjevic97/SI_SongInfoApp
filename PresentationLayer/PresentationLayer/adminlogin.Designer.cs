@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminlogin));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.songinfoinput1 = new PresentationLayer.songinfoinput();
             this.panelRegistration = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.star12 = new System.Windows.Forms.Label();
             this.star11 = new System.Windows.Forms.Label();
@@ -54,9 +53,9 @@
             this.btnSignInNoFunction = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.labelUpdateAdminInfo = new System.Windows.Forms.Label();
             this.btnUpdateAdminShowPanel = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.songinfoinput1 = new PresentationLayer.songinfoinput();
             this.panelUpdateAdmin = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.star18 = new System.Windows.Forms.Label();
             this.star17 = new System.Windows.Forms.Label();
@@ -68,9 +67,6 @@
             this.btnUpdateAdminInfo = new Bunifu.Framework.UI.BunifuThinButton2();
             this.textBoxUpdateAdminPassword = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.textBoxUpdateAdminUsername = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.songinfoinput1 = new PresentationLayer.songinfoinput();
-=======
->>>>>>> d4b6aeb93a00ee53754ee98947e41ef41989145e
             this.bunifuGradientPanel1.SuspendLayout();
             this.panelRegistration.SuspendLayout();
             this.panelUpdateAdmin.SuspendLayout();
@@ -109,15 +105,6 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1066, 791);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
-            // songinfoinput1
-            // 
-            this.songinfoinput1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.songinfoinput1.Location = new System.Drawing.Point(0, 0);
-            this.songinfoinput1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.songinfoinput1.Name = "songinfoinput1";
-            this.songinfoinput1.Size = new System.Drawing.Size(1066, 791);
-            this.songinfoinput1.TabIndex = 21;
-            // 
             // panelRegistration
             // 
             this.panelRegistration.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelRegistration.BackgroundImage")));
@@ -136,12 +123,8 @@
             this.panelRegistration.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
             this.panelRegistration.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panelRegistration.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
-<<<<<<< HEAD
-            this.panelRegistration.Location = new System.Drawing.Point(433, 3);
-=======
-            this.panelRegistration.Location = new System.Drawing.Point(490, 0);
+            this.panelRegistration.Location = new System.Drawing.Point(498, 0);
             this.panelRegistration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
->>>>>>> d4b6aeb93a00ee53754ee98947e41ef41989145e
             this.panelRegistration.Name = "panelRegistration";
             this.panelRegistration.Quality = 10;
             this.panelRegistration.Size = new System.Drawing.Size(576, 791);
@@ -268,11 +251,7 @@
             this.btnRegisterNowCreate.Location = new System.Drawing.Point(172, 468);
             this.btnRegisterNowCreate.Margin = new System.Windows.Forms.Padding(6);
             this.btnRegisterNowCreate.Name = "btnRegisterNowCreate";
-<<<<<<< HEAD
-            this.btnRegisterNowCreate.Size = new System.Drawing.Size(212, 57);
-=======
             this.btnRegisterNowCreate.Size = new System.Drawing.Size(237, 71);
->>>>>>> d4b6aeb93a00ee53754ee98947e41ef41989145e
             this.btnRegisterNowCreate.TabIndex = 21;
             this.btnRegisterNowCreate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRegisterNowCreate.Click += new System.EventHandler(this.btnRegisterNowCreate_Click);
@@ -323,11 +302,7 @@
             this.labelRegistration.BackColor = System.Drawing.Color.Transparent;
             this.labelRegistration.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelRegistration.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.labelRegistration.Location = new System.Drawing.Point(156, 341);
-=======
             this.labelRegistration.Location = new System.Drawing.Point(184, 568);
->>>>>>> d4b6aeb93a00ee53754ee98947e41ef41989145e
             this.labelRegistration.Name = "labelRegistration";
             this.labelRegistration.Size = new System.Drawing.Size(139, 30);
             this.labelRegistration.TabIndex = 19;
@@ -351,17 +326,10 @@
             this.btnRegisterNow.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnRegisterNow.IdleForecolor = System.Drawing.Color.White;
             this.btnRegisterNow.IdleLineColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.btnRegisterNow.Location = new System.Drawing.Point(127, 371);
-            this.btnRegisterNow.Margin = new System.Windows.Forms.Padding(5);
-            this.btnRegisterNow.Name = "btnRegisterNow";
-            this.btnRegisterNow.Size = new System.Drawing.Size(178, 57);
-=======
             this.btnRegisterNow.Location = new System.Drawing.Point(147, 619);
             this.btnRegisterNow.Margin = new System.Windows.Forms.Padding(6);
             this.btnRegisterNow.Name = "btnRegisterNow";
             this.btnRegisterNow.Size = new System.Drawing.Size(226, 71);
->>>>>>> d4b6aeb93a00ee53754ee98947e41ef41989145e
             this.btnRegisterNow.TabIndex = 18;
             this.btnRegisterNow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRegisterNow.Click += new System.EventHandler(this.btnRegisterNow_Click);
@@ -392,27 +360,15 @@
             // 
             // labelSignIn
             // 
-<<<<<<< HEAD
             this.labelSignIn.AutoSize = true;
             this.labelSignIn.BackColor = System.Drawing.Color.Transparent;
             this.labelSignIn.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSignIn.ForeColor = System.Drawing.Color.White;
             this.labelSignIn.Location = new System.Drawing.Point(639, 62);
             this.labelSignIn.Name = "labelSignIn";
-            this.labelSignIn.Size = new System.Drawing.Size(109, 38);
+            this.labelSignIn.Size = new System.Drawing.Size(127, 45);
             this.labelSignIn.TabIndex = 15;
             this.labelSignIn.Text = "Sign In";
-=======
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(719, 78);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 45);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Sign In";
->>>>>>> d4b6aeb93a00ee53754ee98947e41ef41989145e
             // 
             // btnSignInHaveAccount
             // 
@@ -432,17 +388,10 @@
             this.btnSignInHaveAccount.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnSignInHaveAccount.IdleForecolor = System.Drawing.Color.Transparent;
             this.btnSignInHaveAccount.IdleLineColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.btnSignInHaveAccount.Location = new System.Drawing.Point(583, 279);
-            this.btnSignInHaveAccount.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSignInHaveAccount.Name = "btnSignInHaveAccount";
-            this.btnSignInHaveAccount.Size = new System.Drawing.Size(200, 57);
-=======
             this.btnSignInHaveAccount.Location = new System.Drawing.Point(676, 376);
             this.btnSignInHaveAccount.Margin = new System.Windows.Forms.Padding(6);
             this.btnSignInHaveAccount.Name = "btnSignInHaveAccount";
             this.btnSignInHaveAccount.Size = new System.Drawing.Size(220, 71);
->>>>>>> d4b6aeb93a00ee53754ee98947e41ef41989145e
             this.btnSignInHaveAccount.TabIndex = 14;
             this.btnSignInHaveAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignInHaveAccount.Click += new System.EventHandler(this.btnSignInHaveAccount_Click);
@@ -493,11 +442,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.label4.Location = new System.Drawing.Point(122, 208);
-=======
             this.label4.Location = new System.Drawing.Point(142, 361);
->>>>>>> d4b6aeb93a00ee53754ee98947e41ef41989145e
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(236, 30);
             this.label4.TabIndex = 11;
@@ -521,17 +466,10 @@
             this.btnSignInNoFunction.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnSignInNoFunction.IdleForecolor = System.Drawing.Color.White;
             this.btnSignInNoFunction.IdleLineColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.btnSignInNoFunction.Location = new System.Drawing.Point(123, 238);
-            this.btnSignInNoFunction.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSignInNoFunction.Name = "btnSignInNoFunction";
-            this.btnSignInNoFunction.Size = new System.Drawing.Size(178, 57);
-=======
             this.btnSignInNoFunction.Location = new System.Drawing.Point(147, 415);
             this.btnSignInNoFunction.Margin = new System.Windows.Forms.Padding(6);
             this.btnSignInNoFunction.Name = "btnSignInNoFunction";
             this.btnSignInNoFunction.Size = new System.Drawing.Size(226, 71);
->>>>>>> d4b6aeb93a00ee53754ee98947e41ef41989145e
             this.btnSignInNoFunction.TabIndex = 7;
             this.btnSignInNoFunction.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignInNoFunction.Click += new System.EventHandler(this.btnSignInNoFunction_Click);
@@ -542,11 +480,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.label2.Location = new System.Drawing.Point(44, 122);
-=======
             this.label2.Location = new System.Drawing.Point(34, 260);
->>>>>>> d4b6aeb93a00ee53754ee98947e41ef41989145e
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(407, 30);
             this.label2.TabIndex = 5;
@@ -558,26 +492,21 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.label1.Location = new System.Drawing.Point(99, 45);
-=======
             this.label1.Location = new System.Drawing.Point(112, 78);
->>>>>>> d4b6aeb93a00ee53754ee98947e41ef41989145e
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(297, 48);
             this.label1.TabIndex = 4;
             this.label1.Text = "Welcome Admin";
             // 
-<<<<<<< HEAD
             // labelUpdateAdminInfo
             // 
             this.labelUpdateAdminInfo.AutoSize = true;
             this.labelUpdateAdminInfo.BackColor = System.Drawing.Color.Transparent;
             this.labelUpdateAdminInfo.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelUpdateAdminInfo.ForeColor = System.Drawing.Color.White;
-            this.labelUpdateAdminInfo.Location = new System.Drawing.Point(593, 352);
+            this.labelUpdateAdminInfo.Location = new System.Drawing.Point(685, 464);
             this.labelUpdateAdminInfo.Name = "labelUpdateAdminInfo";
-            this.labelUpdateAdminInfo.Size = new System.Drawing.Size(179, 25);
+            this.labelUpdateAdminInfo.Size = new System.Drawing.Size(207, 30);
             this.labelUpdateAdminInfo.TabIndex = 21;
             this.labelUpdateAdminInfo.Text = "Update admin info";
             // 
@@ -599,13 +528,22 @@
             this.btnUpdateAdminShowPanel.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnUpdateAdminShowPanel.IdleForecolor = System.Drawing.Color.White;
             this.btnUpdateAdminShowPanel.IdleLineColor = System.Drawing.Color.White;
-            this.btnUpdateAdminShowPanel.Location = new System.Drawing.Point(594, 382);
+            this.btnUpdateAdminShowPanel.Location = new System.Drawing.Point(676, 504);
             this.btnUpdateAdminShowPanel.Margin = new System.Windows.Forms.Padding(5);
             this.btnUpdateAdminShowPanel.Name = "btnUpdateAdminShowPanel";
-            this.btnUpdateAdminShowPanel.Size = new System.Drawing.Size(174, 49);
+            this.btnUpdateAdminShowPanel.Size = new System.Drawing.Size(220, 71);
             this.btnUpdateAdminShowPanel.TabIndex = 22;
             this.btnUpdateAdminShowPanel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUpdateAdminShowPanel.Click += new System.EventHandler(this.btnUpdateAdminShowPanel_Click);
+            // 
+            // songinfoinput1
+            // 
+            this.songinfoinput1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.songinfoinput1.Location = new System.Drawing.Point(0, 0);
+            this.songinfoinput1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.songinfoinput1.Name = "songinfoinput1";
+            this.songinfoinput1.Size = new System.Drawing.Size(1066, 791);
+            this.songinfoinput1.TabIndex = 23;
             // 
             // panelUpdateAdmin
             // 
@@ -621,15 +559,16 @@
             this.panelUpdateAdmin.Controls.Add(this.btnUpdateAdminInfo);
             this.panelUpdateAdmin.Controls.Add(this.textBoxUpdateAdminPassword);
             this.panelUpdateAdmin.Controls.Add(this.textBoxUpdateAdminUsername);
+            this.panelUpdateAdmin.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelUpdateAdmin.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panelUpdateAdmin.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
             this.panelUpdateAdmin.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panelUpdateAdmin.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
-            this.panelUpdateAdmin.Location = new System.Drawing.Point(430, 6);
+            this.panelUpdateAdmin.Location = new System.Drawing.Point(490, 0);
             this.panelUpdateAdmin.Name = "panelUpdateAdmin";
             this.panelUpdateAdmin.Quality = 10;
-            this.panelUpdateAdmin.Size = new System.Drawing.Size(512, 633);
-            this.panelUpdateAdmin.TabIndex = 29;
+            this.panelUpdateAdmin.Size = new System.Drawing.Size(576, 0);
+            this.panelUpdateAdmin.TabIndex = 31;
             // 
             // star18
             // 
@@ -637,9 +576,9 @@
             this.star18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.star18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.star18.ForeColor = System.Drawing.Color.Red;
-            this.star18.Location = new System.Drawing.Point(443, 270);
+            this.star18.Location = new System.Drawing.Point(443, 266);
             this.star18.Name = "star18";
-            this.star18.Size = new System.Drawing.Size(20, 28);
+            this.star18.Size = new System.Drawing.Size(25, 32);
             this.star18.TabIndex = 28;
             this.star18.Text = "*";
             // 
@@ -649,9 +588,9 @@
             this.star17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.star17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.star17.ForeColor = System.Drawing.Color.Red;
-            this.star17.Location = new System.Drawing.Point(443, 205);
+            this.star17.Location = new System.Drawing.Point(443, 199);
             this.star17.Name = "star17";
-            this.star17.Size = new System.Drawing.Size(20, 28);
+            this.star17.Size = new System.Drawing.Size(25, 32);
             this.star17.TabIndex = 27;
             this.star17.Text = "*";
             // 
@@ -663,7 +602,7 @@
             this.star16.ForeColor = System.Drawing.Color.Red;
             this.star16.Location = new System.Drawing.Point(443, 140);
             this.star16.Name = "star16";
-            this.star16.Size = new System.Drawing.Size(20, 28);
+            this.star16.Size = new System.Drawing.Size(25, 32);
             this.star16.TabIndex = 26;
             this.star16.Text = "*";
             // 
@@ -675,7 +614,7 @@
             this.star15.ForeColor = System.Drawing.Color.Red;
             this.star15.Location = new System.Drawing.Point(217, 140);
             this.star15.Name = "star15";
-            this.star15.Size = new System.Drawing.Size(20, 28);
+            this.star15.Size = new System.Drawing.Size(25, 32);
             this.star15.TabIndex = 25;
             this.star15.Text = "*";
             // 
@@ -687,7 +626,7 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(133, 42);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(245, 41);
+            this.label11.Size = new System.Drawing.Size(291, 48);
             this.label11.TabIndex = 24;
             this.label11.Text = "Update Account";
             // 
@@ -705,7 +644,8 @@
             this.textBoxUpdateAdminSurname.Location = new System.Drawing.Point(281, 134);
             this.textBoxUpdateAdminSurname.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxUpdateAdminSurname.Name = "textBoxUpdateAdminSurname";
-            this.textBoxUpdateAdminSurname.Size = new System.Drawing.Size(191, 34);
+            this.textBoxUpdateAdminSurname.Padding = new System.Windows.Forms.Padding(0, 0, 0, 18);
+            this.textBoxUpdateAdminSurname.Size = new System.Drawing.Size(191, 38);
             this.textBoxUpdateAdminSurname.TabIndex = 23;
             this.textBoxUpdateAdminSurname.Text = "Surname";
             this.textBoxUpdateAdminSurname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -724,7 +664,8 @@
             this.textBoxUpdateAdminName.Location = new System.Drawing.Point(57, 134);
             this.textBoxUpdateAdminName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxUpdateAdminName.Name = "textBoxUpdateAdminName";
-            this.textBoxUpdateAdminName.Size = new System.Drawing.Size(191, 34);
+            this.textBoxUpdateAdminName.Padding = new System.Windows.Forms.Padding(0, 0, 0, 18);
+            this.textBoxUpdateAdminName.Size = new System.Drawing.Size(191, 38);
             this.textBoxUpdateAdminName.TabIndex = 22;
             this.textBoxUpdateAdminName.Text = "Name";
             this.textBoxUpdateAdminName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -753,7 +694,6 @@
             this.btnUpdateAdminInfo.Size = new System.Drawing.Size(225, 57);
             this.btnUpdateAdminInfo.TabIndex = 21;
             this.btnUpdateAdminInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnUpdateAdminInfo.Click += new System.EventHandler(this.btnUpdateAdminInfo_Click);
             // 
             // textBoxUpdateAdminPassword
             // 
@@ -769,7 +709,8 @@
             this.textBoxUpdateAdminPassword.Location = new System.Drawing.Point(57, 264);
             this.textBoxUpdateAdminPassword.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxUpdateAdminPassword.Name = "textBoxUpdateAdminPassword";
-            this.textBoxUpdateAdminPassword.Size = new System.Drawing.Size(415, 34);
+            this.textBoxUpdateAdminPassword.Padding = new System.Windows.Forms.Padding(0, 0, 0, 18);
+            this.textBoxUpdateAdminPassword.Size = new System.Drawing.Size(415, 38);
             this.textBoxUpdateAdminPassword.TabIndex = 20;
             this.textBoxUpdateAdminPassword.Text = "Password";
             this.textBoxUpdateAdminPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -788,21 +729,12 @@
             this.textBoxUpdateAdminUsername.Location = new System.Drawing.Point(57, 199);
             this.textBoxUpdateAdminUsername.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxUpdateAdminUsername.Name = "textBoxUpdateAdminUsername";
-            this.textBoxUpdateAdminUsername.Size = new System.Drawing.Size(415, 34);
+            this.textBoxUpdateAdminUsername.Padding = new System.Windows.Forms.Padding(0, 0, 0, 18);
+            this.textBoxUpdateAdminUsername.Size = new System.Drawing.Size(415, 38);
             this.textBoxUpdateAdminUsername.TabIndex = 19;
             this.textBoxUpdateAdminUsername.Text = "Username";
             this.textBoxUpdateAdminUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // songinfoinput1
-            // 
-            this.songinfoinput1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.songinfoinput1.Location = new System.Drawing.Point(0, 0);
-            this.songinfoinput1.Name = "songinfoinput1";
-            this.songinfoinput1.Size = new System.Drawing.Size(948, 633);
-            this.songinfoinput1.TabIndex = 21;
-            // 
-=======
->>>>>>> d4b6aeb93a00ee53754ee98947e41ef41989145e
             // adminlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -848,6 +780,8 @@
         private System.Windows.Forms.Label star11;
         private System.Windows.Forms.Label star10;
         private System.Windows.Forms.Label star9;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnUpdateAdminShowPanel;
+        private System.Windows.Forms.Label labelUpdateAdminInfo;
         private songinfoinput songinfoinput1;
         private Bunifu.Framework.UI.BunifuGradientPanel panelUpdateAdmin;
         private System.Windows.Forms.Label star18;
@@ -860,7 +794,5 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnUpdateAdminInfo;
         private Bunifu.Framework.UI.BunifuMetroTextbox textBoxUpdateAdminPassword;
         private Bunifu.Framework.UI.BunifuMetroTextbox textBoxUpdateAdminUsername;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnUpdateAdminShowPanel;
-        private System.Windows.Forms.Label labelUpdateAdminInfo;
     }
 }

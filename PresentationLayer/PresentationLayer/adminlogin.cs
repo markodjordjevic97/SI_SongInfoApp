@@ -18,16 +18,17 @@ namespace PresentationLayer
 
         public BusinessAdmin business;
         public static Admin adminIDGET;
-       
+
 
         public adminlogin()
         {
             business = new BusinessAdmin();
-            
+
             InitializeComponent();
             star1.Hide();
             star2.Hide();
             panelRegistration.Hide();
+           
         }
 
         private void adminlogin_Load(object sender, EventArgs e)
@@ -53,8 +54,20 @@ namespace PresentationLayer
             btnRegisterNow.ActiveLineColor = Color.FromArgb(44, 62, 80);
             btnRegisterNow.BackColor = Color.Transparent;
             btnRegisterNow.IdleForecolor = Color.Transparent;
+            // Color update now
+            btnUpdateAdminInfo.ActiveFillColor = Color.FromArgb(44, 62, 80);
+            btnUpdateAdminInfo.ActiveForecolor = Color.Transparent;
+            btnUpdateAdminInfo.ActiveLineColor = Color.FromArgb(44, 62, 80);
+            btnUpdateAdminInfo.BackColor = Color.Transparent;
+            btnUpdateAdminInfo.IdleForecolor = Color.Transparent;
+            // Color show panel
+            btnUpdateAdminShowPanel.ActiveFillColor = Color.FromArgb(44, 62, 80);
+            btnUpdateAdminShowPanel.ActiveForecolor = Color.Transparent;
+            btnUpdateAdminShowPanel.ActiveLineColor = Color.FromArgb(44, 62, 80);
+            btnUpdateAdminShowPanel.BackColor = Color.Transparent;
+            btnUpdateAdminShowPanel.IdleForecolor = Color.Transparent;
 
-            if(this.business.GetAdmin(a))
+            if (this.business.GetAdmin(a))
             {
                 labelRegistration.Hide();
                 btnRegisterNow.Hide();
@@ -67,49 +80,50 @@ namespace PresentationLayer
         private void btnSignInHaveAccount_Click(object sender, EventArgs e)
         {
             Admin a = new Admin();
-            
-            
-            if(textBoxPasswordHaveAccount.Text.Length == 0 
-                || textBoxUserNameHaveAccount.Text.Length ==0
+
+
+            if (textBoxPasswordHaveAccount.Text.Length == 0
+                || textBoxUserNameHaveAccount.Text.Length == 0
                 || this.business.IsValidPassword(textBoxPasswordHaveAccount.Text) != true
-                || this.business.IsValidUsername(textBoxUserNameHaveAccount.Text) != true  )
+                || this.business.IsValidUsername(textBoxUserNameHaveAccount.Text) != true)
             {
 
                 star1.Show();
                 star2.Show();
                 MessageBox.Show("Enter correct data!");
-                
 
-            } else
+
+            }
+            else
             {
-                
+
                 a.Username = textBoxUserNameHaveAccount.Text;
                 a.Password = textBoxPasswordHaveAccount.Text;
                 // Kupim podatke
                 adminIDGET = new Admin();
                 adminIDGET.Username = a.Username;
                 adminIDGET.Password = a.Password;
-                
+
                 if (this.business.AuthenticateAdmin(a).Admin_Id != 0)
                 {
                     MessageBox.Show("Successfull login!");
                     songinfoinput1.Show();
-
+                    panelRegistration.Hide();
                 }
                 else
                 {
                     MessageBox.Show("Unsuccessful login!");
                 }
             }
- 
+
         }
-        
+
 
         /*Prikaz panela za registraciju*/
         private void btnRegisterNow_Click(object sender, EventArgs e)
         {
             panelRegistration.Show();
-            
+
             star9.Hide();
             star10.Hide();
             star11.Hide();
@@ -129,16 +143,16 @@ namespace PresentationLayer
         {
             Admin a = new Admin();
 
-            
 
-            if (textBoxName.Text.Length == 0 
+
+            if (textBoxName.Text.Length == 0
                 || textBoxSurname.Text.Length == 0
-                || textBoxUsername.Text.Length == 0 
-                || textBoxPassword.Text.Length == 0 
-                || this.business.IsValidPassword(textBoxPassword.Text) != true 
-                || this.business.IsValidUsername(textBoxUsername.Text) != true) 
+                || textBoxUsername.Text.Length == 0
+                || textBoxPassword.Text.Length == 0
+                || this.business.IsValidPassword(textBoxPassword.Text) != true
+                || this.business.IsValidUsername(textBoxUsername.Text) != true)
 
-               
+
             {
                 star9.Show();
                 star10.Show();
@@ -147,7 +161,7 @@ namespace PresentationLayer
 
                 MessageBox.Show("Enter correct data!(Username: characters only, min 8 char;Password: one Uppercase, one Number, min 8 char)");
 
-                
+
             }
             else
             {
@@ -209,17 +223,17 @@ namespace PresentationLayer
 
                 if (this.business.AuthenticateAdmin(a).Admin_Id != 0)
                 {
-                   
+
                     MessageBox.Show("You are registered admin!");
 
-                       panelUpdateAdmin.Show();
-                   
+                    panelUpdateAdmin.Show();
+
                 }
                 else
                 {
                     MessageBox.Show("Enter correct data!");
                 }
-              
+
             }
 
 
@@ -230,14 +244,14 @@ namespace PresentationLayer
         {
             Admin a = new Admin();
 
-                a.Name = textBoxUpdateAdminName.Text;
-                a.Surname = textBoxUpdateAdminSurname.Text;
-                a.Username = textBoxUpdateAdminUsername.Text;
-                a.Password = textBoxUpdateAdminPassword.Text;
+            a.Name = textBoxUpdateAdminName.Text;
+            a.Surname = textBoxUpdateAdminSurname.Text;
+            a.Username = textBoxUpdateAdminUsername.Text;
+            a.Password = textBoxUpdateAdminPassword.Text;
 
             a.Admin_Id = this.business.AuthenticateAdmin(adminlogin.adminIDGET).Admin_Id;
 
-            if(this.business.UpdateAdmin(a) > 0)
+            if (this.business.UpdateAdmin(a) > 0)
             {
                 MessageBox.Show("Admin info successfully updated!");
                 btnSignInNoFunction.Show();
