@@ -31,16 +31,16 @@
             this.lblPerformer = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblRating = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.IconBackColor = new System.Windows.Forms.Panel();
+            this.lblIcon = new System.Windows.Forms.PictureBox();
             this.lblTitle = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblGenre = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblIconYoutube = new System.Windows.Forms.PictureBox();
             this.lblIconRating = new System.Windows.Forms.PictureBox();
-            this.lblIcon = new System.Windows.Forms.PictureBox();
             this.lblYoutubeClick = new System.Windows.Forms.Label();
             this.IconBackColor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lblIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblIconYoutube)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblIconRating)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPerformer
@@ -72,6 +72,16 @@
             this.IconBackColor.Name = "IconBackColor";
             this.IconBackColor.Size = new System.Drawing.Size(197, 153);
             this.IconBackColor.TabIndex = 7;
+            // 
+            // lblIcon
+            // 
+            this.lblIcon.BackColor = System.Drawing.Color.Transparent;
+            this.lblIcon.Location = new System.Drawing.Point(45, 32);
+            this.lblIcon.Name = "lblIcon";
+            this.lblIcon.Size = new System.Drawing.Size(102, 90);
+            this.lblIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lblIcon.TabIndex = 6;
+            this.lblIcon.TabStop = false;
             // 
             // lblTitle
             // 
@@ -113,16 +123,6 @@
             this.lblIconRating.TabIndex = 8;
             this.lblIconRating.TabStop = false;
             // 
-            // lblIcon
-            // 
-            this.lblIcon.BackColor = System.Drawing.Color.Transparent;
-            this.lblIcon.Location = new System.Drawing.Point(45, 32);
-            this.lblIcon.Name = "lblIcon";
-            this.lblIcon.Size = new System.Drawing.Size(102, 90);
-            this.lblIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.lblIcon.TabIndex = 6;
-            this.lblIcon.TabStop = false;
-            // 
             // lblYoutubeClick
             // 
             this.lblYoutubeClick.AutoSize = true;
@@ -150,13 +150,13 @@
             this.Controls.Add(this.IconBackColor);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "SongCard";
-            this.Size = new System.Drawing.Size(1038, 153);
+            this.Size = new System.Drawing.Size(1035, 153);
             this.MouseEnter += new System.EventHandler(this.SongCard_MouseEnter_1);
             this.MouseLeave += new System.EventHandler(this.SongCard_MouseLeave);
             this.IconBackColor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lblIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblIconYoutube)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblIconRating)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

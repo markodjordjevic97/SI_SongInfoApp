@@ -16,47 +16,54 @@ namespace PresentationLayer
     {
       
         public BusinessSongs business;
+        public EventHandler btnEvent;
+
         public genres()
         {
             this.business = new BusinessSongs();
             InitializeComponent();
+
+       
         }
 
         private void genres_Load(object sender, EventArgs e)
         {
+            
+         
+        }
+
+        private void btnPop_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void btnFolk_Click_1(object sender, EventArgs e)
+        {
+           
            
         }
 
-      
-        public void btnPop_Click(object sender, EventArgs e)
+        private void btnRock_Click_1(object sender, EventArgs e)
         {
- 
-           
-        }
         
-        public static void btnFolk_Click(object sender, EventArgs e)
-        {
-            
         }
 
-        public static void btnRock_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        public static void btnMotivation_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        public static void btnJazz_Click(object sender, EventArgs e)
+        private void btnMotivation_Click_1(object sender, EventArgs e)
         {
           
         }
 
-        public static void btnChill_Click(object sender, EventArgs e)
+        private void btnJazz_Click_1(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnChill_Click_1(object sender, EventArgs e)
         {
             
         }
+
+       
     }
 }

@@ -53,9 +53,7 @@ namespace PresentationLayer
             newsongs1.Hide();
             adminlogin1.Hide();
             songinfoinput1.Hide();
-            genres1.Show();
-            
-            
+            genres1.Show();   
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)

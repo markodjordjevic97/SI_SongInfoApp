@@ -31,24 +31,27 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(newsongs));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnRatingSort = new Bunifu.Framework.UI.BunifuImageButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnAZSort = new Bunifu.Framework.UI.BunifuImageButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnDateSort = new Bunifu.Framework.UI.BunifuImageButton();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.GetAllSongs = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnRatingSort = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnDateSort = new Bunifu.Framework.UI.BunifuImageButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.flowListSongs = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAZSort = new Bunifu.Framework.UI.BunifuImageButton();
             this.textBoxSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label2 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GetAllSongs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRatingSort)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAZSort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDateSort)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAZSort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
@@ -58,9 +61,18 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.panel1);
+            this.bunifuGradientPanel1.Controls.Add(this.btnSearch);
+            this.bunifuGradientPanel1.Controls.Add(this.label5);
+            this.bunifuGradientPanel1.Controls.Add(this.GetAllSongs);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
+            this.bunifuGradientPanel1.Controls.Add(this.label4);
+            this.bunifuGradientPanel1.Controls.Add(this.btnRatingSort);
+            this.bunifuGradientPanel1.Controls.Add(this.btnDateSort);
+            this.bunifuGradientPanel1.Controls.Add(this.label3);
             this.bunifuGradientPanel1.Controls.Add(this.flowListSongs);
+            this.bunifuGradientPanel1.Controls.Add(this.btnAZSort);
             this.bunifuGradientPanel1.Controls.Add(this.textBoxSearch);
+            this.bunifuGradientPanel1.Controls.Add(this.label2);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
@@ -73,27 +85,80 @@
             this.bunifuGradientPanel1.TabIndex = 0;
             this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
-            // panel1
+            // btnSearch
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.btnRatingSort);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.btnAZSort);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.btnDateSort);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(228, 9);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(431, 100);
-            this.panel1.TabIndex = 11;
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Image = global::PresentationLayer.Properties.Resources.search_solid_min;
+            this.btnSearch.ImageActive = null;
+            this.btnSearch.Location = new System.Drawing.Point(899, 38);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(23, 28);
+            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSearch.TabIndex = 13;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Zoom = 10;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(56, 38);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 25);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Songs";
+            // 
+            // GetAllSongs
+            // 
+            this.GetAllSongs.BackColor = System.Drawing.Color.Transparent;
+            this.GetAllSongs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GetAllSongs.Image = global::PresentationLayer.Properties.Resources.music;
+            this.GetAllSongs.ImageActive = null;
+            this.GetAllSongs.Location = new System.Drawing.Point(137, 36);
+            this.GetAllSongs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.GetAllSongs.Name = "GetAllSongs";
+            this.GetAllSongs.Size = new System.Drawing.Size(38, 38);
+            this.GetAllSongs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.GetAllSongs.TabIndex = 11;
+            this.GetAllSongs.TabStop = false;
+            this.GetAllSongs.Zoom = 10;
+            this.GetAllSongs.Click += new System.EventHandler(this.GetAllSongs_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(301, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 25);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Sort By";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(547, 67);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 25);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Date";
             // 
             // btnRatingSort
             // 
             this.btnRatingSort.BackColor = System.Drawing.Color.Transparent;
-            this.btnRatingSort.Image = ((System.Drawing.Image)(resources.GetObject("btnRatingSort.Image")));
+            this.btnRatingSort.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRatingSort.Image = global::PresentationLayer.Properties.Resources.sort_numeric_down_alt_solid_min;
             this.btnRatingSort.ImageActive = null;
-            this.btnRatingSort.Location = new System.Drawing.Point(248, 16);
+            this.btnRatingSort.Location = new System.Drawing.Point(485, 24);
             this.btnRatingSort.Name = "btnRatingSort";
             this.btnRatingSort.Size = new System.Drawing.Size(38, 38);
             this.btnRatingSort.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -102,50 +167,13 @@
             this.btnRatingSort.Zoom = 10;
             this.btnRatingSort.Click += new System.EventHandler(this.btnRatingSort_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(335, 57);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 25);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Date";
-            // 
-            // btnAZSort
-            // 
-            this.btnAZSort.BackColor = System.Drawing.Color.Transparent;
-            this.btnAZSort.Image = ((System.Drawing.Image)(resources.GetObject("btnAZSort.Image")));
-            this.btnAZSort.ImageActive = null;
-            this.btnAZSort.Location = new System.Drawing.Point(161, 16);
-            this.btnAZSort.Name = "btnAZSort";
-            this.btnAZSort.Size = new System.Drawing.Size(38, 38);
-            this.btnAZSort.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnAZSort.TabIndex = 4;
-            this.btnAZSort.TabStop = false;
-            this.btnAZSort.Zoom = 10;
-            this.btnAZSort.Click += new System.EventHandler(this.btnAZSort_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(235, 57);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 25);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Rating";
-            // 
             // btnDateSort
             // 
             this.btnDateSort.BackColor = System.Drawing.Color.Transparent;
-            this.btnDateSort.Image = ((System.Drawing.Image)(resources.GetObject("btnDateSort.Image")));
+            this.btnDateSort.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDateSort.Image = global::PresentationLayer.Properties.Resources.calendar_regular_min;
             this.btnDateSort.ImageActive = null;
-            this.btnDateSort.Location = new System.Drawing.Point(340, 17);
+            this.btnDateSort.Location = new System.Drawing.Point(551, 24);
             this.btnDateSort.Name = "btnDateSort";
             this.btnDateSort.Size = new System.Drawing.Size(38, 38);
             this.btnDateSort.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -154,39 +182,44 @@
             this.btnDateSort.Zoom = 10;
             this.btnDateSort.Click += new System.EventHandler(this.btnDateSort_Click);
             // 
-            // label2
+            // label3
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(160, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 25);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "A-Z";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(50, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 25);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Sort By";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(469, 67);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 25);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Rating";
             // 
             // flowListSongs
             // 
             this.flowListSongs.AutoScroll = true;
             this.flowListSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
-            this.flowListSongs.Location = new System.Drawing.Point(3, 114);
+            this.flowListSongs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.flowListSongs.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowListSongs.Location = new System.Drawing.Point(0, 114);
             this.flowListSongs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowListSongs.Name = "flowListSongs";
-            this.flowListSongs.Size = new System.Drawing.Size(957, 519);
+            this.flowListSongs.Size = new System.Drawing.Size(948, 519);
             this.flowListSongs.TabIndex = 3;
+            // 
+            // btnAZSort
+            // 
+            this.btnAZSort.BackColor = System.Drawing.Color.Transparent;
+            this.btnAZSort.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAZSort.Image = global::PresentationLayer.Properties.Resources.sort_alpha_down_solid_min;
+            this.btnAZSort.ImageActive = null;
+            this.btnAZSort.Location = new System.Drawing.Point(426, 24);
+            this.btnAZSort.Name = "btnAZSort";
+            this.btnAZSort.Size = new System.Drawing.Size(38, 38);
+            this.btnAZSort.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAZSort.TabIndex = 4;
+            this.btnAZSort.TabStop = false;
+            this.btnAZSort.Zoom = 10;
+            this.btnAZSort.Click += new System.EventHandler(this.btnAZSort_Click);
             // 
             // textBoxSearch
             // 
@@ -200,15 +233,26 @@
             this.textBoxSearch.Font = new System.Drawing.Font("Segoe UI", 12.5F);
             this.textBoxSearch.ForeColor = System.Drawing.Color.White;
             this.textBoxSearch.isPassword = false;
-            this.textBoxSearch.Location = new System.Drawing.Point(703, 38);
+            this.textBoxSearch.Location = new System.Drawing.Point(672, 31);
             this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.textBoxSearch.Size = new System.Drawing.Size(210, 37);
+            this.textBoxSearch.Padding = new System.Windows.Forms.Padding(0, 0, 0, 14);
+            this.textBoxSearch.Size = new System.Drawing.Size(210, 43);
             this.textBoxSearch.TabIndex = 1;
             this.textBoxSearch.Text = "Search";
             this.textBoxSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.textBoxSearch.OnValueChanged += new System.EventHandler(this.textBoxSearch_OnValueChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(421, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 25);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "A-Z";
             // 
             // newsongs
             // 
@@ -218,11 +262,12 @@
             this.Name = "newsongs";
             this.Size = new System.Drawing.Size(948, 633);
             this.bunifuGradientPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GetAllSongs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRatingSort)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnAZSort)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDateSort)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAZSort)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
@@ -239,13 +284,15 @@
         private SongCard songCard1;
         private System.Windows.Forms.BindingSource bindingSource2;
         private System.Windows.Forms.BindingSource bindingSource3;
+        private Bunifu.Framework.UI.BunifuImageButton btnRatingSort;
         private System.Windows.Forms.Label label4;
+        private Bunifu.Framework.UI.BunifuImageButton btnAZSort;
         private System.Windows.Forms.Label label3;
+        private Bunifu.Framework.UI.BunifuImageButton btnDateSort;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuImageButton btnDateSort;
-        private Bunifu.Framework.UI.BunifuImageButton btnRatingSort;
-        private Bunifu.Framework.UI.BunifuImageButton btnAZSort;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label5;
+        private Bunifu.Framework.UI.BunifuImageButton GetAllSongs;
+        private Bunifu.Framework.UI.BunifuImageButton btnSearch;
     }
 }

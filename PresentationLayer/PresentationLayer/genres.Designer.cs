@@ -30,43 +30,37 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(genres));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnChill = new System.Windows.Forms.Button();
+            this.btnJazz = new System.Windows.Forms.Button();
+            this.btnMotivation = new System.Windows.Forms.Button();
+            this.btnRock = new System.Windows.Forms.Button();
+            this.btnFolk = new System.Windows.Forms.Button();
+            this.btnPop = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnChill = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnJazz = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnMotivation = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnRock = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnFolk = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnPop = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnChill)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnJazz)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMotivation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRock)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnFolk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPop)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.label4);
-            this.bunifuGradientPanel1.Controls.Add(this.label5);
-            this.bunifuGradientPanel1.Controls.Add(this.label6);
-            this.bunifuGradientPanel1.Controls.Add(this.label3);
-            this.bunifuGradientPanel1.Controls.Add(this.label2);
-            this.bunifuGradientPanel1.Controls.Add(this.label1);
             this.bunifuGradientPanel1.Controls.Add(this.btnChill);
             this.bunifuGradientPanel1.Controls.Add(this.btnJazz);
             this.bunifuGradientPanel1.Controls.Add(this.btnMotivation);
             this.bunifuGradientPanel1.Controls.Add(this.btnRock);
             this.bunifuGradientPanel1.Controls.Add(this.btnFolk);
             this.bunifuGradientPanel1.Controls.Add(this.btnPop);
+            this.bunifuGradientPanel1.Controls.Add(this.label4);
+            this.bunifuGradientPanel1.Controls.Add(this.label5);
+            this.bunifuGradientPanel1.Controls.Add(this.label6);
+            this.bunifuGradientPanel1.Controls.Add(this.label3);
+            this.bunifuGradientPanel1.Controls.Add(this.label2);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
@@ -77,6 +71,79 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(948, 633);
             this.bunifuGradientPanel1.TabIndex = 0;
+            // 
+            // btnChill
+            // 
+            this.btnChill.BackgroundImage = global::PresentationLayer.Properties.Resources.geio_tischler_XbPG4k_KUwE_unsplash_min;
+            this.btnChill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnChill.Location = new System.Drawing.Point(687, 355);
+            this.btnChill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnChill.Name = "btnChill";
+            this.btnChill.Size = new System.Drawing.Size(197, 147);
+            this.btnChill.TabIndex = 18;
+            this.btnChill.UseVisualStyleBackColor = true;
+            this.btnChill.Click += new System.EventHandler(this.btnChill_Click_1);
+            // 
+            // btnJazz
+            // 
+            this.btnJazz.BackgroundImage = global::PresentationLayer.Properties.Resources.amber_kipp_x1C1V82Pnkc_unsplash_min;
+            this.btnJazz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnJazz.Location = new System.Drawing.Point(383, 355);
+            this.btnJazz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnJazz.Name = "btnJazz";
+            this.btnJazz.Size = new System.Drawing.Size(197, 147);
+            this.btnJazz.TabIndex = 17;
+            this.btnJazz.UseVisualStyleBackColor = true;
+            this.btnJazz.Click += new System.EventHandler(this.btnJazz_Click_1);
+            // 
+            // btnMotivation
+            // 
+            this.btnMotivation.BackgroundImage = global::PresentationLayer.Properties.Resources.jordan_whitfield_sm3Ub_IJKQg_unsplash_min;
+            this.btnMotivation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMotivation.Location = new System.Drawing.Point(74, 355);
+            this.btnMotivation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMotivation.Name = "btnMotivation";
+            this.btnMotivation.Size = new System.Drawing.Size(197, 147);
+            this.btnMotivation.TabIndex = 16;
+            this.btnMotivation.UseVisualStyleBackColor = true;
+            this.btnMotivation.Click += new System.EventHandler(this.btnMotivation_Click_1);
+            // 
+            // btnRock
+            // 
+            this.btnRock.BackColor = System.Drawing.Color.Transparent;
+            this.btnRock.BackgroundImage = global::PresentationLayer.Properties.Resources.hector_bermudez_iIWDt0fXa84_unsplash;
+            this.btnRock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRock.Location = new System.Drawing.Point(687, 104);
+            this.btnRock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRock.Name = "btnRock";
+            this.btnRock.Size = new System.Drawing.Size(197, 147);
+            this.btnRock.TabIndex = 15;
+            this.btnRock.UseVisualStyleBackColor = false;
+            this.btnRock.Click += new System.EventHandler(this.btnRock_Click_1);
+            // 
+            // btnFolk
+            // 
+            this.btnFolk.BackgroundImage = global::PresentationLayer.Properties.Resources.dominik_scythe_FOPoSQ6DMA0_unsplash;
+            this.btnFolk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFolk.Location = new System.Drawing.Point(384, 110);
+            this.btnFolk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFolk.Name = "btnFolk";
+            this.btnFolk.Size = new System.Drawing.Size(197, 147);
+            this.btnFolk.TabIndex = 14;
+            this.btnFolk.UseVisualStyleBackColor = true;
+            this.btnFolk.Click += new System.EventHandler(this.btnFolk_Click_1);
+            // 
+            // btnPop
+            // 
+            this.btnPop.BackgroundImage = global::PresentationLayer.Properties.Resources.efe_kurnaz_RnCPiXixooY_unsplash_min;
+            this.btnPop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPop.Location = new System.Drawing.Point(74, 104);
+            this.btnPop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPop.Name = "btnPop";
+            this.btnPop.Size = new System.Drawing.Size(197, 147);
+            this.btnPop.TabIndex = 12;
+            this.btnPop.UseVisualStyleBackColor = true;
+            this.btnPop.Click += new System.EventHandler(this.btnPop_Click);
             // 
             // label4
             // 
@@ -150,97 +217,6 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Pop";
             // 
-            // btnChill
-            // 
-            this.btnChill.BackColor = System.Drawing.Color.Transparent;
-            this.btnChill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnChill.BackgroundImage")));
-            this.btnChill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnChill.Image = ((System.Drawing.Image)(resources.GetObject("btnChill.Image")));
-            this.btnChill.ImageActive = null;
-            this.btnChill.Location = new System.Drawing.Point(677, 364);
-            this.btnChill.Name = "btnChill";
-            this.btnChill.Size = new System.Drawing.Size(197, 147);
-            this.btnChill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnChill.TabIndex = 5;
-            this.btnChill.TabStop = false;
-            this.btnChill.Zoom = 10;
-            // 
-            // btnJazz
-            // 
-            this.btnJazz.BackColor = System.Drawing.Color.Transparent;
-            this.btnJazz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnJazz.BackgroundImage")));
-            this.btnJazz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnJazz.Image = ((System.Drawing.Image)(resources.GetObject("btnJazz.Image")));
-            this.btnJazz.ImageActive = null;
-            this.btnJazz.Location = new System.Drawing.Point(386, 364);
-            this.btnJazz.Name = "btnJazz";
-            this.btnJazz.Size = new System.Drawing.Size(197, 147);
-            this.btnJazz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnJazz.TabIndex = 4;
-            this.btnJazz.TabStop = false;
-            this.btnJazz.Zoom = 10;
-            // 
-            // btnMotivation
-            // 
-            this.btnMotivation.BackColor = System.Drawing.Color.Transparent;
-            this.btnMotivation.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMotivation.BackgroundImage")));
-            this.btnMotivation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMotivation.Image = ((System.Drawing.Image)(resources.GetObject("btnMotivation.Image")));
-            this.btnMotivation.ImageActive = null;
-            this.btnMotivation.Location = new System.Drawing.Point(74, 364);
-            this.btnMotivation.Name = "btnMotivation";
-            this.btnMotivation.Size = new System.Drawing.Size(197, 147);
-            this.btnMotivation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMotivation.TabIndex = 3;
-            this.btnMotivation.TabStop = false;
-            this.btnMotivation.Zoom = 10;
-            // 
-            // btnRock
-            // 
-            this.btnRock.BackColor = System.Drawing.Color.Transparent;
-            this.btnRock.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRock.BackgroundImage")));
-            this.btnRock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRock.Image = ((System.Drawing.Image)(resources.GetObject("btnRock.Image")));
-            this.btnRock.ImageActive = null;
-            this.btnRock.Location = new System.Drawing.Point(677, 104);
-            this.btnRock.Name = "btnRock";
-            this.btnRock.Size = new System.Drawing.Size(197, 147);
-            this.btnRock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRock.TabIndex = 2;
-            this.btnRock.TabStop = false;
-            this.btnRock.Zoom = 10;
-            // 
-            // btnFolk
-            // 
-            this.btnFolk.BackColor = System.Drawing.Color.Transparent;
-            this.btnFolk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFolk.BackgroundImage")));
-            this.btnFolk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFolk.Image = ((System.Drawing.Image)(resources.GetObject("btnFolk.Image")));
-            this.btnFolk.ImageActive = null;
-            this.btnFolk.Location = new System.Drawing.Point(386, 104);
-            this.btnFolk.Name = "btnFolk";
-            this.btnFolk.Size = new System.Drawing.Size(197, 147);
-            this.btnFolk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnFolk.TabIndex = 1;
-            this.btnFolk.TabStop = false;
-            this.btnFolk.Zoom = 10;
-            // 
-            // btnPop
-            // 
-            this.btnPop.BackColor = System.Drawing.Color.Transparent;
-            this.btnPop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPop.BackgroundImage")));
-            this.btnPop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPop.Image = ((System.Drawing.Image)(resources.GetObject("btnPop.Image")));
-            this.btnPop.ImageActive = null;
-            this.btnPop.Location = new System.Drawing.Point(74, 104);
-            this.btnPop.Name = "btnPop";
-            this.btnPop.Size = new System.Drawing.Size(197, 147);
-            this.btnPop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnPop.TabIndex = 0;
-            this.btnPop.TabStop = false;
-            this.btnPop.Zoom = 10;
-            this.btnPop.Click += new System.EventHandler(this.btnPop_Click);
-            // 
             // genres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -251,12 +227,6 @@
             this.Load += new System.EventHandler(this.genres_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnChill)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnJazz)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMotivation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRock)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnFolk)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPop)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -264,17 +234,18 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.Framework.UI.BunifuImageButton btnChill;
-        private Bunifu.Framework.UI.BunifuImageButton btnJazz;
-        private Bunifu.Framework.UI.BunifuImageButton btnMotivation;
-        private Bunifu.Framework.UI.BunifuImageButton btnRock;
-        private Bunifu.Framework.UI.BunifuImageButton btnFolk;
-        private Bunifu.Framework.UI.BunifuImageButton btnPop;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnPop;
+        private System.Windows.Forms.Button btnChill;
+        private System.Windows.Forms.Button btnJazz;
+        private System.Windows.Forms.Button btnMotivation;
+        private System.Windows.Forms.Button btnRock;
+        private System.Windows.Forms.Button btnFolk;
+     
     }
 }

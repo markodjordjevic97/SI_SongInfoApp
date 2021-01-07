@@ -34,14 +34,32 @@ namespace PresentationLayer
         {
             songinfoinput1.Hide();
             Admin a = new Admin();
-           
-            if(this.business.GetAdmin(a))
-            {
-                labelRegistration.Hide();
-                btnRegisterNow.Hide();
-                btnSignInNoFunction.Hide();
-                label4.Hide();
-            }
+            // Color right Sign In
+            btnSignInHaveAccount.ActiveFillColor = Color.FromArgb(44, 62, 80);
+            btnSignInHaveAccount.ActiveForecolor = Color.Transparent;
+            btnSignInHaveAccount.ActiveLineColor = Color.FromArgb(44, 62, 80);
+            btnSignInHaveAccount.BackColor = Color.Transparent;
+            btnSignInHaveAccount.IdleForecolor = Color.Transparent;
+            // Color left Sign In
+            btnSignInNoFunction.ActiveFillColor = Color.FromArgb(44, 62, 80);
+            btnSignInNoFunction.ActiveForecolor = Color.Transparent;
+            btnSignInNoFunction.ActiveLineColor = Color.FromArgb(44, 62, 80);
+            btnSignInNoFunction.BackColor = Color.Transparent;
+            btnSignInNoFunction.IdleForecolor = Color.Transparent;
+            // Color register now
+            btnRegisterNow.ActiveFillColor = Color.FromArgb(44, 62, 80);
+            btnRegisterNow.ActiveForecolor = Color.Transparent;
+            btnRegisterNow.ActiveLineColor = Color.FromArgb(44, 62, 80);
+            btnRegisterNow.BackColor = Color.Transparent;
+            btnRegisterNow.IdleForecolor = Color.Transparent;
+
+             if(this.business.GetAdmin(a))
+               {
+                   labelRegistration.Hide();
+                   btnRegisterNow.Hide();
+                   btnSignInNoFunction.Hide();
+                   label4.Hide();
+               } 
         }
 
         /*Sprecavanje unosa praznih polja*/
