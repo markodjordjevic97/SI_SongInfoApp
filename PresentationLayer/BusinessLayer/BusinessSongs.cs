@@ -52,13 +52,13 @@ namespace BusinessLayer
         // Method for sort by rating
         public List<Song> GetSongByRating()
         {
-            return this.songRepository.GetAllSongs().OrderBy(song => song.Jim_Rating).ToList();
+            return this.songRepository.GetAllSongs().OrderByDescending(song => song.Jim_Rating).ToList();
         }
 
         // Method for sort by date
         public List<Song> GetSongByDate()
         {
-            return this.songRepository.GetAllSongs().OrderBy(song => song.Created_At).ToList();
+            return this.songRepository.GetAllSongs().OrderByDescending(song => song.Created_At).ToList();
         }
 
         //************************************ Methods for genres *********************************************

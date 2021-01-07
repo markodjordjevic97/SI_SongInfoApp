@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLayer;
 using PresentationLayer.Properties;
@@ -18,6 +13,7 @@ namespace PresentationLayer
 
        
         private readonly BusinessSongs blSong;
+
         public newsongs()
         {
             InitializeComponent();
@@ -26,18 +22,16 @@ namespace PresentationLayer
 
         private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
-            FillList();
-            SongsItems();
+            
         }
 
-       
-        private void SongsItems()
+        private void SongsItems(List<Song> listSong)
         {
 
             // Mora jovan da mi prosledi static polje od njegov event
-            var Songs = this.blSong.GetAllSongs();
-            var listLength = this.blSong.GetAllSongs().Count;
-            
+            FillList();
+            var Songs = listSong;
+             var listLength = listSong.Count;
 
             SongCard[] listSongs = new SongCard[listLength];
            
@@ -57,12 +51,12 @@ namespace PresentationLayer
 
                 // Add to flow panel
                flowListSongs.Controls.Add(listSongs[i]);
+               
             }
         }
         private void FillList()
         {
             flowListSongs.Controls.Clear();
-           
         }
 
         //Search bar, sort buttons
@@ -71,18 +65,33 @@ namespace PresentationLayer
             //Upit za search?
             string searchValue = textBoxSearch.Text;
 
+        }
+       
+        // Get All Songs
+        private void GetAllSongs_Click(object sender, EventArgs e)
+        {
+            var Songs = this.blSong.GetAllSongs();
+            var listLength = this.blSong.GetAllSongs().Count;
 
+            if (listLength != 0)
+            {
+                SongsItems(Songs);
+            }
+            else
+            {
+                MessageBox.Show("There are no songs!");
+            }
         }
 
+        // Sort method for songs by name
         private void btnAZSort_Click(object sender, EventArgs e)
         {
+            var Songs = this.blSong.GetSongByName();
+            var listLength = this.blSong.GetSongByName().Count;
 
-            List<Song> listAZSort = this.blSong.GetSongByName();
-
-            if (listAZSort.Count != 0)
+            if (listLength != 0)
             {
-                FillList();
-                SongsItems();
+                SongsItems(Songs);
             }
             else
             {
@@ -90,39 +99,36 @@ namespace PresentationLayer
             }
         }
 
+        // Sort method for songs by rating
         private void btnRatingSort_Click(object sender, EventArgs e)
         {
+            var Songs = this.blSong.GetSongByRating();
+            var listLength = this.blSong.GetSongByRating().Count;
 
-            List<Song> listRatingSort = this.blSong.GetSongByRating();
-
-            if (listRatingSort.Count != 0)
+            if (listLength != 0)
             {
-                FillList();
-                SongsItems();
+                SongsItems(Songs);
             }
             else
             {
                 MessageBox.Show("There are no songs!");
             }
-
         }
 
+        // Sort method for songs by date
         private void btnDateSort_Click(object sender, EventArgs e)
         {
+            var Songs = this.blSong.GetSongByDate();
+            var listLength = this.blSong.GetSongByDate().Count;
 
-            List<Song> listDateSort = this.blSong.GetSongByDate();
-
-            if (listDateSort.Count != 0)
+            if (listLength != 0)
             {
-                FillList();
-                SongsItems();
+                SongsItems(Songs);
             }
             else
             {
                 MessageBox.Show("There are no songs!");
             }
         }
-
-
     }
 }
