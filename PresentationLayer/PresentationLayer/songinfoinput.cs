@@ -33,27 +33,9 @@ namespace PresentationLayer
             FillList();
         }
 
-        /*Unos slike*/
-        private void btnInsertPic_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog opf = new OpenFileDialog();
-            opf.Title = "Select Image";
-            opf.Filter = "Image File (*.jpg; *.jpeg *.bmp *.png) | *.jpg; *.jpeg *.bmp *.png";
-            if (opf.ShowDialog() == DialogResult.OK)
-            {
-                Bitmap image = new Bitmap(opf.FileName);
-                pictureBoxSong.Image = image;
-            }
-        }
-        /*Brisanje slike*/
-        private void btnDeletePic_Click(object sender, EventArgs e)
-        {
-            pictureBoxSong.CancelAsync();
-            pictureBoxSong.Image.Dispose();
-            pictureBoxSong.Image = null;
-        }
+        
 
-        //Popunjavanje list boxa pesama za admina
+        //Filling list box of songs for admin
         private void FillList()
         {
             listBoxSongsForAdmin.Items.Clear();
@@ -82,13 +64,13 @@ namespace PresentationLayer
             string[] array = fields.Split(' ');
             textBoxPerfName.Text = array[2];
             textBoxPerfSurname.Text = array[3] ;
-            textBoxTitle.Text = array[4] + " " + array[5];
-            textBoxGenre.Text = array[6];
-            textBoxRatingJIM.Text = array[7];
-            textBoxURLYoutube.Text = array[8];
+            textBoxTitle.Text = array[4];
+            textBoxGenre.Text = array[5];                        
+            textBoxRatingJIM.Text = array[6];
+            textBoxURLYoutube.Text = array[7];
         }
 
-        /*Sprecavanje unosa praznih polja*/
+        //Insert song
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Song s = new Song();
@@ -115,7 +97,7 @@ namespace PresentationLayer
                 s.Genre = textBoxGenre.Text;
                 s.Youtube_Url = textBoxURLYoutube.Text;
                 s.Jim_Rating = Convert.ToDecimal(textBoxRatingJIM.Text);
-                s.Picture_Url = "slika";
+                s.Picture_Url = " ";
                 p.Name = textBoxPerfName.Text;
                 p.Surname = textBoxPerfSurname.Text;
 
@@ -142,7 +124,7 @@ namespace PresentationLayer
             }
            
         }
-
+        //Update song
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             Song s = new Song();
@@ -151,10 +133,9 @@ namespace PresentationLayer
             s.Genre = textBoxGenre.Text;
             s.Jim_Rating =Convert.ToDecimal(textBoxRatingJIM.Text);
             s.Youtube_Url = textBoxURLYoutube.Text;
-            
-
             s.Song_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split(' ')[0]);
             p.Performer_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split(' ')[1]);
+
             p.Name = textBoxPerfName.Text;
             p.Surname = textBoxPerfSurname.Text;
             //(this.performer.UpdatePerformer(p))
@@ -167,11 +148,9 @@ namespace PresentationLayer
             {
                 MessageBox.Show("Unsuccessfull song update!");
             }
-
-           
-                
+  
         }
-
+        //Delete song
         private void btnDelete_Click(object sender, EventArgs e)
         {
             Song s = new Song();

@@ -2,7 +2,9 @@
 
 using DataAccessLayer;
 using DataAccessLayer.Models;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BusinessLayer
 {
@@ -14,6 +16,8 @@ namespace BusinessLayer
         {
             songRepository = new SongRepository();
         }
+
+        //************************************ Methods for CRUD songs **************************************
 
         // Method for insert song
         public bool InsertSong(Performer performer,Admin admin, Song song)
@@ -36,6 +40,67 @@ namespace BusinessLayer
         public List<Song> GetAllSongs()
         {
             return this.songRepository.GetAllSongs();
+        }
+        //************************************ Methods for user criteria **************************************
+       // Method for search by name
+       public List<Song> SearchSongByName(string name)
+        {
+            return this.songRepository.GetAllSongs().Where(song => song.Title.ToLower().Equals(name.ToLower())).ToList();
+        }
+        // Method for sort by name
+        public List<Song> GetSongByName()
+        {
+            return this.songRepository.GetAllSongs().OrderBy(song => song.Title).ToList();
+        }
+
+        // Method for sort by rating
+        public List<Song> GetSongByRating()
+        {
+            return this.songRepository.GetAllSongs().OrderByDescending(song => song.Jim_Rating).ToList();
+        }
+
+        // Method for sort by date
+        public List<Song> GetSongByDate()
+        {
+            return this.songRepository.GetAllSongs().OrderByDescending(song => song.Created_At).ToList();
+        }
+
+        //************************************ Methods for genres *********************************************
+
+        // Method for Motivation songs
+        public List<Song> GetSongsMotivation()
+        {
+            return this.songRepository.GetAllSongs().Where(song => song.Genre.Equals("Motivation")).ToList();
+        }
+
+        // Method for Chill songs
+        public List<Song> GetSongsChill()
+        {
+            return this.songRepository.GetAllSongs().Where(song => song.Genre.Equals("Chill")).ToList();
+        }
+
+        // Method for Jazz songs
+        public List<Song> GetSongsJazz()
+        {
+            return this.songRepository.GetAllSongs().Where(song => song.Genre.Equals("Jazz")).ToList();
+        }
+
+        // Method for Folk songs
+        public List<Song> GetSongsFolk()
+        {
+            return this.songRepository.GetAllSongs().Where(song => song.Genre.Equals("Folk")).ToList();
+        }
+
+        // Method for Rock songs
+        public List<Song> GetSongsRock()
+        {
+            return this.songRepository.GetAllSongs().Where(song => song.Genre == "Rock").ToList();
+        }
+
+        // Method for Folk songs
+        public List<Song> GetSongsPop()
+        {
+            return this.songRepository.GetAllSongs().Where(song => song.Genre.Equals("Pop")).ToList();
         }
     }
 }

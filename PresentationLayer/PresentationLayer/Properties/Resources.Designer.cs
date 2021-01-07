@@ -63,9 +63,129 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap amber_kipp_x1C1V82Pnkc_unsplash_min {
+            get {
+                object obj = ResourceManager.GetObject("amber_kipp_x1C1V82Pnkc_unsplash_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar_regular_min {
+            get {
+                object obj = ResourceManager.GetObject("calendar_regular_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dominik_scythe_FOPoSQ6DMA0_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("dominik_scythe_FOPoSQ6DMA0_unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dot_circle_regular_min {
+            get {
+                object obj = ResourceManager.GetObject("dot_circle_regular_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap efe_kurnaz_RnCPiXixooY_unsplash_min {
+            get {
+                object obj = ResourceManager.GetObject("efe_kurnaz_RnCPiXixooY_unsplash_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap geio_tischler_XbPG4k_KUwE_unsplash_min {
+            get {
+                object obj = ResourceManager.GetObject("geio_tischler_XbPG4k_KUwE_unsplash_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hector_bermudez_iIWDt0fXa84_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("hector_bermudez_iIWDt0fXa84_unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jordan_whitfield_sm3Ub_IJKQg_unsplash_min {
+            get {
+                object obj = ResourceManager.GetObject("jordan_whitfield_sm3Ub_IJKQg_unsplash_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap konstantin_aal_Otx5FHbr3OE_unsplash_min {
+            get {
+                object obj = ResourceManager.GetObject("konstantin_aal_Otx5FHbr3OE_unsplash_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap music {
             get {
                 object obj = ResourceManager.GetObject("music", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_solid_min {
+            get {
+                object obj = ResourceManager.GetObject("search_solid_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sort_alpha_down_solid_min {
+            get {
+                object obj = ResourceManager.GetObject("sort_alpha_down_solid_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sort_numeric_down_alt_solid_min {
+            get {
+                object obj = ResourceManager.GetObject("sort_numeric_down_alt_solid_min", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
