@@ -281,7 +281,6 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox textBoxSearch;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.FlowLayoutPanel flowListSongs;
-        private SongCard songCard1;
         private System.Windows.Forms.BindingSource bindingSource2;
         private System.Windows.Forms.BindingSource bindingSource3;
         private Bunifu.Framework.UI.BunifuImageButton btnRatingSort;
