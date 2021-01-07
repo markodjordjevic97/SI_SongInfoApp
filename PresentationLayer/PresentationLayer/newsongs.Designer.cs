@@ -116,7 +116,7 @@
             // 
             this.GetAllSongs.BackColor = System.Drawing.Color.Transparent;
             this.GetAllSongs.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GetAllSongs.Image = global::PresentationLayer.Properties.Resources.music;
+            this.GetAllSongs.Image = ((System.Drawing.Image)(resources.GetObject("GetAllSongs.Image")));
             this.GetAllSongs.ImageActive = null;
             this.GetAllSongs.Location = new System.Drawing.Point(137, 36);
             this.GetAllSongs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
