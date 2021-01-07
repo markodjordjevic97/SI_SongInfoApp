@@ -22,7 +22,7 @@ namespace PresentationLayer
 
         private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
-            
+           
         }
 
         private void SongsItems(List<Song> listSong)
@@ -37,9 +37,10 @@ namespace PresentationLayer
            
             for (int i = 0; i < listLength; i++)
             {
-                // Song info
-                listSongs[i] = new SongCard();
-                listSongs[i].Icon = Resources.music; 
+              
+               // Song info
+               listSongs[i] = new SongCard();
+                listSongs[i].Icon = Resources.music;
                 listSongs[i].IconRating = Resources.star;
                 listSongs[i].IconYoutube = Resources.youtube;
                 listSongs[i].IconBackground = Color.FromArgb(44, 62, 80);
@@ -60,12 +61,12 @@ namespace PresentationLayer
         }
 
         //Search bar, sort buttons
-        private void textBoxSearch_OnValueChanged(object sender, EventArgs e)
+       /* private void textBoxSearch_OnValueChanged(object sender, EventArgs e)
         {
             //Upit za search?
-            string searchValue = textBoxSearch.Text;
+           
 
-        }
+        }*/
        
         // Get All Songs
         private void GetAllSongs_Click(object sender, EventArgs e)
@@ -130,5 +131,16 @@ namespace PresentationLayer
                 MessageBox.Show("There are no songs!");
             }
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string searchValue = textBoxSearch.Text;
+
+            var Songs = this.blSong.SearchSongByName(searchValue);
+            
+            SongsItems(Songs);
+        }
+
+        
     }
 }

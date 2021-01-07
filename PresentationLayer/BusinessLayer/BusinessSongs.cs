@@ -42,7 +42,11 @@ namespace BusinessLayer
             return this.songRepository.GetAllSongs();
         }
         //************************************ Methods for user criteria **************************************
-       
+       // Method for search by name
+       public List<Song> SearchSongByName(string name)
+        {
+            return this.songRepository.GetAllSongs().Where(song => song.Title.ToLower().Equals(name.ToLower())).ToList();
+        }
         // Method for sort by name
         public List<Song> GetSongByName()
         {

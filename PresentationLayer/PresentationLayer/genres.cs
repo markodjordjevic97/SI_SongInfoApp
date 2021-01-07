@@ -23,43 +23,47 @@ namespace PresentationLayer
             this.business = new BusinessSongs();
             InitializeComponent();
 
-            newsongs1.Hide();
+       
         }
 
         private void genres_Load(object sender, EventArgs e)
         {
-            newsongs1.Hide();
+            
+         
         }
 
         private void btnPop_Click(object sender, EventArgs e)
         {
-            newsongs1.Show();
+            
 
         }
 
         private void btnFolk_Click_1(object sender, EventArgs e)
         {
-            newsongs1.Show();
+           
+           
         }
 
         private void btnRock_Click_1(object sender, EventArgs e)
         {
-            newsongs1.Show();
+        
         }
 
         private void btnMotivation_Click_1(object sender, EventArgs e)
         {
-            newsongs1.Show();
+          
         }
 
         private void btnJazz_Click_1(object sender, EventArgs e)
         {
-            newsongs1.Show();
+           
         }
 
         private void btnChill_Click_1(object sender, EventArgs e)
         {
-            newsongs1.Show();
+            
         }
+
+       
     }
 }
