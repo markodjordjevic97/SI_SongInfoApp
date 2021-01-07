@@ -28,14 +28,15 @@ namespace PresentationLayer
 
         private void genres_Load(object sender, EventArgs e)
         {
-            
+            newsongs1.Hide();
          
+         newsongs1.
         }
 
         private void btnPop_Click(object sender, EventArgs e)
         {
+            newsongs1.Show();
             
-
         }
 
         private void btnFolk_Click_1(object sender, EventArgs e)

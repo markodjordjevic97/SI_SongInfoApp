@@ -246,6 +246,5 @@
         private System.Windows.Forms.Button btnMotivation;
         private System.Windows.Forms.Button btnRock;
         private System.Windows.Forms.Button btnFolk;
-     
     }
 }
