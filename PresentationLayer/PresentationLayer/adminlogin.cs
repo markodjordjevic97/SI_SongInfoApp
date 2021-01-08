@@ -12,7 +12,7 @@ using DataAccessLayer.Models;
 
 namespace PresentationLayer
 {
-    public partial class adminlogin : UserControl
+    public partial class Adminlogin : UserControl
     {
 
 
@@ -20,7 +20,7 @@ namespace PresentationLayer
         public static Admin adminIDGET;
 
 
-        public adminlogin()
+        public Adminlogin()
         {
             business = new BusinessAdmin();
 
@@ -31,7 +31,7 @@ namespace PresentationLayer
            
         }
 
-        private void adminlogin_Load(object sender, EventArgs e)
+        private void Adminlogin_Load(object sender, EventArgs e)
         {
             songinfoinput1.Hide();
             panelUpdateAdmin.Hide();
@@ -76,7 +76,7 @@ namespace PresentationLayer
         }
 
         /*Sprecavanje unosa praznih polja*/
-        private void btnSignInHaveAccount_Click(object sender, EventArgs e)
+        private void BtnSignInHaveAccount_Click(object sender, EventArgs e)
         {
             Admin a = new Admin();
 
@@ -119,7 +119,7 @@ namespace PresentationLayer
 
 
         /*Prikaz panela za registraciju*/
-        private void btnRegisterNow_Click(object sender, EventArgs e)
+        private void BtnRegisterNow_Click(object sender, EventArgs e)
         {
             panelRegistration.Show();
 
@@ -130,7 +130,7 @@ namespace PresentationLayer
         }
 
         /*Ponovnim klikom na Sign In se vracamo nazad na logovanje*/
-        private void btnSignInNoFunction_Click(object sender, EventArgs e)
+        private void BtnSignInNoFunction_Click(object sender, EventArgs e)
         {
             panelRegistration.Hide();
             panelUpdateAdmin.Hide();
@@ -138,7 +138,7 @@ namespace PresentationLayer
         }
 
         /*Sprecavanje unosa praznih polja*/
-        private void btnRegisterNowCreate_Click(object sender, EventArgs e)
+        private void BtnRegisterNowCreate_Click(object sender, EventArgs e)
         {
             Admin a = new Admin();
 
@@ -185,7 +185,7 @@ namespace PresentationLayer
 
         }
 
-        private void btnUpdateAdminShowPanel_Click(object sender, EventArgs e)
+        private void BtnUpdateAdminShowPanel_Click(object sender, EventArgs e)
         {
             star9.Hide();
             star10.Hide();
@@ -236,7 +236,7 @@ namespace PresentationLayer
             }
         }
 
-        private void btnUpdateAdminInfo_Click_1(object sender, EventArgs e)
+        private void BtnUpdateAdminInfo_Click_1(object sender, EventArgs e)
         {
             Admin a = new Admin();
 
@@ -245,7 +245,7 @@ namespace PresentationLayer
             a.Username = textBoxUpdateAdminUsername.Text;
             a.Password = textBoxUpdateAdminPassword.Text;
 
-            a.Admin_Id = this.business.AuthenticateAdmin(adminlogin.adminIDGET).Admin_Id;
+            a.Admin_Id = this.business.AuthenticateAdmin(Adminlogin.adminIDGET).Admin_Id;
 
             if (this.business.UpdateAdmin(a) > 0)
             {

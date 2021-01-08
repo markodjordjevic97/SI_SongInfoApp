@@ -13,12 +13,12 @@ using BusinessLayer;
 
 namespace PresentationLayer
 {
-    public partial class songinfoinput : UserControl
+    public partial class Songinfoinput : UserControl
     {
         public BusinessSongs business;
         public BusinessPerfomer performer;
         public BusinessAdmin admin1;
-        public songinfoinput()
+        public Songinfoinput()
         {
             this.business = new BusinessSongs();
             this.performer = new BusinessPerfomer();
@@ -47,7 +47,7 @@ namespace PresentationLayer
             }
         }
         // Clear fileds
-        private void clearFields()
+        private void ClearFields()
         {
             textBoxTitle.Text = null;
             textBoxGenre.Text = null;
@@ -58,7 +58,7 @@ namespace PresentationLayer
             FillList();
         }
         // listBox
-        private void listBoxSongsForAdmin_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListBoxSongsForAdmin_SelectedIndexChanged(object sender, EventArgs e)
         {
             string fields = listBoxSongsForAdmin.SelectedItem.ToString();
             string[] array = fields.Split('-');
@@ -71,7 +71,7 @@ namespace PresentationLayer
         }
 
         //Insert song
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void BtnAdd_Click(object sender, EventArgs e)
         {
             Song s = new Song();
             Performer p = new Performer();
@@ -110,7 +110,7 @@ namespace PresentationLayer
                 tmp = this.performer.GetPerformer(p.Name, p.Surname);
 
                 //adminlogin.username, adminlogin.password
-                a = this.admin1.AuthenticateAdmin(adminlogin.adminIDGET);
+                a = this.admin1.AuthenticateAdmin(Adminlogin.adminIDGET);
 
                 if (this.business.InsertSong(tmp, a, s))
                 {
@@ -125,7 +125,7 @@ namespace PresentationLayer
            
         }
         //Update song
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void BtnUpdate_Click(object sender, EventArgs e)
         {
             Song s = new Song();
             Performer p = new Performer();
@@ -142,7 +142,7 @@ namespace PresentationLayer
             if (this.business.UpdateSong(s) > 0 && this.performer.UpdatePerformer(p))
             {
                 MessageBox.Show("Successfull song update!");
-                clearFields();
+                ClearFields();
             }
             else
             {
@@ -151,7 +151,7 @@ namespace PresentationLayer
   
         }
         //Delete song
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void BtnDelete_Click(object sender, EventArgs e)
         {
             Song s = new Song();
 

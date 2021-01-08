@@ -8,21 +8,27 @@ using DataAccessLayer.Models;
 
 namespace PresentationLayer
 {
-    public partial class newsongs : UserControl
+    public partial class Newsongs : UserControl
     {
 
        
         private readonly BusinessSongs blSong;
 
-        public newsongs()
+        public Newsongs()
         {
             InitializeComponent();
             blSong = new BusinessSongs();
+
+            
         }
 
-        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
+        private void Newsongs_Load(object sender, EventArgs e)
         {
-           
+            
+        }
+        private void BunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
 
         private void SongsItems(List<Song> listSong)
@@ -85,7 +91,7 @@ namespace PresentationLayer
         }
 
         // Sort method for songs by name
-        private void btnAZSort_Click(object sender, EventArgs e)
+        private void BtnAZSort_Click(object sender, EventArgs e)
         {
             var Songs = this.blSong.GetSongByName();
             var listLength = this.blSong.GetSongByName().Count;
@@ -101,7 +107,7 @@ namespace PresentationLayer
         }
 
         // Sort method for songs by rating
-        private void btnRatingSort_Click(object sender, EventArgs e)
+        private void BtnRatingSort_Click(object sender, EventArgs e)
         {
             var Songs = this.blSong.GetSongByRating();
             var listLength = this.blSong.GetSongByRating().Count;
@@ -117,7 +123,7 @@ namespace PresentationLayer
         }
 
         // Sort method for songs by date
-        private void btnDateSort_Click(object sender, EventArgs e)
+        private void BtnDateSort_Click(object sender, EventArgs e)
         {
             var Songs = this.blSong.GetSongByDate();
             var listLength = this.blSong.GetSongByDate().Count;
@@ -132,7 +138,7 @@ namespace PresentationLayer
             }
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void BtnSearch_Click(object sender, EventArgs e)
         {
             string searchValue = textBoxSearch.Text;
 
@@ -141,6 +147,6 @@ namespace PresentationLayer
             SongsItems(Songs);
         }
 
-        
+       
     }
 }
