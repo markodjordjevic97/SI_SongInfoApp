@@ -20,6 +20,8 @@ namespace PresentationLayer
             InitializeComponent();
             blSong = new BusinessSongs();
 
+          
+
             
         }
 
@@ -46,7 +48,7 @@ namespace PresentationLayer
             {
               
                // Song info
-               listSongs[i] = new SongCard();
+                listSongs[i] = new SongCard();
                 listSongs[i].Icon = Resources.music;
                 listSongs[i].IconRating = Resources.star;
                 listSongs[i].IconYoutube = Resources.youtube;
@@ -56,9 +58,9 @@ namespace PresentationLayer
                 listSongs[i].Genre = Songs[i].Genre;
                 listSongs[i].Performer = Songs[i].Performer.Name + Songs[i].Performer.Surname;
                 listSongs[i].Rating = Songs[i].Jim_Rating;
-
+                
                 // Add to flow panel
-               flowListSongs.Controls.Add(listSongs[i]);
+                flowListSongs.Controls.Add(listSongs[i]);
                
             }
         }

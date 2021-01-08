@@ -51,6 +51,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.GetAllSongs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRatingSort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDateSort)).BeginInit();
+
+            this.flowListSongs.SuspendLayout();
+
             ((System.ComponentModel.ISupportInitialize)(this.btnAZSort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
@@ -198,15 +201,24 @@
             // flowListSongs
             // 
             this.flowListSongs.AutoScroll = true;
+
+            this.flowListSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
+            this.flowListSongs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowListSongs.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowListSongs.Location = new System.Drawing.Point(0, 142);
+
             this.flowListSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
             this.flowListSongs.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowListSongs.BackgroundImage")));
             this.flowListSongs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flowListSongs.Location = new System.Drawing.Point(0, 114);
+
             this.flowListSongs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowListSongs.Name = "flowListSongs";
             this.flowListSongs.Size = new System.Drawing.Size(948, 519);
             this.flowListSongs.TabIndex = 3;
             // 
+            // pictureBox1
+ 
             // btnAZSort
             // 
             this.btnAZSort.BackColor = System.Drawing.Color.Transparent;
@@ -255,7 +267,11 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "A-Z";
             // 
+
+            // newsongs
+
             // Newsongs
+
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -270,6 +286,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.GetAllSongs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRatingSort)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDateSort)).EndInit();
+
+            this.flowListSongs.ResumeLayout(false);
+
+
             ((System.ComponentModel.ISupportInitialize)(this.btnAZSort)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
