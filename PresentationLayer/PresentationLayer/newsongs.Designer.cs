@@ -40,7 +40,6 @@
             this.btnDateSort = new Bunifu.Framework.UI.BunifuImageButton();
             this.label3 = new System.Windows.Forms.Label();
             this.flowListSongs = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAZSort = new Bunifu.Framework.UI.BunifuImageButton();
             this.textBoxSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,11 +51,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.GetAllSongs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRatingSort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDateSort)).BeginInit();
-<<<<<<< HEAD
+
             this.flowListSongs.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-=======
->>>>>>> origin/development
+
             ((System.ComponentModel.ISupportInitialize)(this.btnAZSort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
@@ -204,33 +201,24 @@
             // flowListSongs
             // 
             this.flowListSongs.AutoScroll = true;
-<<<<<<< HEAD
+
             this.flowListSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
             this.flowListSongs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowListSongs.Controls.Add(this.pictureBox1);
             this.flowListSongs.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowListSongs.Location = new System.Drawing.Point(0, 142);
-=======
+
             this.flowListSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
             this.flowListSongs.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowListSongs.BackgroundImage")));
             this.flowListSongs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flowListSongs.Location = new System.Drawing.Point(0, 114);
->>>>>>> origin/development
+
             this.flowListSongs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowListSongs.Name = "flowListSongs";
             this.flowListSongs.Size = new System.Drawing.Size(948, 519);
             this.flowListSongs.TabIndex = 3;
             // 
             // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1060, 643);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
+ 
             // btnAZSort
             // 
             this.btnAZSort.BackColor = System.Drawing.Color.Transparent;
@@ -279,11 +267,11 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "A-Z";
             // 
-<<<<<<< HEAD
+
             // newsongs
-=======
+
             // Newsongs
->>>>>>> origin/development
+
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -298,11 +286,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.GetAllSongs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRatingSort)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDateSort)).EndInit();
-<<<<<<< HEAD
+
             this.flowListSongs.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-=======
->>>>>>> origin/development
+
+
             ((System.ComponentModel.ISupportInitialize)(this.btnAZSort)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();

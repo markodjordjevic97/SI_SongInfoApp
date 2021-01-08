@@ -56,7 +56,7 @@ namespace PresentationLayer
                 listSongs[i].Genre = Songs[i].Genre;
                 listSongs[i].Performer = Songs[i].Performer.Name + Songs[i].Performer.Surname;
                 listSongs[i].Rating = Songs[i].Jim_Rating;
-               
+                
                 // Add to flow panel
                 flowListSongs.Controls.Add(listSongs[i]);
                
