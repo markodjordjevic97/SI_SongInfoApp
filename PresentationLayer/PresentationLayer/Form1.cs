@@ -35,6 +35,7 @@ namespace PresentationLayer
 
             btnEditSongs.Hide();
             genres1.Hide();
+           
 
 
           
@@ -127,6 +128,7 @@ namespace PresentationLayer
                 
                 logo.Hide();
                 btnHamburger.Location = new Point(10, 12);
+                
                 btnNewSongs.Text = " ";               
                 btnGenres.Text = " ";
                 btnAdmin.Text = " ";

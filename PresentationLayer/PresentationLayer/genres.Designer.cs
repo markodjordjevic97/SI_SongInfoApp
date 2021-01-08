@@ -68,9 +68,10 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(948, 633);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1066, 791);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
             // btnChill
@@ -78,10 +79,10 @@
             this.btnChill.BackgroundImage = global::PresentationLayer.Properties.Resources.geio_tischler_XbPG4k_KUwE_unsplash_min;
             this.btnChill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnChill.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
-            this.btnChill.Location = new System.Drawing.Point(687, 355);
+            this.btnChill.Location = new System.Drawing.Point(773, 444);
             this.btnChill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChill.Name = "btnChill";
-            this.btnChill.Size = new System.Drawing.Size(197, 147);
+            this.btnChill.Size = new System.Drawing.Size(222, 184);
             this.btnChill.TabIndex = 18;
             this.btnChill.Text = "Chill";
             this.btnChill.UseVisualStyleBackColor = true;
@@ -92,10 +93,10 @@
             this.btnJazz.BackgroundImage = global::PresentationLayer.Properties.Resources.amber_kipp_x1C1V82Pnkc_unsplash_min;
             this.btnJazz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnJazz.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
-            this.btnJazz.Location = new System.Drawing.Point(383, 355);
+            this.btnJazz.Location = new System.Drawing.Point(431, 444);
             this.btnJazz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnJazz.Name = "btnJazz";
-            this.btnJazz.Size = new System.Drawing.Size(197, 147);
+            this.btnJazz.Size = new System.Drawing.Size(222, 184);
             this.btnJazz.TabIndex = 17;
             this.btnJazz.Text = " Jazz";
             this.btnJazz.UseVisualStyleBackColor = true;
@@ -106,10 +107,10 @@
             this.btnMotivation.BackgroundImage = global::PresentationLayer.Properties.Resources.jordan_whitfield_sm3Ub_IJKQg_unsplash_min;
             this.btnMotivation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMotivation.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
-            this.btnMotivation.Location = new System.Drawing.Point(74, 355);
+            this.btnMotivation.Location = new System.Drawing.Point(83, 444);
             this.btnMotivation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMotivation.Name = "btnMotivation";
-            this.btnMotivation.Size = new System.Drawing.Size(197, 147);
+            this.btnMotivation.Size = new System.Drawing.Size(222, 184);
             this.btnMotivation.TabIndex = 16;
             this.btnMotivation.Text = "Motivation";
             this.btnMotivation.UseVisualStyleBackColor = true;
@@ -121,10 +122,10 @@
             this.btnRock.BackgroundImage = global::PresentationLayer.Properties.Resources.hector_bermudez_iIWDt0fXa84_unsplash;
             this.btnRock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRock.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
-            this.btnRock.Location = new System.Drawing.Point(687, 104);
+            this.btnRock.Location = new System.Drawing.Point(773, 130);
             this.btnRock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRock.Name = "btnRock";
-            this.btnRock.Size = new System.Drawing.Size(197, 147);
+            this.btnRock.Size = new System.Drawing.Size(222, 184);
             this.btnRock.TabIndex = 15;
             this.btnRock.Text = "Rock";
             this.btnRock.UseVisualStyleBackColor = false;
@@ -136,10 +137,10 @@
             this.btnFolk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFolk.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.btnFolk.ForeColor = System.Drawing.Color.Olive;
-            this.btnFolk.Location = new System.Drawing.Point(384, 110);
+            this.btnFolk.Location = new System.Drawing.Point(432, 138);
             this.btnFolk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnFolk.Name = "btnFolk";
-            this.btnFolk.Size = new System.Drawing.Size(197, 147);
+            this.btnFolk.Size = new System.Drawing.Size(222, 184);
             this.btnFolk.TabIndex = 14;
             this.btnFolk.Text = "Folk";
             this.btnFolk.UseVisualStyleBackColor = true;
@@ -152,10 +153,10 @@
             this.btnPop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPop.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.btnPop.ForeColor = System.Drawing.Color.Goldenrod;
-            this.btnPop.Location = new System.Drawing.Point(74, 104);
+            this.btnPop.Location = new System.Drawing.Point(83, 130);
             this.btnPop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPop.Name = "btnPop";
-            this.btnPop.Size = new System.Drawing.Size(197, 147);
+            this.btnPop.Size = new System.Drawing.Size(222, 184);
             this.btnPop.TabIndex = 12;
             this.btnPop.Text = "Pop";
             this.btnPop.UseVisualStyleBackColor = false;
@@ -167,9 +168,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(816, 515);
+            this.label4.Location = new System.Drawing.Point(918, 644);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 28);
+            this.label4.Size = new System.Drawing.Size(65, 32);
             this.label4.TabIndex = 11;
             this.label4.Text = "Chill";
             // 
@@ -179,9 +180,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(525, 515);
+            this.label5.Location = new System.Drawing.Point(591, 644);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 28);
+            this.label5.Size = new System.Drawing.Size(63, 32);
             this.label5.TabIndex = 10;
             this.label5.Text = "Jazz";
             // 
@@ -191,9 +192,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(142, 515);
+            this.label6.Location = new System.Drawing.Point(160, 644);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 28);
+            this.label6.Size = new System.Drawing.Size(141, 32);
             this.label6.TabIndex = 9;
             this.label6.Text = "Motivation";
             // 
@@ -203,9 +204,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(816, 260);
+            this.label3.Location = new System.Drawing.Point(918, 325);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 28);
+            this.label3.Size = new System.Drawing.Size(70, 32);
             this.label3.TabIndex = 8;
             this.label3.Text = "Rock";
             // 
@@ -215,9 +216,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(525, 260);
+            this.label2.Location = new System.Drawing.Point(591, 325);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 28);
+            this.label2.Size = new System.Drawing.Size(62, 32);
             this.label2.TabIndex = 7;
             this.label2.Text = "Folk";
             // 
@@ -227,29 +228,33 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(212, 260);
+            this.label1.Location = new System.Drawing.Point(238, 325);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 28);
+            this.label1.Size = new System.Drawing.Size(59, 32);
             this.label1.TabIndex = 6;
             this.label1.Text = "Pop";
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(948, 633);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(15, 20, 20, 20);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1066, 791);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // Genres
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Genres";
-            this.Size = new System.Drawing.Size(948, 633);
+            this.Size = new System.Drawing.Size(1066, 791);
             this.Load += new System.EventHandler(this.Genres_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
