@@ -13,6 +13,7 @@ namespace PresentationLayer
 
        
         private readonly BusinessSongs blSong;
+        public string SelectedGenre;
 
         public Newsongs()
         {

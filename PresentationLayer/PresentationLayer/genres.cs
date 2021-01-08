@@ -32,6 +32,7 @@ namespace PresentationLayer
         private void SongsItems(List<Song> listSong)
         {
 
+
             // Mora jovan da mi prosledi static polje od njegov event
             FillList();
             var Songs = listSong;
@@ -87,5 +88,7 @@ namespace PresentationLayer
             flowLayoutPanel1.Show();
             flowLayoutPanel1.BringToFront();
         }
+
+
     }
 }
