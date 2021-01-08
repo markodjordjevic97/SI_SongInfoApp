@@ -37,7 +37,7 @@ namespace DataAccessLayer
                 return result;
             }
         }
-        public Performer GetPerformerId(string name, string surname)
+        public Performer GetPerformer(string name, string surname)
         {
             using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))
             {

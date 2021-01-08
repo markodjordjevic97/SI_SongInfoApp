@@ -15,14 +15,14 @@ namespace PresentationLayer
 {
     public partial class Songinfoinput : UserControl
     {
-        public BusinessSongs business;
-        public BusinessPerfomer performer;
-        public BusinessAdmin admin1;
+        public BusinessSongs businessSong;
+        public BusinessPerfomer businessPerformer;
+        public BusinessAdmin businessAdmin;
         public Songinfoinput()
         {
-            this.business = new BusinessSongs();
-            this.performer = new BusinessPerfomer();
-            this.admin1 = new BusinessAdmin();
+            this.businessSong = new BusinessSongs();
+            this.businessPerformer = new BusinessPerfomer();
+            this.businessAdmin = new BusinessAdmin();
             InitializeComponent();
             star3.Hide();
             star4.Hide();
@@ -33,13 +33,11 @@ namespace PresentationLayer
             FillList();
         }
 
-        
-
         //Filling list box of songs for admin
         private void FillList()
         {
             listBoxSongsForAdmin.Items.Clear();
-            List<Song> list = this.business.GetAllSongs();
+            List<Song> list = this.businessSong.GetAllSongs();
 
             foreach (Song item in list)
             {
@@ -76,7 +74,6 @@ namespace PresentationLayer
             Song s = new Song();
             Performer p = new Performer();
             Admin a = new Admin();
-            Performer  tmp = new Performer();
 
             if (textBoxGenre.Text.Length == 0 || textBoxTitle.Text.Length == 0 ||
                 textBoxPerfName.Text.Length == 0 || textBoxPerfSurname.Text.Length == 0 || textBoxURLYoutube.Text.Length==0)  
@@ -98,21 +95,21 @@ namespace PresentationLayer
                 s.Youtube_Url = textBoxURLYoutube.Text;
                 s.Jim_Rating = Convert.ToDecimal(textBoxRatingJIM.Text);
                 s.Picture_Url = " ";
-                p.Name = textBoxPerfName.Text;
-                p.Surname = textBoxPerfSurname.Text;
+                var name = textBoxPerfName.Text;
+                var surname = textBoxPerfSurname.Text;
 
-                // Insert perfomer
-                int idk = this.performer.InsertPerformer(p.Name, p.Surname);
-
-                
-                // Get Perfomer
-
-                tmp = this.performer.GetPerformer(p.Name, p.Surname);
+                // Check if Perfomers Exists
+                Performer performer = this.businessPerformer.GetPerformer(name, surname);
+                if(performer.Performer_Id < 1)
+                {
+                    int result = this.businessPerformer.InsertPerformer(name, surname);
+                    
+                }
 
                 //adminlogin.username, adminlogin.password
-                a = this.admin1.AuthenticateAdmin(Adminlogin.adminIDGET);
+                a = this.businessAdmin.AuthenticateAdmin(Adminlogin.adminIDGET);
 
-                if (this.business.InsertSong(tmp, a, s))
+                if (this.businessSong.InsertSong(performer, a, s))
                 {
                     MessageBox.Show("Successfull input of song!");
                     FillList();
@@ -139,7 +136,7 @@ namespace PresentationLayer
             p.Name = textBoxPerfName.Text;
             p.Surname = textBoxPerfSurname.Text;
             //(this.performer.UpdatePerformer(p))
-            if (this.business.UpdateSong(s) > 0 && this.performer.UpdatePerformer(p))
+            if (this.businessSong.UpdateSong(s) > 0 && this.businessPerformer.UpdatePerformer(p))
             {
                 MessageBox.Show("Successfull song update!");
                 ClearFields();
@@ -157,7 +154,7 @@ namespace PresentationLayer
 
             s.Song_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split('-')[0]);
 
-            if(this.business.DeleteSong(s) > 0)
+            if(this.businessSong.DeleteSong(s) > 0)
             {
                 MessageBox.Show("Successfull delete!");
                 FillList();
