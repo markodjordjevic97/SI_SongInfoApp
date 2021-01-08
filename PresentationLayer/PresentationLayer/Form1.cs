@@ -25,6 +25,8 @@ namespace PresentationLayer
             
         }
 
+        
+
         private void Form1_Load(object sender, EventArgs e)
         {
             newsongs1.Show();
@@ -40,7 +42,7 @@ namespace PresentationLayer
 
         
 
-        private void btnNewSongs_Click(object sender, EventArgs e)
+        private void BtnNewSongs_Click(object sender, EventArgs e)
         {
             newsongs1.Show();
             adminlogin1.Hide();
@@ -48,17 +50,26 @@ namespace PresentationLayer
             genres1.Hide();
 
         }
-        private void btnGenres_Click(object sender, EventArgs e)
+        private void BtnGenres_Click(object sender, EventArgs e)
         {
+           
+
+
             newsongs1.Hide();
+            newsongs1.SendToBack();
             adminlogin1.Hide();
             songinfoinput1.Hide();
-            genres1.Show();   
+            genres1.Show();
+
+            genres1.flowLayoutPanel1.Hide();
+
+            
+           
         }
 
-        private void btnAdmin_Click(object sender, EventArgs e)
+        private void BtnAdmin_Click(object sender, EventArgs e)
         {
-            adminlogin al = new adminlogin();
+            Adminlogin al = new Adminlogin();
             newsongs1.Hide();
             adminlogin1.Show();
             songinfoinput1.Hide();
@@ -67,16 +78,16 @@ namespace PresentationLayer
 
         }
 
-        private void btnContact_Click(object sender, EventArgs e)
+        private void BtnContact_Click(object sender, EventArgs e)
         {
            
         }
 
-        private void btnHelp_Click(object sender, EventArgs e)
+        private void BtnHelp_Click(object sender, EventArgs e)
         {
 
         }
-        private void btnEditSongs_Click(object sender, EventArgs e)
+        private void BtnEditSongs_Click(object sender, EventArgs e)
         {
             
             newsongs1.Hide();
@@ -85,16 +96,17 @@ namespace PresentationLayer
             btnEditSongs.Show();
             genres1.Hide();
         }
-        private void btnExit_Click(object sender, EventArgs e)
+        private void BtnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnHamburger_Click(object sender, EventArgs e)
+        private void BtnHamburger_Click(object sender, EventArgs e)
         {
+           
             if (panelMenu.Width == 70)
             {
-
+                
                 panelMenu.Width = 190;
                 logo.Show();
                 btnHamburger.Location = new Point(140, 12);
@@ -111,6 +123,8 @@ namespace PresentationLayer
             else
             {
                 panelMenu.Width = 70;
+                
+                
                 logo.Hide();
                 btnHamburger.Location = new Point(10, 12);
                 btnNewSongs.Text = " ";               
@@ -120,6 +134,8 @@ namespace PresentationLayer
                 btnHelp.Text = " ";
                 btnEditSongs.Text = " ";
                 btnExit.Text = " ";
+                
+                
                 
             }
         }

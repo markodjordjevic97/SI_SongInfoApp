@@ -99,7 +99,7 @@ namespace PresentationLayer
             this.ForeColor = Color.White;
         }
 
-        private void lblYoutubeClick_Click(object sender, EventArgs e)
+        private void LblYoutubeClick_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(Youtube_hyperlink);
         }

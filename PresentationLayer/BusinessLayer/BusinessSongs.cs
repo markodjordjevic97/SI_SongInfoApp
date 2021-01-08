@@ -102,5 +102,10 @@ namespace BusinessLayer
         {
             return this.songRepository.GetAllSongs().Where(song => song.Genre.Equals("Pop")).ToList();
         }
+
+        public List<Song> GetSongsByGenre(string genre)
+        {
+            return this.songRepository.GetAllSongs().Where(song => song.Genre.Equals(genre)).ToList();
+        }
     }
 }
