@@ -73,6 +73,26 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_left_solid_min {
+            get {
+                object obj = ResourceManager.GetObject("arrow_left_solid_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrow_right_solid_min {
+            get {
+                object obj = ResourceManager.GetObject("arrow_right_solid_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendar_regular_min {
             get {
                 object obj = ResourceManager.GetObject("calendar_regular_min", resourceCulture);
@@ -133,6 +153,26 @@ namespace PresentationLayer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap i_min {
+            get {
+                object obj = ResourceManager.GetObject("i_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap j_min {
+            get {
+                object obj = ResourceManager.GetObject("j_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap jordan_whitfield_sm3Ub_IJKQg_unsplash_min {
             get {
                 object obj = ResourceManager.GetObject("jordan_whitfield_sm3Ub_IJKQg_unsplash_min", resourceCulture);
@@ -146,6 +186,16 @@ namespace PresentationLayer.Properties {
         internal static System.Drawing.Bitmap konstantin_aal_Otx5FHbr3OE_unsplash_min {
             get {
                 object obj = ResourceManager.GetObject("konstantin_aal_Otx5FHbr3OE_unsplash_min", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap m_min {
+            get {
+                object obj = ResourceManager.GetObject("m_min", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

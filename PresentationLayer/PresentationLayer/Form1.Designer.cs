@@ -38,17 +38,16 @@
             this.btnGenres = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnNewSongs = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnHamburger = new Bunifu.Framework.UI.BunifuImageButton();
             this.logo = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.contact1 = new PresentationLayer.contact();
             this.genres1 = new PresentationLayer.Genres();
             this.adminlogin1 = new PresentationLayer.Adminlogin();
             this.songinfoinput1 = new PresentationLayer.Songinfoinput();
             this.newsongs1 = new PresentationLayer.Newsongs();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHamburger)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.bunifuGradientPanel3.SuspendLayout();
             this.SuspendLayout();
@@ -340,7 +339,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.panel1.Controls.Add(this.btnHamburger);
             this.panel1.Controls.Add(this.logo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -348,27 +346,13 @@
             this.panel1.Size = new System.Drawing.Size(245, 152);
             this.panel1.TabIndex = 2;
             // 
-            // btnHamburger
-            // 
-            this.btnHamburger.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnHamburger.Image = ((System.Drawing.Image)(resources.GetObject("btnHamburger.Image")));
-            this.btnHamburger.ImageActive = null;
-            this.btnHamburger.Location = new System.Drawing.Point(178, 12);
-            this.btnHamburger.Name = "btnHamburger";
-            this.btnHamburger.Size = new System.Drawing.Size(57, 52);
-            this.btnHamburger.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnHamburger.TabIndex = 1;
-            this.btnHamburger.TabStop = false;
-            this.btnHamburger.Zoom = 10;
-            this.btnHamburger.Click += new System.EventHandler(this.BtnHamburger_Click);
-            // 
             // logo
             // 
             this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
             this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logo.Location = new System.Drawing.Point(3, 12);
+            this.logo.Location = new System.Drawing.Point(25, 12);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(169, 117);
+            this.logo.Size = new System.Drawing.Size(185, 117);
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
             // 
@@ -391,6 +375,7 @@
             this.bunifuGradientPanel3.BackColor = System.Drawing.Color.White;
             this.bunifuGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel3.BackgroundImage")));
             this.bunifuGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel3.Controls.Add(this.contact1);
             this.bunifuGradientPanel3.Controls.Add(this.genres1);
             this.bunifuGradientPanel3.Controls.Add(this.adminlogin1);
             this.bunifuGradientPanel3.Controls.Add(this.songinfoinput1);
@@ -403,15 +388,23 @@
             this.bunifuGradientPanel3.Location = new System.Drawing.Point(245, 0);
             this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
             this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(958, 630);
+            this.bunifuGradientPanel3.Size = new System.Drawing.Size(961, 630);
             this.bunifuGradientPanel3.TabIndex = 1;
+            // 
+            // contact1
+            // 
+            this.contact1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contact1.Location = new System.Drawing.Point(0, 0);
+            this.contact1.Name = "contact1";
+            this.contact1.Size = new System.Drawing.Size(961, 630);
+            this.contact1.TabIndex = 4;
             // 
             // genres1
             // 
             this.genres1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.genres1.Location = new System.Drawing.Point(0, 0);
             this.genres1.Name = "genres1";
-            this.genres1.Size = new System.Drawing.Size(958, 630);
+            this.genres1.Size = new System.Drawing.Size(961, 630);
             this.genres1.TabIndex = 3;
             // 
             // adminlogin1
@@ -420,7 +413,7 @@
             this.adminlogin1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.adminlogin1.Location = new System.Drawing.Point(0, 0);
             this.adminlogin1.Name = "adminlogin1";
-            this.adminlogin1.Size = new System.Drawing.Size(958, 630);
+            this.adminlogin1.Size = new System.Drawing.Size(961, 630);
             this.adminlogin1.TabIndex = 2;
             // 
             // songinfoinput1
@@ -428,7 +421,7 @@
             this.songinfoinput1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.songinfoinput1.Location = new System.Drawing.Point(0, 0);
             this.songinfoinput1.Name = "songinfoinput1";
-            this.songinfoinput1.Size = new System.Drawing.Size(958, 630);
+            this.songinfoinput1.Size = new System.Drawing.Size(961, 630);
             this.songinfoinput1.TabIndex = 1;
             // 
             // newsongs1
@@ -437,7 +430,7 @@
             this.newsongs1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.newsongs1.Location = new System.Drawing.Point(0, 0);
             this.newsongs1.Name = "newsongs1";
-            this.newsongs1.Size = new System.Drawing.Size(958, 630);
+            this.newsongs1.Size = new System.Drawing.Size(961, 630);
             this.newsongs1.TabIndex = 0;
             // 
             // Form1
@@ -445,16 +438,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1203, 630);
+            this.ClientSize = new System.Drawing.Size(1206, 630);
             this.ControlBox = false;
             this.Controls.Add(this.bunifuGradientPanel3);
             this.Controls.Add(this.panelMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Song Info App";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnHamburger)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.bunifuGradientPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -472,7 +465,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnGenres;
         private Bunifu.Framework.UI.BunifuFlatButton btnNewSongs;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuImageButton btnHamburger;
         private System.Windows.Forms.PictureBox logo;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
         private Newsongs newsongs1;
@@ -480,5 +472,6 @@
         private Adminlogin adminlogin1;
         private Bunifu.Framework.UI.BunifuFlatButton btnEditSongs;
         private Genres genres1;
+        private contact contact1;
     }
 }

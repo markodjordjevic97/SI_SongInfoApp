@@ -35,6 +35,7 @@ namespace PresentationLayer
 
             btnEditSongs.Hide();
             genres1.Hide();
+            contact1.Hide();
            
 
 
@@ -49,6 +50,7 @@ namespace PresentationLayer
             adminlogin1.Hide();
             songinfoinput1.Hide();
             genres1.Hide();
+            contact1.Hide();
 
         }
         private void BtnGenres_Click(object sender, EventArgs e)
@@ -63,9 +65,10 @@ namespace PresentationLayer
             genres1.Show();
 
             genres1.flowLayoutPanel1.Hide();
+            contact1.Hide();
 
-            
-           
+
+
         }
 
         private void BtnAdmin_Click(object sender, EventArgs e)
@@ -75,13 +78,21 @@ namespace PresentationLayer
             adminlogin1.Show();
             songinfoinput1.Hide();
             genres1.Hide();
+            contact1.Hide();
 
 
         }
 
         private void BtnContact_Click(object sender, EventArgs e)
         {
-           
+            newsongs1.Hide();
+            newsongs1.SendToBack();
+            adminlogin1.Hide();
+            songinfoinput1.Hide();
+            genres1.Show();
+
+            genres1.flowLayoutPanel1.Hide();
+            contact1.Show();
         }
 
         private void BtnHelp_Click(object sender, EventArgs e)
@@ -102,12 +113,12 @@ namespace PresentationLayer
             this.Close();
         }
 
-        private void BtnHamburger_Click(object sender, EventArgs e)
+       /* private void BtnHamburger_Click(object sender, EventArgs e)
         {
            
             if (panelMenu.Width == 70)
             {
-                
+
                 panelMenu.Width = 190;
                 logo.Show();
                 btnHamburger.Location = new Point(140, 12);
@@ -140,7 +151,7 @@ namespace PresentationLayer
                 
                 
             }
-        }
+        }*/
 
      
     }
