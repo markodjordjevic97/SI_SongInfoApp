@@ -103,7 +103,7 @@ namespace PresentationLayer
                 if(performer.Performer_Id < 1)
                 {
                     int result = this.businessPerformer.InsertPerformer(name, surname);
-                    
+                    performer = this.businessPerformer.GetPerformer(name, surname);
                 }
 
                 //adminlogin.username, adminlogin.password
