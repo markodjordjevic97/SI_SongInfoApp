@@ -42,10 +42,10 @@
             this.logo = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.genres1 = new PresentationLayer.Genres();
             this.adminlogin1 = new PresentationLayer.Adminlogin();
             this.songinfoinput1 = new PresentationLayer.Songinfoinput();
             this.newsongs1 = new PresentationLayer.Newsongs();
-            this.genres1 = new PresentationLayer.Genres();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHamburger)).BeginInit();
@@ -406,6 +406,14 @@
             this.bunifuGradientPanel3.Size = new System.Drawing.Size(958, 630);
             this.bunifuGradientPanel3.TabIndex = 1;
             // 
+            // genres1
+            // 
+            this.genres1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.genres1.Location = new System.Drawing.Point(0, 0);
+            this.genres1.Name = "genres1";
+            this.genres1.Size = new System.Drawing.Size(958, 630);
+            this.genres1.TabIndex = 3;
+            // 
             // adminlogin1
             // 
             this.adminlogin1.BackColor = System.Drawing.Color.Transparent;
@@ -425,19 +433,12 @@
             // 
             // newsongs1
             // 
+            this.newsongs1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
             this.newsongs1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.newsongs1.Location = new System.Drawing.Point(0, 0);
             this.newsongs1.Name = "newsongs1";
             this.newsongs1.Size = new System.Drawing.Size(958, 630);
             this.newsongs1.TabIndex = 0;
-            // 
-            // genres1
-            // 
-            this.genres1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.genres1.Location = new System.Drawing.Point(0, 0);
-            this.genres1.Name = "genres1";
-            this.genres1.Size = new System.Drawing.Size(958, 630);
-            this.genres1.TabIndex = 3;
             // 
             // Form1
             // 
