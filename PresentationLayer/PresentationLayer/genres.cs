@@ -31,38 +31,13 @@ namespace PresentationLayer
            
         }
 
-        private void btnPop_Click(object sender, EventArgs e)
+        private void btnClicked(object sender, EventArgs e)
         {
-           
-            
-        }
+            Button b = (Button)sender;
+            var genre = b.Text;
 
-        private void btnFolk_Click_1(object sender, EventArgs e)
-        {
-           
-           
+            newsongs newSongPanel = new newsongs();
+            newSongPanel.SelectedGenre = genre;
         }
-
-        private void btnRock_Click_1(object sender, EventArgs e)
-        {
-        
-        }
-
-        private void btnMotivation_Click_1(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void btnJazz_Click_1(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btnChill_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
-       
     }
 }

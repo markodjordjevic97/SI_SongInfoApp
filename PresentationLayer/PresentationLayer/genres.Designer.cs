@@ -82,7 +82,7 @@
             this.btnChill.Size = new System.Drawing.Size(197, 147);
             this.btnChill.TabIndex = 18;
             this.btnChill.UseVisualStyleBackColor = true;
-            this.btnChill.Click += new System.EventHandler(this.btnChill_Click_1);
+            this.btnChill.Click += new System.EventHandler(this.btnClicked);
             // 
             // btnJazz
             // 
@@ -94,7 +94,7 @@
             this.btnJazz.Size = new System.Drawing.Size(197, 147);
             this.btnJazz.TabIndex = 17;
             this.btnJazz.UseVisualStyleBackColor = true;
-            this.btnJazz.Click += new System.EventHandler(this.btnJazz_Click_1);
+            this.btnJazz.Click += new System.EventHandler(this.btnClicked);
             // 
             // btnMotivation
             // 
@@ -106,7 +106,7 @@
             this.btnMotivation.Size = new System.Drawing.Size(197, 147);
             this.btnMotivation.TabIndex = 16;
             this.btnMotivation.UseVisualStyleBackColor = true;
-            this.btnMotivation.Click += new System.EventHandler(this.btnMotivation_Click_1);
+            this.btnMotivation.Click += new System.EventHandler(this.btnClicked);
             // 
             // btnRock
             // 
@@ -119,7 +119,7 @@
             this.btnRock.Size = new System.Drawing.Size(197, 147);
             this.btnRock.TabIndex = 15;
             this.btnRock.UseVisualStyleBackColor = false;
-            this.btnRock.Click += new System.EventHandler(this.btnRock_Click_1);
+            this.btnRock.Click += new System.EventHandler(this.btnClicked);
             // 
             // btnFolk
             // 
@@ -131,7 +131,7 @@
             this.btnFolk.Size = new System.Drawing.Size(197, 147);
             this.btnFolk.TabIndex = 14;
             this.btnFolk.UseVisualStyleBackColor = true;
-            this.btnFolk.Click += new System.EventHandler(this.btnFolk_Click_1);
+            this.btnFolk.Click += new System.EventHandler(this.btnClicked);
             // 
             // btnPop
             // 
@@ -143,7 +143,7 @@
             this.btnPop.Size = new System.Drawing.Size(197, 147);
             this.btnPop.TabIndex = 12;
             this.btnPop.UseVisualStyleBackColor = true;
-            this.btnPop.Click += new System.EventHandler(this.btnPop_Click);
+            this.btnPop.Click += new System.EventHandler(this.btnClicked);
             // 
             // label4
             // 
