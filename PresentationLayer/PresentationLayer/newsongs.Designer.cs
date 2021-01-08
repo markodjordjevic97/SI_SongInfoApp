@@ -1,6 +1,6 @@
 ﻿namespace PresentationLayer
 {
-    partial class newsongs
+    partial class Newsongs
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(newsongs));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Newsongs));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.label5 = new System.Windows.Forms.Label();
@@ -61,6 +61,7 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.flowListSongs);
             this.bunifuGradientPanel1.Controls.Add(this.btnSearch);
             this.bunifuGradientPanel1.Controls.Add(this.label5);
             this.bunifuGradientPanel1.Controls.Add(this.GetAllSongs);
@@ -69,7 +70,6 @@
             this.bunifuGradientPanel1.Controls.Add(this.btnRatingSort);
             this.bunifuGradientPanel1.Controls.Add(this.btnDateSort);
             this.bunifuGradientPanel1.Controls.Add(this.label3);
-            this.bunifuGradientPanel1.Controls.Add(this.flowListSongs);
             this.bunifuGradientPanel1.Controls.Add(this.btnAZSort);
             this.bunifuGradientPanel1.Controls.Add(this.textBoxSearch);
             this.bunifuGradientPanel1.Controls.Add(this.label2);
@@ -83,10 +83,11 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(948, 633);
             this.bunifuGradientPanel1.TabIndex = 0;
-            this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
+            this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.BunifuGradientPanel1_Paint);
             // 
             // btnSearch
             // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Image = global::PresentationLayer.Properties.Resources.search_solid_min;
@@ -98,7 +99,7 @@
             this.btnSearch.TabIndex = 13;
             this.btnSearch.TabStop = false;
             this.btnSearch.Zoom = 10;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // label5
             // 
@@ -165,7 +166,7 @@
             this.btnRatingSort.TabIndex = 5;
             this.btnRatingSort.TabStop = false;
             this.btnRatingSort.Zoom = 10;
-            this.btnRatingSort.Click += new System.EventHandler(this.btnRatingSort_Click);
+            this.btnRatingSort.Click += new System.EventHandler(this.BtnRatingSort_Click);
             // 
             // btnDateSort
             // 
@@ -180,7 +181,7 @@
             this.btnDateSort.TabIndex = 6;
             this.btnDateSort.TabStop = false;
             this.btnDateSort.Zoom = 10;
-            this.btnDateSort.Click += new System.EventHandler(this.btnDateSort_Click);
+            this.btnDateSort.Click += new System.EventHandler(this.BtnDateSort_Click);
             // 
             // label3
             // 
@@ -197,9 +198,9 @@
             // flowListSongs
             // 
             this.flowListSongs.AutoScroll = true;
-            this.flowListSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
-            this.flowListSongs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.flowListSongs.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowListSongs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
+            this.flowListSongs.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowListSongs.BackgroundImage")));
+            this.flowListSongs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flowListSongs.Location = new System.Drawing.Point(0, 114);
             this.flowListSongs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowListSongs.Name = "flowListSongs";
@@ -219,11 +220,11 @@
             this.btnAZSort.TabIndex = 4;
             this.btnAZSort.TabStop = false;
             this.btnAZSort.Zoom = 10;
-            this.btnAZSort.Click += new System.EventHandler(this.btnAZSort_Click);
+            this.btnAZSort.Click += new System.EventHandler(this.BtnAZSort_Click);
             // 
             // textBoxSearch
             // 
-            this.textBoxSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.textBoxSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.textBoxSearch.BorderColorFocused = System.Drawing.Color.Transparent;
             this.textBoxSearch.BorderColorIdle = System.Drawing.Color.Transparent;
@@ -254,13 +255,15 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "A-Z";
             // 
-            // newsongs
+            // Newsongs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(79)))), ((int)(((byte)(86)))));
             this.Controls.Add(this.bunifuGradientPanel1);
-            this.Name = "newsongs";
+            this.Name = "Newsongs";
             this.Size = new System.Drawing.Size(948, 633);
+            this.Load += new System.EventHandler(this.Newsongs_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
@@ -280,7 +283,7 @@
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuMetroTextbox textBoxSearch;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.FlowLayoutPanel flowListSongs;
+        public System.Windows.Forms.FlowLayoutPanel flowListSongs;
         private System.Windows.Forms.BindingSource bindingSource2;
         private System.Windows.Forms.BindingSource bindingSource3;
         private Bunifu.Framework.UI.BunifuImageButton btnRatingSort;
@@ -293,5 +296,6 @@
         private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuImageButton GetAllSongs;
         private Bunifu.Framework.UI.BunifuImageButton btnSearch;
+       
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace PresentationLayer
 {
-    partial class songinfoinput
+    partial class Songinfoinput
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(songinfoinput));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Songinfoinput));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.label3 = new System.Windows.Forms.Label();
             this.star11 = new System.Windows.Forms.Label();
             this.textBoxURLYoutube = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.listBoxSongsForAdmin = new System.Windows.Forms.ListBox();
@@ -48,7 +49,6 @@
             this.textBoxPerfName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,6 +87,18 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(948, 633);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(340, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(285, 46);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Insert New Song";
+            // 
             // star11
             // 
             this.star11.AutoSize = true;
@@ -121,13 +133,15 @@
             // 
             // listBoxSongsForAdmin
             // 
+            this.listBoxSongsForAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.listBoxSongsForAdmin.ForeColor = System.Drawing.Color.White;
             this.listBoxSongsForAdmin.FormattingEnabled = true;
             this.listBoxSongsForAdmin.ItemHeight = 16;
             this.listBoxSongsForAdmin.Location = new System.Drawing.Point(110, 416);
             this.listBoxSongsForAdmin.Name = "listBoxSongsForAdmin";
             this.listBoxSongsForAdmin.Size = new System.Drawing.Size(735, 196);
             this.listBoxSongsForAdmin.TabIndex = 26;
-            this.listBoxSongsForAdmin.SelectedIndexChanged += new System.EventHandler(this.listBoxSongsForAdmin_SelectedIndexChanged);
+            this.listBoxSongsForAdmin.SelectedIndexChanged += new System.EventHandler(this.ListBoxSongsForAdmin_SelectedIndexChanged);
             // 
             // star8
             // 
@@ -233,7 +247,7 @@
             this.btnDelete.Size = new System.Drawing.Size(195, 57);
             this.btnDelete.TabIndex = 15;
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -259,7 +273,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(197, 57);
             this.btnUpdate.TabIndex = 14;
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -285,7 +299,7 @@
             this.btnAdd.Size = new System.Drawing.Size(194, 57);
             this.btnAdd.TabIndex = 13;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // textBoxGenre
             // 
@@ -391,24 +405,12 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Song Info\r\n";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(340, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(285, 46);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "Insert New Song";
-            // 
-            // songinfoinput
+            // Songinfoinput
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bunifuGradientPanel1);
-            this.Name = "songinfoinput";
+            this.Name = "Songinfoinput";
             this.Size = new System.Drawing.Size(948, 633);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();

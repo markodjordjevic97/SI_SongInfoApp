@@ -20,7 +20,7 @@ namespace BusinessLayer
         // Method for Get Perfomer
         public Performer GetPerformer(string name, string surname)
         {
-            return this.perfomer.GetPerformerId(name, surname);
+            return this.perfomer.GetPerformer(name, surname);
         }
 
         // Method for Insert Performer

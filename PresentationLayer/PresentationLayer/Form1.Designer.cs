@@ -42,10 +42,10 @@
             this.logo = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel3 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.adminlogin1 = new PresentationLayer.adminlogin();
-            this.songinfoinput1 = new PresentationLayer.songinfoinput();
-            this.newsongs1 = new PresentationLayer.newsongs();
-            this.genres1 = new PresentationLayer.genres();
+            this.adminlogin1 = new PresentationLayer.Adminlogin();
+            this.songinfoinput1 = new PresentationLayer.Songinfoinput();
+            this.newsongs1 = new PresentationLayer.Newsongs();
+            this.genres1 = new PresentationLayer.Genres();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHamburger)).BeginInit();
@@ -113,7 +113,7 @@
             this.btnEditSongs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEditSongs.Textcolor = System.Drawing.Color.White;
             this.btnEditSongs.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditSongs.Click += new System.EventHandler(this.btnEditSongs_Click);
+            this.btnEditSongs.Click += new System.EventHandler(this.BtnEditSongs_Click);
             // 
             // btnExit
             // 
@@ -150,7 +150,7 @@
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnExit.Textcolor = System.Drawing.Color.White;
             this.btnExit.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // btnHelp
             // 
@@ -187,7 +187,7 @@
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnHelp.Textcolor = System.Drawing.Color.White;
             this.btnHelp.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            this.btnHelp.Click += new System.EventHandler(this.BtnHelp_Click);
             // 
             // btnContact
             // 
@@ -224,7 +224,7 @@
             this.btnContact.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnContact.Textcolor = System.Drawing.Color.White;
             this.btnContact.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContact.Click += new System.EventHandler(this.btnContact_Click);
+            this.btnContact.Click += new System.EventHandler(this.BtnContact_Click);
             // 
             // btnAdmin
             // 
@@ -261,7 +261,7 @@
             this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAdmin.Textcolor = System.Drawing.Color.White;
             this.btnAdmin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
+            this.btnAdmin.Click += new System.EventHandler(this.BtnAdmin_Click);
             // 
             // btnGenres
             // 
@@ -298,7 +298,7 @@
             this.btnGenres.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnGenres.Textcolor = System.Drawing.Color.White;
             this.btnGenres.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenres.Click += new System.EventHandler(this.btnGenres_Click);
+            this.btnGenres.Click += new System.EventHandler(this.BtnGenres_Click);
             // 
             // btnNewSongs
             // 
@@ -335,7 +335,7 @@
             this.btnNewSongs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNewSongs.Textcolor = System.Drawing.Color.White;
             this.btnNewSongs.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewSongs.Click += new System.EventHandler(this.btnNewSongs_Click);
+            this.btnNewSongs.Click += new System.EventHandler(this.BtnNewSongs_Click);
             // 
             // panel1
             // 
@@ -360,7 +360,7 @@
             this.btnHamburger.TabIndex = 1;
             this.btnHamburger.TabStop = false;
             this.btnHamburger.Zoom = 10;
-            this.btnHamburger.Click += new System.EventHandler(this.btnHamburger_Click);
+            this.btnHamburger.Click += new System.EventHandler(this.BtnHamburger_Click);
             // 
             // logo
             // 
@@ -474,10 +474,10 @@
         private Bunifu.Framework.UI.BunifuImageButton btnHamburger;
         private System.Windows.Forms.PictureBox logo;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel3;
-        private newsongs newsongs1;
-        private songinfoinput songinfoinput1;
-        private adminlogin adminlogin1;
+        private Newsongs newsongs1;
+        private Songinfoinput songinfoinput1;
+        private Adminlogin adminlogin1;
         private Bunifu.Framework.UI.BunifuFlatButton btnEditSongs;
-        private genres genres1;
+        private Genres genres1;
     }
 }

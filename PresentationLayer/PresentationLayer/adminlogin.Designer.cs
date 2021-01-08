@@ -1,6 +1,6 @@
 ﻿namespace PresentationLayer
 {
-    partial class adminlogin
+    partial class Adminlogin
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminlogin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Adminlogin));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.panelUpdateAdmin = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.star18 = new System.Windows.Forms.Label();
@@ -41,7 +41,7 @@
             this.btnUpdateAdminInfo = new Bunifu.Framework.UI.BunifuThinButton2();
             this.textBoxUpdateAdminPassword = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.textBoxUpdateAdminUsername = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.songinfoinput1 = new PresentationLayer.songinfoinput();
+            this.songinfoinput1 = new PresentationLayer.Songinfoinput();
             this.panelRegistration = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.star12 = new System.Windows.Forms.Label();
             this.star11 = new System.Windows.Forms.Label();
@@ -254,7 +254,7 @@
             this.btnUpdateAdminInfo.Size = new System.Drawing.Size(200, 46);
             this.btnUpdateAdminInfo.TabIndex = 21;
             this.btnUpdateAdminInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnUpdateAdminInfo.Click += new System.EventHandler(this.btnUpdateAdminInfo_Click_1);
+            this.btnUpdateAdminInfo.Click += new System.EventHandler(this.BtnUpdateAdminInfo_Click_1);
             // 
             // textBoxUpdateAdminPassword
             // 
@@ -452,7 +452,7 @@
             this.btnRegisterNowCreate.Size = new System.Drawing.Size(211, 57);
             this.btnRegisterNowCreate.TabIndex = 21;
             this.btnRegisterNowCreate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRegisterNowCreate.Click += new System.EventHandler(this.btnRegisterNowCreate_Click);
+            this.btnRegisterNowCreate.Click += new System.EventHandler(this.BtnRegisterNowCreate_Click);
             // 
             // textBoxPassword
             // 
@@ -530,7 +530,7 @@
             this.btnRegisterNow.Size = new System.Drawing.Size(201, 57);
             this.btnRegisterNow.TabIndex = 18;
             this.btnRegisterNow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRegisterNow.Click += new System.EventHandler(this.btnRegisterNow_Click);
+            this.btnRegisterNow.Click += new System.EventHandler(this.BtnRegisterNow_Click);
             // 
             // star2
             // 
@@ -592,7 +592,7 @@
             this.btnSignInHaveAccount.Size = new System.Drawing.Size(196, 57);
             this.btnSignInHaveAccount.TabIndex = 14;
             this.btnSignInHaveAccount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSignInHaveAccount.Click += new System.EventHandler(this.btnSignInHaveAccount_Click);
+            this.btnSignInHaveAccount.Click += new System.EventHandler(this.BtnSignInHaveAccount_Click);
             // 
             // textBoxPasswordHaveAccount
             // 
@@ -670,7 +670,7 @@
             this.btnSignInNoFunction.Size = new System.Drawing.Size(201, 57);
             this.btnSignInNoFunction.TabIndex = 7;
             this.btnSignInNoFunction.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSignInNoFunction.Click += new System.EventHandler(this.btnSignInNoFunction_Click);
+            this.btnSignInNoFunction.Click += new System.EventHandler(this.BtnSignInNoFunction_Click);
             // 
             // label2
             // 
@@ -732,7 +732,7 @@
             this.btnUpdateAdminShowPanel.Size = new System.Drawing.Size(196, 57);
             this.btnUpdateAdminShowPanel.TabIndex = 22;
             this.btnUpdateAdminShowPanel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnUpdateAdminShowPanel.Click += new System.EventHandler(this.btnUpdateAdminShowPanel_Click);
+            this.btnUpdateAdminShowPanel.Click += new System.EventHandler(this.BtnUpdateAdminShowPanel_Click);
             // 
             // adminlogin
             // 
@@ -741,7 +741,7 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "adminlogin";
             this.Size = new System.Drawing.Size(948, 633);
-            this.Load += new System.EventHandler(this.adminlogin_Load);
+            this.Load += new System.EventHandler(this.Adminlogin_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             this.panelUpdateAdmin.ResumeLayout(false);
@@ -780,7 +780,7 @@
         private System.Windows.Forms.Label star9;
         private Bunifu.Framework.UI.BunifuThinButton2 btnUpdateAdminShowPanel;
         private System.Windows.Forms.Label labelUpdateAdminInfo;
-        private songinfoinput songinfoinput1;
+        private Songinfoinput songinfoinput1;
         private Bunifu.Framework.UI.BunifuGradientPanel panelUpdateAdmin;
         private System.Windows.Forms.Label star18;
         private System.Windows.Forms.Label star17;

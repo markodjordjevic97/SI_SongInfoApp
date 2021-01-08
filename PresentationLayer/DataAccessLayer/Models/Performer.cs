@@ -12,7 +12,7 @@ namespace DataAccessLayer.Models
 
         public override string ToString()
         {
-            return Performer_Id + " " + Name + " " + Surname;
+            return Performer_Id + "-" + Name + "-" + Surname;
         }
     }
 }
