@@ -107,7 +107,7 @@ namespace PresentationLayer
                 }
 
                 //adminlogin.username, adminlogin.password
-                a = this.businessAdmin.AuthenticateAdmin(Adminlogin.adminIDGET);
+                a = this.businessAdmin.AuthenticateAdmin(Adminlogin.adminData);
 
                 if (this.businessSong.InsertSong(performer, a, s))
                 {
@@ -119,19 +119,28 @@ namespace PresentationLayer
                     MessageBox.Show("Unsuccessfull input of song!");
                 }
             }
-           
         }
         //Update song
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
             Song s = new Song();
             Performer p = new Performer();
-            s.Title = textBoxTitle.Text;
-            s.Genre = textBoxGenre.Text;
-            s.Jim_Rating =Convert.ToDecimal(textBoxRatingJIM.Text);
-            s.Youtube_Url = textBoxURLYoutube.Text;
-            s.Song_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split('-')[0]);
-            p.Performer_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split('-')[1]);
+            try
+            {
+              s.Title = textBoxTitle.Text;
+              s.Genre = textBoxGenre.Text;
+              s.Jim_Rating = Convert.ToDecimal(textBoxRatingJIM.Text);
+              s.Youtube_Url = textBoxURLYoutube.Text;
+              s.Song_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split('-')[0]);
+              p.Performer_Id = Convert.ToInt32(listBoxSongsForAdmin.SelectedItem.ToString().Split('-')[1]);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Radnja nije validna...");
+            }
+          
+
+
 
             p.Name = textBoxPerfName.Text;
             p.Surname = textBoxPerfSurname.Text;
@@ -163,7 +172,5 @@ namespace PresentationLayer
                 MessageBox.Show("Unsuccessfull delete!");
             }
         }
-
-       
     }
 }

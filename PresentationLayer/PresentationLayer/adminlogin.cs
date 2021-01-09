@@ -17,8 +17,7 @@ namespace PresentationLayer
 
 
         public BusinessAdmin business;
-        public static Admin adminIDGET;
-
+        public static Admin adminData;
 
         public Adminlogin()
         {
@@ -80,7 +79,6 @@ namespace PresentationLayer
         {
             Admin a = new Admin();
 
-
             if (textBoxPasswordHaveAccount.Text.Length == 0
                 || textBoxUserNameHaveAccount.Text.Length == 0
                 || this.business.IsValidPassword(textBoxPasswordHaveAccount.Text) != true
@@ -98,16 +96,16 @@ namespace PresentationLayer
 
                 a.Username = textBoxUserNameHaveAccount.Text;
                 a.Password = textBoxPasswordHaveAccount.Text;
-                // Kupim podatke
-                adminIDGET = new Admin();
-                adminIDGET.Username = a.Username;
-                adminIDGET.Password = a.Password;
-
+               
                 if (this.business.AuthenticateAdmin(a).Admin_Id != 0)
                 {
                     MessageBox.Show("Successfull login!");
                     songinfoinput1.Show();
                     panelRegistration.Hide();
+                    // Data stored for songinput
+                    adminData = new Admin();
+                    adminData.Username = a.Username;
+                    adminData.Password = a.Password;
                 }
                 else
                 {
@@ -142,16 +140,12 @@ namespace PresentationLayer
         {
             Admin a = new Admin();
 
-
-
-            if (textBoxName.Text.Length == 0
+            if ( textBoxName.Text.Length == 0
                 || textBoxSurname.Text.Length == 0
                 || textBoxUsername.Text.Length == 0
                 || textBoxPassword.Text.Length == 0
                 || this.business.IsValidPassword(textBoxPassword.Text) != true
-                || this.business.IsValidUsername(textBoxUsername.Text) != true)
-
-
+                || this.business.IsValidUsername(textBoxUsername.Text) != true )
             {
                 star9.Show();
                 star10.Show();
@@ -159,8 +153,6 @@ namespace PresentationLayer
                 star12.Show();
 
                 MessageBox.Show("Enter correct data!(Username: characters only, min 8 char;Password: one Uppercase, one Number, min 8 char)");
-
-
             }
             else
             {
@@ -169,12 +161,14 @@ namespace PresentationLayer
                 a.Username = textBoxUsername.Text;
                 a.Password = textBoxPassword.Text;
 
+                adminData = new Admin();
+                adminData.Username = a.Username;
+                adminData.Password = a.Password;
+
                 if (this.business.RegisterAdmin(a) > 0)
                 {
-
                     MessageBox.Show("Successfull registration!");
                     songinfoinput1.Show();
-
                 }
                 else
                 {
@@ -208,7 +202,6 @@ namespace PresentationLayer
                 star2.Show();
                 MessageBox.Show("Enter correct data!");
 
-
             }
             else
             {
@@ -216,9 +209,9 @@ namespace PresentationLayer
                 a.Username = textBoxUserNameHaveAccount.Text;
                 a.Password = textBoxPasswordHaveAccount.Text;
                 // Kupim podatke
-                adminIDGET = new Admin();
-                adminIDGET.Username = a.Username;
-                adminIDGET.Password = a.Password;
+                adminData = new Admin();
+                adminData.Username = a.Username;
+                adminData.Password = a.Password;
 
                 if (this.business.AuthenticateAdmin(a).Admin_Id != 0)
                 {
@@ -232,7 +225,6 @@ namespace PresentationLayer
                 {
                     MessageBox.Show("Enter correct data!");
                 }
-
             }
         }
 
@@ -245,7 +237,7 @@ namespace PresentationLayer
             a.Username = textBoxUpdateAdminUsername.Text;
             a.Password = textBoxUpdateAdminPassword.Text;
 
-            a.Admin_Id = this.business.AuthenticateAdmin(Adminlogin.adminIDGET).Admin_Id;
+            a.Admin_Id = this.business.AuthenticateAdmin(Adminlogin.adminData).Admin_Id;
 
             if (this.business.UpdateAdmin(a) > 0)
             {
