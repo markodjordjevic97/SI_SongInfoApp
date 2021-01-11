@@ -345,6 +345,8 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(245, 152);
             this.panel1.TabIndex = 2;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
             // logo
             // 
@@ -355,6 +357,8 @@
             this.logo.Size = new System.Drawing.Size(185, 117);
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
+            this.logo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.logo_MouseDown);
+            this.logo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.logo_MouseMove);
             // 
             // bunifuGradientPanel2
             // 
