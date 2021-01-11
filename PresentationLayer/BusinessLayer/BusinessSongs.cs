@@ -102,7 +102,7 @@ namespace BusinessLayer
 
         public List<Song> GetSongsByGenre(string genre)
         {
-            return this.songRepository.GetAllSongs().Where(song => song.Genre.Equals(genre)).ToList();
+            return this.songRepository.GetAllSongs().Where(song => song.Genre.Equals(genre.ToLower())).ToList();
         }
     }
 }

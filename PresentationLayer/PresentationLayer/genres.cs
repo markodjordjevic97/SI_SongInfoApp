@@ -60,12 +60,19 @@ namespace PresentationLayer
         {
             Button btn = (Button)sender;
             var genre = btn.Text;
+            var songs = this.business.GetSongsByGenre(genre);
+            
+            if(songs.Count > 0)
+            {
+                SongsItems(songs);
+                flowLayoutPanel1.Show();
+                flowLayoutPanel1.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("There are no songs for that genre!");
+            }
 
-            var Songs = this.business.GetSongsByGenre(genre);
-
-            SongsItems(Songs);
-            flowLayoutPanel1.Show();
-            flowLayoutPanel1.BringToFront();
         }
     }
 }

@@ -38,7 +38,7 @@ namespace PresentationLayer
                 listSongs[i].Youtube_hyperlink = Songs[i].Youtube_Url;
                 listSongs[i].Title = Songs[i].Title;
                 listSongs[i].Genre = Songs[i].Genre;
-                listSongs[i].Performer = Songs[i].Performer.Name + Songs[i].Performer.Surname;
+                listSongs[i].Performer = Songs[i].Performer.Name + " " + Songs[i].Performer.Surname;
                 listSongs[i].Rating = Songs[i].Jim_Rating;
                 
                 // Add to flow panel
@@ -65,7 +65,6 @@ namespace PresentationLayer
                 MessageBox.Show("There are no songs!");
             }
         }
-
         // Sort method for songs by name
         private void BtnAZSort_Click(object sender, EventArgs e)
         {
