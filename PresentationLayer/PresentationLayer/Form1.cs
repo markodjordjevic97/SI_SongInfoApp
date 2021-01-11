@@ -77,7 +77,12 @@ namespace PresentationLayer
         }
         private void BtnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Environment.Exit(2);
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=BYca5mVk0OM&ab_channel=IvanKrstic");
         }
     }
 }
