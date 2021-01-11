@@ -74,7 +74,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Quality = 10;
-            this.panelMenu.Size = new System.Drawing.Size(245, 673);
+            this.panelMenu.Size = new System.Drawing.Size(245, 635);
             this.panelMenu.TabIndex = 0;
             // 
             // btnEditSongs
@@ -136,7 +136,7 @@
             this.btnExit.IconVisible = true;
             this.btnExit.IconZoom = 50D;
             this.btnExit.IsTab = false;
-            this.btnExit.Location = new System.Drawing.Point(0, 614);
+            this.btnExit.Location = new System.Drawing.Point(0, 576);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
@@ -388,7 +388,7 @@
             this.bunifuGradientPanel3.Location = new System.Drawing.Point(245, 0);
             this.bunifuGradientPanel3.Name = "bunifuGradientPanel3";
             this.bunifuGradientPanel3.Quality = 10;
-            this.bunifuGradientPanel3.Size = new System.Drawing.Size(961, 673);
+            this.bunifuGradientPanel3.Size = new System.Drawing.Size(923, 635);
             this.bunifuGradientPanel3.TabIndex = 1;
             // 
             // contact1
@@ -396,7 +396,7 @@
             this.contact1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contact1.Location = new System.Drawing.Point(0, 0);
             this.contact1.Name = "contact1";
-            this.contact1.Size = new System.Drawing.Size(961, 673);
+            this.contact1.Size = new System.Drawing.Size(923, 635);
             this.contact1.TabIndex = 4;
             // 
             // genres1
@@ -404,7 +404,7 @@
             this.genres1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.genres1.Location = new System.Drawing.Point(0, 0);
             this.genres1.Name = "genres1";
-            this.genres1.Size = new System.Drawing.Size(961, 673);
+            this.genres1.Size = new System.Drawing.Size(923, 635);
             this.genres1.TabIndex = 3;
             // 
             // adminlogin1
@@ -413,7 +413,7 @@
             this.adminlogin1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.adminlogin1.Location = new System.Drawing.Point(0, 0);
             this.adminlogin1.Name = "adminlogin1";
-            this.adminlogin1.Size = new System.Drawing.Size(961, 673);
+            this.adminlogin1.Size = new System.Drawing.Size(923, 635);
             this.adminlogin1.TabIndex = 2;
             // 
             // songinfoinput1
@@ -421,7 +421,7 @@
             this.songinfoinput1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.songinfoinput1.Location = new System.Drawing.Point(0, 0);
             this.songinfoinput1.Name = "songinfoinput1";
-            this.songinfoinput1.Size = new System.Drawing.Size(961, 673);
+            this.songinfoinput1.Size = new System.Drawing.Size(923, 635);
             this.songinfoinput1.TabIndex = 1;
             // 
             // newsongs1
@@ -430,7 +430,7 @@
             this.newsongs1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.newsongs1.Location = new System.Drawing.Point(0, 0);
             this.newsongs1.Name = "newsongs1";
-            this.newsongs1.Size = new System.Drawing.Size(961, 673);
+            this.newsongs1.Size = new System.Drawing.Size(923, 635);
             this.newsongs1.TabIndex = 0;
             // 
             // Form1
@@ -438,11 +438,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1206, 673);
+            this.ClientSize = new System.Drawing.Size(1168, 635);
             this.ControlBox = false;
             this.Controls.Add(this.bunifuGradientPanel3);
             this.Controls.Add(this.panelMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Song Info App";
             this.Load += new System.EventHandler(this.Form1_Load);

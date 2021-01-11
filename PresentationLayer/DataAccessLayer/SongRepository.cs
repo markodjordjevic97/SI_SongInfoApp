@@ -93,5 +93,34 @@ namespace DataAccessLayer
             }
             return songs;
         }
+        public Song GetSongByTitleAndPerformer(string title, string name, string surname)
+        {
+            Song song = new Song();
+
+            using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))
+            {
+                connection.Open();
+
+                MySqlCommand command = new MySqlCommand();
+                command.Connection = connection;
+                command.CommandText = string.Format(@"SELECT
+	                                         songs.id AS 'song id',
+                                             songs.title AS 'Naziv pesme'
+                                        FROM songs
+                                        JOIN performers
+	                                         ON performers.id = songs.performer_id
+                                        WHERE songs.title = '{0}' AND performers.name = '{1}'
+                                            AND  performers.surname = '{2}';", title, name, surname);
+
+                MySqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    song.Song_Id = reader.GetInt32(0);
+                    song.Title = reader.GetString(1);
+                }
+            }
+            return song;
+        }
     }
 }

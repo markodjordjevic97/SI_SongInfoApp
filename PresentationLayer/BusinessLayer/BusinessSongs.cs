@@ -104,5 +104,12 @@ namespace BusinessLayer
         {
             return this.songRepository.GetAllSongs().Where(song => song.Genre.Equals(genre.ToLower())).ToList();
         }
+
+        public bool CheckIfSongExists(string title, string name, string surname)
+        {
+            if (songRepository.GetSongByTitleAndPerformer(title, name, surname).Song_Id > 0)
+                return true;
+            return false;
+        }
     }
 }

@@ -80,6 +80,10 @@ namespace PresentationLayer
 
                 MessageBox.Show("Niste uneli sve podatke!");
             }
+            else if(businessSong.CheckIfSongExists(textBoxTitle.Text, textBoxPerfName.Text, textBoxPerfSurname.Text))
+            {
+                MessageBox.Show("Song already inserted!");
+            }
             else
             {
                 try
