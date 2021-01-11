@@ -10,8 +10,6 @@ namespace PresentationLayer
 {
     public partial class Newsongs : UserControl
     {
-
-       
         private readonly BusinessSongs blSong;
         public string SelectedGenre;
 
@@ -19,34 +17,18 @@ namespace PresentationLayer
         {
             InitializeComponent();
             blSong = new BusinessSongs();
-
-          
-
-            
+            SongsItems(this.blSong.GetAllSongs());
         }
-
-        private void Newsongs_Load(object sender, EventArgs e)
-        {
-            
-        }
-        private void BunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
         private void SongsItems(List<Song> listSong)
         {
-
-            // Mora jovan da mi prosledi static polje od njegov event
-            FillList();
+            ClearList();
             var Songs = listSong;
-             var listLength = listSong.Count;
+            var listLength = listSong.Count;
 
             SongCard[] listSongs = new SongCard[listLength];
            
             for (int i = 0; i < listLength; i++)
             {
-              
                // Song info
                 listSongs[i] = new SongCard();
                 listSongs[i].Icon = Resources.music;
@@ -61,22 +43,13 @@ namespace PresentationLayer
                 
                 // Add to flow panel
                 flowListSongs.Controls.Add(listSongs[i]);
-               
             }
         }
-        private void FillList()
+        private void ClearList()
         {
             flowListSongs.Controls.Clear();
         }
 
-        //Search bar, sort buttons
-       /* private void textBoxSearch_OnValueChanged(object sender, EventArgs e)
-        {
-            //Upit za search?
-           
-
-        }*/
-       
         // Get All Songs
         private void GetAllSongs_Click(object sender, EventArgs e)
         {
@@ -149,7 +122,5 @@ namespace PresentationLayer
             
             SongsItems(Songs);
         }
-
-       
     }
 }

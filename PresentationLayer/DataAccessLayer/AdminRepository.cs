@@ -23,7 +23,7 @@ namespace DataAccessLayer
             }
         }
 
-        //Checking if Admin Username already exists in database
+        // Checking if Admin Username already exists in database
         public List<Admin> GetAdmin(Admin admin)
         {
             using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))
@@ -45,9 +45,7 @@ namespace DataAccessLayer
                     temp.Password = reader.GetString(4);
                     list2.Add(temp);
                 }
-
                 return list2;
-              
             }
         }
 

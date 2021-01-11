@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLayer;
 using DataAccessLayer.Models;
@@ -15,7 +10,6 @@ namespace PresentationLayer
 {
     public partial class Genres : UserControl
     {
-      
         public BusinessSongs business;
         public EventHandler btnEvent;
 
@@ -23,17 +17,10 @@ namespace PresentationLayer
         {
             this.business = new BusinessSongs();
             InitializeComponent();
-
-            
-            
-       
         }
 
         private void SongsItems(List<Song> listSong)
         {
-
-
-            // Mora jovan da mi prosledi static polje od njegov event
             FillList();
             var Songs = listSong;
             var listLength = listSong.Count;
@@ -42,7 +29,6 @@ namespace PresentationLayer
 
             for (int i = 0; i < listLength; i++)
             {
-
                 // Song info
                 listSongs[i] = new SongCard();
                 listSongs[i].Icon = Resources.music;
@@ -57,8 +43,6 @@ namespace PresentationLayer
 
                 // Add to flow panel
                 flowLayoutPanel1.Controls.Add(listSongs[i]);
-
-
             }
         }
         private void FillList()
@@ -67,16 +51,11 @@ namespace PresentationLayer
         }
         private void Genres_Load(object sender, EventArgs e)
         {
-
             this.Show();
 
             flowLayoutPanel1.Hide();
-            
-            
         }
-
-      
-
+        
         private void BtnClicked(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -88,7 +67,5 @@ namespace PresentationLayer
             flowLayoutPanel1.Show();
             flowLayoutPanel1.BringToFront();
         }
-
-
     }
 }

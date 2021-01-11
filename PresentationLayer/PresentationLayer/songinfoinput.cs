@@ -1,13 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 using DataAccessLayer.Models;
 using BusinessLayer;
 
@@ -138,13 +131,10 @@ namespace PresentationLayer
             {
                 MessageBox.Show("Radnja nije validna...");
             }
-          
-
-
 
             p.Name = textBoxPerfName.Text;
             p.Surname = textBoxPerfSurname.Text;
-            //(this.performer.UpdatePerformer(p))
+           
             if (this.businessSong.UpdateSong(s) > 0 && this.businessPerformer.UpdatePerformer(p))
             {
                 MessageBox.Show("Successfull song update!");
@@ -154,7 +144,6 @@ namespace PresentationLayer
             {
                 MessageBox.Show("Unsuccessfull song update!");
             }
-  
         }
         //Delete song
         private void BtnDelete_Click(object sender, EventArgs e)
@@ -167,7 +156,8 @@ namespace PresentationLayer
             {
                 MessageBox.Show("Successfull delete!");
                 FillList();
-            }else
+            }
+            else
             {
                 MessageBox.Show("Unsuccessfull delete!");
             }

@@ -1,14 +1,11 @@
 ﻿using DataAccessLayer.Models;
 using MySql.Data.MySqlClient;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DataAccessLayer
 {
     public class SongRepository
     {
-
         public int InsertSong(Performer performer, Admin admin, Song song)
         {
             using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))

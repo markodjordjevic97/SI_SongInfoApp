@@ -67,8 +67,5 @@ namespace BusinessLayer
                 return true;
             return false;
         }
-
-        
-
     }
 }

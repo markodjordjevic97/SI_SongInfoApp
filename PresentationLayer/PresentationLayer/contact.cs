@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PresentationLayer
@@ -23,9 +16,7 @@ namespace PresentationLayer
             panelIvan.BringToFront();
             panelJovan.SendToBack();
         }
-
-
-
+        
         private void BtnIvanLeft_Click(object sender, EventArgs e)
         {
             panelMarko.BringToFront();
@@ -37,8 +28,7 @@ namespace PresentationLayer
         {
             panelIvan.SendToBack();
             panelMarko.SendToBack();
-
-
+            
             panelJovan.BringToFront();
         }
 
@@ -46,8 +36,6 @@ namespace PresentationLayer
         {
             panelIvan.BringToFront();
             panelMarko.SendToBack();
-
-
             panelJovan.SendToBack();
         }
     }

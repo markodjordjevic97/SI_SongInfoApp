@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLayer;
 using DataAccessLayer.Models;
@@ -14,8 +8,6 @@ namespace PresentationLayer
 {
     public partial class Adminlogin : UserControl
     {
-
-
         public BusinessAdmin business;
         public static Admin adminData;
 
@@ -27,7 +19,6 @@ namespace PresentationLayer
             star1.Hide();
             star2.Hide();
             panelRegistration.Hide();
-           
         }
 
         private void Adminlogin_Load(object sender, EventArgs e)
@@ -48,6 +39,12 @@ namespace PresentationLayer
             btnSignInNoFunction.BackColor = Color.Transparent;
             btnSignInNoFunction.IdleForecolor = Color.Transparent;
             // Color register now
+            btnRegisterNowCreate.ActiveFillColor = Color.FromArgb(44, 62, 80);
+            btnRegisterNowCreate.ActiveForecolor = Color.Transparent;
+            btnRegisterNowCreate.ActiveLineColor = Color.FromArgb(44, 62, 80);
+            btnRegisterNowCreate.BackColor = Color.Transparent;
+            btnRegisterNowCreate.IdleForecolor = Color.Transparent;
+            // Color register now
             btnRegisterNow.ActiveFillColor = Color.FromArgb(44, 62, 80);
             btnRegisterNow.ActiveForecolor = Color.Transparent;
             btnRegisterNow.ActiveLineColor = Color.FromArgb(44, 62, 80);
@@ -65,12 +62,11 @@ namespace PresentationLayer
             btnUpdateAdminShowPanel.ActiveLineColor = Color.FromArgb(44, 62, 80);
             btnUpdateAdminShowPanel.BackColor = Color.Transparent;
             btnUpdateAdminShowPanel.IdleForecolor = Color.Transparent;
-
+            
             if (this.business.GetAdmin(a))
             {
                 labelRegistration.Hide();
                 btnRegisterNow.Hide();
-               
             }
         }
 
@@ -84,16 +80,12 @@ namespace PresentationLayer
                 || this.business.IsValidPassword(textBoxPasswordHaveAccount.Text) != true
                 || this.business.IsValidUsername(textBoxUserNameHaveAccount.Text) != true)
             {
-
                 star1.Show();
                 star2.Show();
                 MessageBox.Show("Enter correct data!");
-
-
             }
             else
             {
-
                 a.Username = textBoxUserNameHaveAccount.Text;
                 a.Password = textBoxPasswordHaveAccount.Text;
                
@@ -112,15 +104,12 @@ namespace PresentationLayer
                     MessageBox.Show("Unsuccessful login!");
                 }
             }
-
         }
-
-
+        
         /*Prikaz panela za registraciju*/
         private void BtnRegisterNow_Click(object sender, EventArgs e)
         {
             panelRegistration.Show();
-
             star9.Hide();
             star10.Hide();
             star11.Hide();
@@ -175,8 +164,6 @@ namespace PresentationLayer
                     MessageBox.Show("Unsuccessfull registration!");
                 }
             }
-
-
         }
 
         private void BtnUpdateAdminShowPanel_Click(object sender, EventArgs e)
@@ -201,11 +188,9 @@ namespace PresentationLayer
                 star1.Show();
                 star2.Show();
                 MessageBox.Show("Enter correct data!");
-
             }
             else
             {
-
                 a.Username = textBoxUserNameHaveAccount.Text;
                 a.Password = textBoxPasswordHaveAccount.Text;
                 // Kupim podatke
