@@ -23,7 +23,7 @@ namespace PresentationLayer
             }
             catch (Exception)
             {
-
+                MessageBox.Show("Please reconect to your Internet network!");
                 
             }
         }
