@@ -12,7 +12,7 @@ namespace BusinessLayer
 
         public BusinessPerfomer()
         {
-            this.perfomer = new PerformerRepository();
+            this.perfomer = PerformerRepository.Instance;
         }
 
         //************************************ Methods for CRUD performers **************************************

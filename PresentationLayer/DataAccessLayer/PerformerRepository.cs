@@ -5,46 +5,45 @@ namespace DataAccessLayer
 {
     public class PerformerRepository
     {
+        private static PerformerRepository _instance = null;
+
+        private PerformerRepository() { }
+
+        public static PerformerRepository Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new PerformerRepository();
+                }
+                return _instance;
+            }
+        }
+
+
         public int InsertPerfomer(string name, string surname)
         {
-            using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))
-            {
-                connection.Open();
+            int result = DBConnection.EditData(string.Format(
+                "INSERT INTO performers (name,surname) VALUES ('{0}', '{1}');", name, surname));
 
-                MySqlCommand command = new MySqlCommand();
-                command.Connection = connection;
-                command.CommandText = string.Format("INSERT INTO performers (name,surname) VALUES ('{0}', '{1}');", name, surname);
-
-                int result = command.ExecuteNonQuery();
+            DBConnection.CloseConnection();
                 return result;
-            }
         }
 
         public int UpdatePerformer(Performer performer)
         {
-            using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))
-            {
-                connection.Open();
+            int result = DBConnection.EditData(string.Format(
+                "UPDATE performers SET name = '{0}', surname = '{1}' WHERE id = {2};", 
+                performer.Name, performer.Surname, performer.Performer_Id));
 
-                MySqlCommand command = new MySqlCommand();
-                command.Connection = connection;
-                command.CommandText = string.Format("UPDATE performers SET name = '{0}', surname = '{1}' WHERE id = {2};", performer.Name, performer.Surname, performer.Performer_Id);
-
-                int result = command.ExecuteNonQuery();
-                return result;
-            }
+            DBConnection.CloseConnection();
+            return result;
         }
         public Performer GetPerformer(string name, string surname)
         {
-            using (MySqlConnection connection = new MySqlConnection(Constants.connectionString))
-            {
-                connection.Open();
-
-                MySqlCommand command = new MySqlCommand();
-                command.Connection = connection;
-                command.CommandText = string.Format("SELECT * FROM performers WHERE name = '{0}' AND surname = '{1}';", name, surname);
-
-                MySqlDataReader reader = command.ExecuteReader();
+            MySqlDataReader reader = DBConnection.GetData(string.Format(
+                "SELECT * FROM performers WHERE name = '{0}' AND surname = '{1}';", name, surname));
 
                 Performer performer = new Performer();
                 while (reader.Read())
@@ -53,8 +52,8 @@ namespace DataAccessLayer
                     performer.Name = reader.GetString(1);
                     performer.Surname = reader.GetString(2);
                 }
-                return performer;
-            }
+            DBConnection.CloseConnection();
+            return performer;
         }
     }
 }

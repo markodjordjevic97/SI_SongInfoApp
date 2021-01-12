@@ -16,16 +16,16 @@ namespace PresentationLayer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            
-            try
-            {
-                Application.Run(new Form1());
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Please reconect to your Internet network!");
-                
-            }
+            Application.Run(new Form1());
+             try
+             {
+                 Application.Run(new Form1());
+             } 
+             catch (Exception)
+             {
+                  MessageBox.Show("Please reconect to your Internet network!");
+
+             } 
         }
     }
 }

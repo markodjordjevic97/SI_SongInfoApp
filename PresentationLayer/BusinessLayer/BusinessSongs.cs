@@ -11,7 +11,7 @@ namespace BusinessLayer
 
         public BusinessSongs()
         {
-            songRepository = new SongRepository();
+            songRepository = SongRepository.Instance;
         }
 
         //************************************ Methods for CRUD songs **************************************

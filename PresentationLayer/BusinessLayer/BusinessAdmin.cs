@@ -10,7 +10,7 @@ namespace BusinessLayer
 
         public BusinessAdmin()
         {
-            adminRepository = new AdminRepository();
+            adminRepository = AdminRepository.Instance;
         }
 
         //************************************ Methods for CRUD admin **************************************
