@@ -40,7 +40,7 @@ namespace DataAccessLayer
         }
 
         // Checking if Admin Username already exists in database
-        public List<Admin> GetAdmin(Admin admin)
+        public List<Admin> GetAdmin()
         {
                 List<Admin> list2 = new List<Admin>();
                 Admin temp = new Admin();

@@ -63,7 +63,7 @@ namespace PresentationLayer
             btnUpdateAdminShowPanel.BackColor = Color.Transparent;
             btnUpdateAdminShowPanel.IdleForecolor = Color.Transparent;
             
-            if (this.business.GetAdmin(a))
+            if (this.business.GetAdmin())
             {
                 labelRegistration.Hide();
                 btnRegisterNow.Hide();

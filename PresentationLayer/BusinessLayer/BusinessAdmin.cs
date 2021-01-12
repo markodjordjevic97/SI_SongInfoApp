@@ -22,9 +22,9 @@ namespace BusinessLayer
         }
 
         // Method for Admin Login
-        public bool GetAdmin(Admin admin)
+        public bool GetAdmin()
         {
-            if (this.adminRepository.GetAdmin(admin).Count > 0)
+            if (this.adminRepository.GetAdmin().Count > 0)
                 return true;
             return false;
         }
