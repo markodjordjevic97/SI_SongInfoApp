@@ -10,11 +10,21 @@ namespace RepositoryLayerTests
     public class AdminRepositoryTest
     {
         AdminRepository admin;
+        Admin adminFake;
 
         [TestInitialize]
         public void SetData()
         {
-           this.admin = AdminRepository.Instance;
+           admin = AdminRepository.Instance;
+            // Arrange
+           adminFake = new Admin()
+            {
+                Admin_Id = 119,
+                Name = "Korisnik",
+                Surname = "Korisnik1",
+                Username = "adminadmin",
+                Password = "Adminadmin1"
+            };
         }
         [TestCleanup]
         public void TestCleanup()
@@ -22,36 +32,10 @@ namespace RepositoryLayerTests
             this.admin.DeleteAdmin(
                 new Admin() { Name = "adminadmin" });
         }
-
-
-        [TestMethod]
-        public void RegistrationAdmin()
-        {
-            // Arrange
-            var adminFake = new Admin(){
-                Name = "Korisnik",
-                Surname = "Korisnik1",
-                Username = "adminadmin",
-                Password = "Adminadmin1"
-            };
-            // Act
-            int result = this.admin.RegisterAdmin(adminFake);
-            // Assert
-            if(result == 1)
-             Assert.AreEqual(1, result);
-        }
-
+        
         [TestMethod]
         public void GetAdmin()
         {
-            // Arrange
-            var adminFake = new Admin()
-            {
-                Name = "Korisnik",
-                Surname = "Korisnik1",
-                Username = "adminadmin",
-                Password = "Adminadmin1"
-            };
             // Act
             List<Admin> list = this.admin.GetAdmin();
             // Assert
@@ -61,14 +45,6 @@ namespace RepositoryLayerTests
         [TestMethod]
         public void AuthentificationAdmin()
         {
-            // Arrange
-            var adminFake = new Admin()
-            {
-                Name = "Korisnik",
-                Surname = "Korisnik1",
-                Username = "adminadmin",
-                Password = "Adminadmin1"
-            };
             // Act
             Admin adm = this.admin.AuthenticateAdmin(adminFake);
             // Assert
@@ -77,20 +53,10 @@ namespace RepositoryLayerTests
         [TestMethod]
         public void UpdateAdmin()
         {
-            // Arrange
-            var adminFake = new Admin()
-            {
-                Name = "Korisnik",
-                Surname = "Korisnik1",
-                Username = "adminadmin",
-                Password = "Adminadmin1",
-
-            };
             // Act
-            this.admin.RegisterAdmin(adminFake);
-            int result = this.admin.UpdateAdmin(adminFake);
+            int adm = this.admin.UpdateAdmin(this.adminFake);
             // Assert
-            Assert.AreEqual(1, result);
-        } 
+            Assert.AreEqual(1, adm);
+        }
     }
 }

@@ -40,6 +40,7 @@ namespace DataAccessLayer
             DBConnection.CloseConnection();
             return result;
         }
+      
         public Performer GetPerformer(string name, string surname)
         {
             MySqlDataReader reader = DBConnection.GetData(string.Format(

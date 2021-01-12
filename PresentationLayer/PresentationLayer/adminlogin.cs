@@ -154,7 +154,7 @@ namespace PresentationLayer
                 adminData.Username = a.Username;
                 adminData.Password = a.Password;
 
-                if (this.business.RegisterAdmin(a) > 0)
+                if (this.business.RegisterAdmin(a) != 0)
                 {
                     MessageBox.Show("Successfull registration!");
                     songinfoinput1.Show();

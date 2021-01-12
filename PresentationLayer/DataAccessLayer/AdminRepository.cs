@@ -30,12 +30,16 @@ namespace DataAccessLayer
 
         public int RegisterAdmin(Admin admin)
         {
-            int result = DBConnection.EditData(string.Format(
+            int result = 0;
+            if (!GetAdmin().Contains(admin))
+            {
+                result = DBConnection.EditData(string.Format(
                 "INSERT INTO admins(name, surname, username, password) " +
-                "VALUES ('{0}','{1}','{2}',md5('{3}'));", admin.Name, 
+                "VALUES ('{0}','{1}','{2}',md5('{3}'));", admin.Name,
                 admin.Surname, admin.Username, admin.Password));
 
-            DBConnection.CloseConnection();
+                DBConnection.CloseConnection();
+            }
                 return result;
         }
 
