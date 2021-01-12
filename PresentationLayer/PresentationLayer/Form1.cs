@@ -83,7 +83,7 @@ namespace PresentationLayer
 
         private void btnHelp_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=BYca5mVk0OM&ab_channel=IvanKrstic");
+            System.Diagnostics.Process.Start("https://www.youtube.com/watch?v=HHdB_rLsMY8&feature=youtu.be");
         }
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)
