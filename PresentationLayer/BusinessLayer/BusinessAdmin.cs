@@ -41,6 +41,12 @@ namespace BusinessLayer
             return this.adminRepository.UpdateAdmin(admin);
         }
 
+        // Method for delete admin info
+        public int DeleteAdmin(Admin admin)
+        {
+            return this.adminRepository.DeleteAdmin(admin);
+        }
+
         //************************************ Methods for Check validation **************************************
 
         // Method for check password validation

@@ -88,5 +88,14 @@ namespace DataAccessLayer
             DBConnection.CloseConnection();
                 return result;
         }
+        // For Integration testing
+        public int DeleteAdmin(Admin admin)
+        {
+            int result = DBConnection.EditData(string.Format(
+                "DELETE FROM admins WHERE username='{0}'", admin.Username
+                ));
+            DBConnection.CloseConnection();
+            return result;
+        }
     }
 }
